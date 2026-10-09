@@ -4,6 +4,7 @@ description: "A CNRS-supported research visit directly linked to Ktirio Urban Bu
 lang: "en"
 slug: "flood-abdoulaye-samake"
 date: "2026-10-09"
+projects: ["flood", "ktirio-urban-building"]
 category: "FLOOD · CNRS"
 ---
 

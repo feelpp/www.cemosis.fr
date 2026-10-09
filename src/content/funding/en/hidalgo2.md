@@ -3,7 +3,7 @@ title: "CoE HiDALGO2"
 description: "Environmental challenge simulations on European supercomputers."
 lang: "en"
 slug: "hidalgo2"
-category: "EuroHPC JU · Union européenne"
+category: "EuroHPC JU · European Union"
 period: "2023–2026"
 order: 3
 source: "https://www.hidalgo2.eu/urban-building-model/"

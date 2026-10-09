@@ -5,7 +5,7 @@ interface Props { title: string; description: string; lang: Language; path?: str
 const { title, description, lang, path = '', alternate = true, noindex = false, switchPath } = Astro.props;
 const t = labels[lang];
 const other = lang === 'fr' ? 'en' : 'fr';
-const navigation = ['services', 'projects', 'software', 'about', 'news'] as const;
+const navigation = ['services', 'projects', 'software', 'publications', 'about', 'news'] as const;
 const canonical = new URL(route(lang, path), Astro.site);
 ---
 <!doctype html>
@@ -35,8 +35,8 @@ const canonical = new URL(route(lang, path), Astro.site);
     <header class="site-header">
       <div class="container header-inner">
         <div class="header-identity">
-          <a class="unistra-brand" href="https://www.unistra.fr/"><img src={url('images/unistra-signature.svg')} width="173" height="73" alt="Université de Strasbourg" /></a>
-          <a class="brand" href={route(lang)} aria-label={`Cemosis — ${t.home}`}><span class="brand-logo"><img src={url('images/logo-cemosis.png')} width="800" height="800" alt="Cemosis — Centre de modélisation et de simulation de Strasbourg" /></span></a>
+          <a class="unistra-brand" href="https://www.unistra.fr/"><img src={url('images/unistra-signature.svg')} width="173" height="73" alt={lang === 'fr' ? 'Université de Strasbourg' : 'University of Strasbourg'} /></a>
+          <a class="brand" href={route(lang)} aria-label={`Cemosis — ${t.home}`}><span class="brand-logo"><img src={url('images/logo-cemosis.png')} width="800" height="800" alt={lang === 'fr' ? 'Cemosis — Centre de modélisation et de simulation de Strasbourg' : 'Cemosis — Strasbourg Centre for Modelling and Simulation'} /></span></a>
         </div>
         <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false">{t.menu} <span aria-hidden="true">☰</span></button>
         <nav id="navigation" aria-label={t.footerLinks}>
@@ -49,8 +49,8 @@ const canonical = new URL(route(lang, path), Astro.site);
     <main id="main"><slot /></main>
     <footer class="site-footer">
       <div class="container footer-grid">
-        <div><a class="unistra-footer" href="https://www.unistra.fr/"><img src={url('images/unistra-signature.svg')} width="173" height="73" alt="Université de Strasbourg" /></a><a class="footer-brand" href={route(lang)}>Cemosis</a><p>{t.footerText}</p></div>
-        <div><h2>{t.footerLinks}</h2>{navigation.map(item => <a href={route(lang, item)}>{t[item]}</a>)}<a href={route(lang, 'discussions')}>Discussions Feel++</a><a href={route(lang, 'videos')}>{lang === 'fr' ? 'Vidéos' : 'Videos'}</a></div>
+        <div><a class="unistra-footer" href="https://www.unistra.fr/"><img src={url('images/unistra-signature.svg')} width="173" height="73" alt={lang === 'fr' ? 'Université de Strasbourg' : 'University of Strasbourg'} /></a><a class="footer-brand" href={route(lang)}>Cemosis</a><p>{t.footerText}</p></div>
+        <div><h2>{t.footerLinks}</h2>{navigation.map(item => <a href={route(lang, item)}>{t[item]}</a>)}<a href={route(lang, 'discussions')}>{lang === 'fr' ? 'Discussions Feel++' : 'Feel++ discussions'}</a><a href={route(lang, 'videos')}>{lang === 'fr' ? 'Vidéos' : 'Videos'}</a></div>
         <div><h2>{t.footerContact}</h2><address>7 rue René Descartes<br />Strasbourg, France</address><a href="mailto:contact@cemosis.fr">contact@cemosis.fr ↗</a><a href="tel:+33368850259">+33 3 68 85 02 59</a></div>
       </div>
       <div class="container footer-bottom"><span>© {new Date().getUTCFullYear()} Cemosis</span><a href="https://github.com/feelpp/www.cemosis.fr">GitHub ↗</a><span>Strasbourg, France</span></div>

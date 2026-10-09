@@ -26,7 +26,7 @@ const projects = defineCollection({
 });
 const news = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/news', generateId }),
-  schema: z.object({ ...common, date: z.coerce.date(), category: z.string(), image: z.string().startsWith('/images/').optional(), source: z.url().optional(), historical: z.boolean().default(false) }),
+  schema: z.object({ ...common, date: z.coerce.date(), endDate: z.coerce.date().optional(), category: z.string(), image: z.string().startsWith('/images/').optional(), projects: z.array(z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/)).default([]), source: z.url().optional(), historical: z.boolean().default(false) }),
 });
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/pages', generateId }),
@@ -34,6 +34,6 @@ const pages = defineCollection({
 });
 const funding = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/funding', generateId }),
-  schema: z.object({ ...common, category: z.string(), period: z.string(), order: z.number(), source: z.url().optional() }),
+  schema: z.object({ ...common, category: z.string(), period: z.string().optional(), order: z.number(), source: z.url().optional() }),
 });
 export const collections = { projects, news, pages, funding };

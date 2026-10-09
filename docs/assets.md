@@ -67,3 +67,15 @@ hosts and known image/video types, with an 80 MB limit per file.
 ## Chicago reconstruction — NumPEx / SC26
 
 Three original PNG screenshots supplied by Christophe Prud’homme on 9 October 2026, copied without modification from Downloads to `public/images/chicago/`: `screenshot (2).png` → `downtown.png`, `screenshot3 (1).png` → `river-lake.png`, `screenshot2 (2).png` → `overview.png`. Used for the homepage and a bilingual news article about the planned NumPEx poster at Supercomputing in November 2026. No new asset license is asserted. Booth name confirmed by the user: GENCI/TGCC Alice Recoque.
+
+## CIFRE / AVNIR Energy illustration
+
+Original PNG supplied by the site owner on 9 October 2026, copied unchanged to `public/images/cifre/industrial-structure.png`. Used in the bilingual CIFRE announcement and funding page, and the news card. The caption describes its illustrative use; no specific equipment identity or new license is asserted.
+
+## JNL-G PhD illustration
+
+User-supplied LNCMI magnets/power/cooling diagram, copied unchanged to `public/images/jnl-g/magnet-power-cooling.png` for the Pierre-Antoine Senger PhD announcement and news card. No new image license asserted.
+
+## Exa-MA general assembly 2027
+
+`public/images/exama/inria-bordeaux-numpex.png`: editorial composite of the Inria Talence building photograph (© Inria / Photo B. Fourrier), from https://www.inria.fr/fr/centre-inria-universite-bordeaux and its 2021-12/Inria-0333-044 (1).jpg asset, with the official NumPEx swirl from https://numpex.org/wp-content/uploads/sites/6/2024/12/Logo-NumPEx-couleurs-etat-v.4-web.png. Logo placement/composite produced with imagegen; source credit retained in both articles.

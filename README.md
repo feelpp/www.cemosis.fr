@@ -146,3 +146,7 @@ the homepage and the projects page, ahead of the archives. Software descriptions
 and repository links are maintained in `src/data/software.json`. Homepage news
 combines published platform announcements with imported GitHub discussions,
 sorted by their original publication dates. Historical news stays in the archives.
+
+### Link news to projects
+
+Add `projects: ["jnl-g"]` to a news article’s frontmatter (in each translation). Use project slugs; an article can reference several projects. The corresponding project pages automatically show published news in the same language, newest first. Drafts are excluded.

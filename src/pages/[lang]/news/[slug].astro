@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Site from '../../../layouts/Site.astro';
-import { labels, route, dateLabel } from '../../../lib/site';
+import { labels, route, newsDateLabel } from '../../../lib/site';
 export async function getStaticPaths() {
   const news = await getCollection('news', ({ data }) => !data.draft);
   return news.map(article => ({ params: { lang: article.data.lang, slug: article.data.slug }, props: { article, alternate: news.some(n => n.data.lang !== article.data.lang && n.data.slug === article.data.slug) } }));
@@ -11,6 +11,6 @@ const { Content } = await render(article);
 const n = article.data, t = labels[n.lang];
 ---
 <Site title={n.title} description={n.description} lang={n.lang} path={`news/${n.slug}`} alternate={alternate}>
-  <section class="page-intro container"><a class="text-link" href={route(n.lang, 'news')}>← {t.backNews}</a><p class="eyebrow">{n.category}</p><h1>{n.title}</h1><p class="lead">{n.description}</p><p class="card-meta">{t.published} <time datetime={n.date.toISOString()}>{dateLabel(n.date, n.lang)}</time></p></section>
+  <section class="page-intro container"><a class="text-link" href={route(n.lang, 'news')}>← {t.backNews}</a><p class="eyebrow">{n.category}</p><h1>{n.title}</h1><p class="lead">{n.description}</p><p class="card-meta">{n.endDate ? "Dates" : t.published} <time datetime={n.date.toISOString()}>{newsDateLabel(n.date, n.lang, n.endDate)}</time></p></section>
   <div class="container article-shell">{n.historical && <p class="archive-note">{t.newsArchiveNote}</p>}<article class="prose"><Content /></article>{n.source && <p class="source-link"><a href={n.source}>{t.source} ↗</a></p>}</div>
 </Site>

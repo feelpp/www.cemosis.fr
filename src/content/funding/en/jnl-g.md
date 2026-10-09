@@ -18,3 +18,9 @@ Cemosis contributes multiphysics models, model order reduction, uncertainty quan
 JNL-G extends the HiFiMagnet work initiated in 2011. The digital twin is under development: modelling and measurement analysis are the first steps before predictions can feed back into operations.
 
 [HiFiMagnet documentation](https://docs.cemosis.fr/hifimagnet/stable/cad/index.html)
+
+## PhD research
+
+Pierre-Antoine Senger started his PhD on 6 January 2026, supervised by Christophe Prud’homme, working on multiphysics and reduced-order models for the digital twin.
+
+[Read the announcement](../../news/phd-pierre-antoine-senger-jnl-g/)

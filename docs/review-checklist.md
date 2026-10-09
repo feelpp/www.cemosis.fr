@@ -80,3 +80,7 @@ the director. French and English summaries link to one another's corresponding
 news/project pages within each language.
 
 FLOOD: public summaries use the scientific scope of the supplied CNRS proposal (Google Doc 1P6uT5u_Mvkdeznf-5qRPVpyecgazSM0z9ewzO5PamMw), without reproducing contact details, CVs or the application. The public name FLOOD, award status, January submission, May response and late September–late November 2026 visit follow the user’s updated information; the proposal’s March–May schedule was tentative. Publication date is the announcement date, not the visit start.
+
+Pierre-Antoine Senger announcement: 6 January 2026 start supplied by the owner. CSMI degree, Christophe Prud’homme as advisor and FOM/ROM scope verified against the JNL-G kickoff overview (Google Slides 1dI9xkoMzHbR1rinRnB53TdPOkxRCXCXYOBz0jGdk_Xg). Internal slides and personal profile details are not published.
+
+JNL-G general assembly news: dates 9–10 September 2026 and LNCMI Grenoble location confirmed in work calendar event AG JNL-G; scientific programme checked against Christophe Trophime’s 7 September agenda email. Calendar end 11 September is exclusive. Public summary excludes addresses, contact information, private links, correspondence and unverified meeting outcomes.

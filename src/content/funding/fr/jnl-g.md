@@ -18,3 +18,9 @@ Cemosis contribue aux modèles multiphysiques, à la réduction d’ordre, à la
 JNL-G prolonge les travaux HiFiMagnet engagés depuis 2011. Le jumeau numérique est en développement : les modèles et l’exploitation des mesures constituent les premières étapes avant le retour des prédictions vers l’exploitation.
 
 [Documentation HiFiMagnet](https://docs.cemosis.fr/hifimagnet/stable/cad/index.html)
+
+## Doctorat
+
+Pierre-Antoine Senger a commencé sa thèse le 6 janvier 2026, sous la direction de Christophe Prud’homme, sur les modèles multiphysiques et réduits du jumeau numérique.
+
+[Lire l’annonce](../../news/phd-pierre-antoine-senger-jnl-g/)

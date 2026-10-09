@@ -2,13 +2,13 @@
 import { getCollection } from 'astro:content';
 import snapshot from '../data/discussions.json';
 import media from '../data/discussion-media.json';
-import { route, url, dateLabel, type Language } from '../lib/site';
+import { route, url, newsDateLabel, type Language } from '../lib/site';
 interface Props { lang: Language; limit?: number }
 const {lang, limit = 6} = Astro.props;
 const editorial = await getCollection('news', ({data}) => data.lang === lang && !data.draft && !data.historical);
 const items = [
- ...snapshot.items.map(item => ({...item, path: `discussions/${item.number}`, editorial: false, image: undefined})),
- ...editorial.map(({data}) => ({title: data.title, body: '', createdAt: data.date.toISOString(), category: data.category, path: `news/${data.slug}`, editorial: true, image: data.image})),
+ ...snapshot.items.map(item => ({...item, path: `discussions/${item.number}`, editorial: false, image: undefined, endDate: undefined})),
+ ...editorial.map(({data}) => ({title: data.title, body: '', createdAt: data.date.toISOString(), category: data.category, path: `news/${data.slug}`, editorial: true, image: data.image, endDate: data.endDate})),
 ].sort((a,b) => b.createdAt.localeCompare(a.createdAt)).slice(0, limit);
 const imageFor = (body: string) => Object.entries(media).find(([source, asset]) => asset.mime.startsWith('image/') && body.includes(source))?.[1].path;
 ---
@@ -20,6 +20,6 @@ const imageFor = (body: string) => Object.entries(media).find(([source, asset]) 
   <div class:list={['news-highlight-art', !image && 'news-highlight-type']}>
     {image ? <img src={url(image)} alt="" width="720" height="450" loading="lazy" /> : <><span>{visualLabel}</span><span>{item.category === 'Announcements' ? (lang === 'fr' ? 'Développements' : 'Developments') : item.category}</span></>}
   </div>
-  <div class="news-highlight-copy"><time datetime={item.createdAt}>{dateLabel(new Date(item.createdAt),lang)}</time><h3>{item.title}</h3><span class="text-link">{lang === 'fr' ? 'Lire' : 'Read'} →</span></div>
+  <div class="news-highlight-copy"><time datetime={item.createdAt}>{newsDateLabel(new Date(item.createdAt),lang,item.endDate)}</time><h3>{item.title}</h3><span class="text-link">{lang === 'fr' ? 'Lire' : 'Read'} →</span></div>
  </a>;
 })}</div>

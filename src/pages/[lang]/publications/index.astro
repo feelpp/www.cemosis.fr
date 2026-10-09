@@ -1,0 +1,59 @@
+---
+import Site from '../../../layouts/Site.astro';
+import snapshot from '../../../data/publications.json';
+import { languages, type Language } from '../../../lib/site';
+export function getStaticPaths() { return languages.map(lang => ({ params: { lang } })); }
+const lang = Astro.params.lang as Language;
+const fr = lang === 'fr';
+const records = snapshot.publications;
+const types: Record<string, string[]> = { ART: ['Article de revue', 'Journal article'], COMM: ['Communication', 'Conference paper'], COUV: ['Chapitre', 'Book chapter'], OUV: ['Ouvrage', 'Book'], REPORT: ['Rapport', 'Report'], THESE: ['Thèse', 'PhD thesis'], HDR: ['HDR', 'HDR'], POSTER: ['Poster', 'Poster'], UNDEFINED: ['Prépublication', 'Preprint'], SOFTWARE: ['Logiciel', 'Software'], DATA: ['Données', 'Dataset'] };
+const typeLabel = (code: string) => types[code]?.[fr ? 0 : 1] ?? code;
+const yearOf = (p: typeof records[number]) => String(p.year || p.date.slice(0, 4) || (fr ? 'Sans date' : 'Undated'));
+const years = [...new Set(records.map(yearOf))].sort().reverse();
+const typeCounts = [...new Set(records.map(p => p.type))].map(type => ({ type, count: records.filter(p => p.type === type).length })).sort((a,b) => b.count-a.count);
+const intro = fr ? 'Les publications de la collection CEMOSIS dans HAL, avec les travaux des membres actuels et anciens de la plateforme.' : 'Publications from the CEMOSIS HAL collection, including work by current and former members of the platform.';
+---
+<Site title="Publications" description={intro} lang={lang} path="publications">
+  <section class="page-intro container"><p class="eyebrow">Cemosis / HAL</p><h1>Publications</h1><p class="lead">{intro}</p><p>{fr ? 'Dernière collecte :' : 'Last harvested:'} <time datetime={snapshot.metadata.harvested_at}>{new Intl.DateTimeFormat(fr ? 'fr-FR' : 'en-GB', {dateStyle:'long', timeZone:'UTC'}).format(new Date(snapshot.metadata.harvested_at))}</time> · <a href="https://hal.science/CEMOSIS">{fr ? 'Collection HAL ↗' : 'HAL collection ↗'}</a></p></section>
+  <section class="container listing-section publications-section">
+    <h2>{fr ? 'Vue d’ensemble' : 'Overview'}</h2>
+    <div class="publication-stats">
+      <div><strong>{records.length}</strong><span>{fr ? 'Références' : 'References'}</span></div>
+      <div><strong>{records.filter(p => p.doi).length}</strong><span>{fr ? 'Avec DOI' : 'With DOI'}</span></div>
+      <div><strong>{records.filter(p => p.pdf_url).length}</strong><span>{fr ? 'Texte intégral dans HAL' : 'Full text in HAL'}</span></div>
+      <div><strong>{records.filter(p => p.open_access).length}</strong><span>{fr ? 'Accès ouvert déclaré par HAL' : 'Open access reported by HAL'}</span></div>
+    </div>
+    <div class="publication-distributions"><div><h3>{fr ? 'Par type' : 'By type'}</h3><ul>{typeCounts.map(({type,count}) => <li><span>{typeLabel(type)}</span><strong>{count}</strong></li>)}</ul></div><div><h3>{fr ? 'Par année' : 'By year'}</h3><ul>{years.map(year => <li><span>{year}</span><strong>{records.filter(p => yearOf(p) === year).length}</strong></li>)}</ul></div></div>
+    <p>{fr ? 'Les statistiques portent sur les références de cette collection, dédupliquées par identifiant HAL. Elles ne mesurent pas les citations. La couverture dépend des dépôts et de leur rattachement à CEMOSIS.' : 'Statistics count records in this collection, deduplicated by HAL identifier. They are not citation metrics. Coverage depends on deposits and their inclusion in CEMOSIS.'}</p>
+    <h2>{fr ? 'Références bibliographiques' : 'Publication list'}</h2>
+    <form class="publication-filters" role="search" onsubmit="return false">
+      <label>{fr ? 'Titre, auteur, revue' : 'Title, author, journal'}<input id="publication-search" type="search" /></label>
+      <label>{fr ? 'Année' : 'Year'}<select id="publication-year"><option value="">{fr ? 'Toutes' : 'All'}</option>{years.map(year => <option>{year}</option>)}</select></label>
+      <label>{fr ? 'Type' : 'Type'}<select id="publication-type"><option value="">{fr ? 'Tous' : 'All'}</option>{typeCounts.map(({type}) => <option value={type}>{typeLabel(type)}</option>)}</select></label>
+    </form>
+    <p id="publication-count" aria-live="polite" data-label={fr ? 'références affichées' : 'references shown'}>{records.length} {fr ? 'références affichées' : 'references shown'}</p>
+    <ol class="publication-list">{records.map(p => <li data-publication data-year={yearOf(p)} data-type={p.type} data-search={[p.title,...p.authors,p.journal,p.conference,p.hal_id,p.doi].join(' ')}>
+      <p class="publication-meta">{yearOf(p)} · {typeLabel(p.type)}</p><h3><a href={p.url}>{p.title}</a></h3><p>{p.authors.join(', ')}</p>{(p.journal || p.conference) && <p><em>{p.journal || p.conference}</em></p>}
+      <div class="publication-links"><a href={p.url}>HAL ↗</a>{p.doi && <a href={`https://doi.org/${p.doi}`}>DOI ↗</a>}{p.pdf_url && <a href={p.pdf_url}>{fr ? 'Texte intégral ↗' : 'Full text ↗'}</a>}</div>
+    </li>)}</ol>
+    <noscript><p>{fr ? 'Toutes les références sont visibles. Activez JavaScript pour utiliser les filtres.' : 'All references are visible. Enable JavaScript to use the filters.'}</p></noscript>
+  </section>
+</Site>
+<script>
+  const normalise = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const search = document.querySelector<HTMLInputElement>('#publication-search');
+  const year = document.querySelector<HTMLSelectElement>('#publication-year');
+  const type = document.querySelector<HTMLSelectElement>('#publication-type');
+  const count = document.querySelector<HTMLElement>('#publication-count');
+  const rows = [...document.querySelectorAll<HTMLElement>('[data-publication]')];
+  function filter() {
+    const terms = normalise(search?.value ?? '').split(/\s+/).filter(Boolean);
+    let visible = 0;
+    for (const row of rows) {
+      row.hidden = !terms.every(term => normalise(row.dataset.search ?? '').includes(term)) || Boolean(year?.value && row.dataset.year !== year.value) || Boolean(type?.value && row.dataset.type !== type.value);
+      if (!row.hidden) visible++;
+    }
+    if (count) count.textContent = `${visible} ${count.dataset.label}`;
+  }
+  search?.addEventListener('input', filter); year?.addEventListener('change', filter); type?.addEventListener('change', filter);
+</script>

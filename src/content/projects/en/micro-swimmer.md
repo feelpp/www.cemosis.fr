@@ -21,7 +21,7 @@ This project studies an elastic micro-swimmer driven by an external magnetic fie
 ## Objectives
 
 - Control the micro-swimmer near walls and obstacles.
-- Optimize its shape and characteristic parameters.
+- Optimise its shape and characteristic parameters.
 - Compare numerical results with experiments.
 
 ## Tools and collaboration

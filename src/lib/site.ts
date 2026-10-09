@@ -7,7 +7,7 @@ export const dateLabel = (date: Date, lang: Language) => new Intl.DateTimeFormat
 
 export const labels = {
   fr: {
-    home: 'Accueil', services: 'Recherche', projects: 'Projets', software: 'Logiciels', about: 'À propos', news: 'Actualités', contact: 'Contact',
+    publications: 'Publications', home: 'Accueil', services: 'Recherche', projects: 'Projets', software: 'Logiciels', about: 'À propos', news: 'Actualités', contact: 'Contact',
     skip: 'Aller au contenu', menu: 'Menu', close: 'Fermer', read: 'Découvrir le projet', allProjects: 'Tous les projets',
     eyebrow: 'Université de Strasbourg',
     heroA: 'Modélisation', heroB: 'et simulation', heroC: '',
@@ -31,11 +31,11 @@ export const labels = {
     notFound: 'Page introuvable', notFoundText: 'La page demandée est introuvable. Retrouvez nos expertises et projets depuis l’accueil.',
   },
   en: {
-    home: 'Home', services: 'Research', projects: 'Projects', software: 'Software', about: 'About', news: 'News', contact: 'Contact',
+    publications: 'Publications', home: 'Home', services: 'Research', projects: 'Projects', software: 'Software', about: 'About', news: 'News', contact: 'Contact',
     skip: 'Skip to content', menu: 'Menu', close: 'Close', read: 'Explore the project', allProjects: 'All projects',
     eyebrow: 'University of Strasbourg',
-    heroA: 'Modeling', heroB: 'and simulation', heroC: '',
-    heroText: 'Cemosis is a University of Strasbourg research platform for modeling, simulation and scientific computing.',
+    heroA: 'Modelling', heroB: 'and simulation', heroC: '',
+    heroText: 'Cemosis is a University of Strasbourg research platform for modelling, simulation and scientific computing.',
     explore: 'Research activities', meshCaption: 'Parametric surface', meshNote: 'Illustrative mathematical surface',
     mission: 'Research areas', missionText: 'Applied mathematics, numerical methods and interdisciplinary collaboration.',
     hosted: 'A University of Strasbourg platform, hosted at IRMA.',
@@ -63,9 +63,13 @@ export const expertise = {
     { code: '04 / IMAGE', title: 'Signal & images', text: 'Traitement, reconstruction et analyse.' },
   ],
   en: [
-    { code: '01 / MSO', title: 'Modeling & simulation', text: 'Mathematical models, numerical methods and optimization.' },
+    { code: '01 / MSO', title: 'Modelling & simulation', text: 'Mathematical models, numerical methods and optimisation.' },
     { code: '02 / DATA', title: 'Data science', text: 'Statistical analysis and machine learning.' },
     { code: '03 / HPC', title: 'High-performance computing', text: 'Parallel computing and scientific infrastructure.' },
     { code: '04 / IMAGE', title: 'Signal & images', text: 'Processing, reconstruction and analysis.' },
   ],
 };
+
+export const newsDateLabel = (date: Date, lang: Language, endDate?: Date) => endDate
+  ? new Intl.DateTimeFormat(lang === "fr" ? "fr-FR" : "en-GB", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }).formatRange(date, endDate)
+  : dateLabel(date, lang);

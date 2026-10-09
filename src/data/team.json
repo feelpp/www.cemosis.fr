@@ -4,8 +4,8 @@
   "members": [
     { "name": "Christophe Prud'homme", "initials": "CP", "role": { "fr": "Directeur", "en": "Director" } },
     { "name": "Vincent Chabannes", "initials": "VC", "role": { "fr": "Responsable de l’ingénierie et des infrastructures", "en": "Head of engineering and infrastructure" } },
-    { "name": "Juliette Antonczak", "initials": "JA", "role": { "fr": "Gestion de projets et valorisation", "en": "Project management and research valorization" } },
+    { "name": "Juliette Antonczak", "initials": "JA", "role": { "fr": "Gestion de projets et valorisation", "en": "Project management and knowledge transfer" } },
     { "name": "Gwenolle Chappron", "initials": "GC", "role": { "fr": "Ingénieure en génie civil", "en": "Civil engineer" } },
-    { "name": "Philippe Pincon", "initials": "PP", "role": { "fr": "Modélisation et simulation", "en": "Modeling and simulation" } }
+    { "name": "Philippe Pincon", "initials": "PP", "role": { "fr": "Modélisation et simulation", "en": "Modelling and simulation" } }
   ]
 }

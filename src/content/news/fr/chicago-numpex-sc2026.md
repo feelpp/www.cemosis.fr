@@ -4,6 +4,7 @@ description: "Trois vues du modèle de Chicago illustreront un poster NumPEx à 
 lang: "fr"
 slug: "chicago-numpex-sc2026"
 date: "2026-10-09"
+projects: ["exama", "ktirio-urban-building"]
 category: "NumPEx · SC26"
 image: "/images/chicago/downtown.png"
 ---

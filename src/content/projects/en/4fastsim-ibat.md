@@ -14,7 +14,7 @@ source: https://www.cemosis.fr/projects/4fastsim-ibat/
 
 ## The challenge
 
-Reducing building energy consumption requires understanding thermal behavior and comparing possible interventions before undertaking renovation work.
+Reducing building energy consumption requires understanding thermal behaviour and comparing possible interventions before undertaking renovation work.
 
 The 4fastsim-ibat project aims to combine physical simulation, artificial intelligence methods and sensor data to study existing buildings.
 

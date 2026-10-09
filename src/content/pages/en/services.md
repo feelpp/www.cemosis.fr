@@ -1,11 +1,11 @@
 ---
 title: "Research areas"
-description: "Modeling, simulation and scientific computing at the University of Strasbourg."
+description: "Modelling, simulation and scientific computing at the University of Strasbourg."
 lang: en
 slug: services
 ---
 
-## Modeling, simulation and optimization
+## Modelling, simulation and optimisation
 
 Mathematical models, numerical methods and simulation of physical phenomena.
 

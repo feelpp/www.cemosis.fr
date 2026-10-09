@@ -14,6 +14,7 @@
     "check": "astro check",
     "verify:links": "node scripts/check-links.mjs",
     "import:discussions": "node scripts/import-discussions.mjs",
+    "import:publications": "python3 scripts/import-publications.py",
     "import:media": "node scripts/import-media.mjs"
   },
   "dependencies": {

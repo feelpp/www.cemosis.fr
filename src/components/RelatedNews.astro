@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import { route, newsDateLabel, type Language } from '../lib/site';
+interface Props { lang: Language; project: string }
+const { lang, project } = Astro.props;
+const news = (await getCollection('news', ({ data }) => data.lang === lang && !data.draft && data.projects.includes(project)))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+{news.length > 0 && <section class="related-news" aria-labelledby="related-news-title">
+  <h2 id="related-news-title">{lang === 'fr' ? 'Actualités du projet' : 'Related news'}</h2>
+  <div class="news-list">{news.map(({ data: n }) => <a href={route(lang, `news/${n.slug}`)} class="news-row">
+    <time datetime={n.date.toISOString()}>{newsDateLabel(n.date, lang, n.endDate)}</time>
+    <div><h3>{n.title}</h3><p>{n.description}</p></div>
+    <span aria-hidden="true">→</span>
+  </a>)}</div>
+</section>}

@@ -8,6 +8,11 @@ period: "2026–2029"
 order: 4
 ---
 
+<figure>
+<img src="../../../images/cifre/industrial-structure.png" alt="Transport of a large cylindrical industrial structure." width="1426" height="874" loading="lazy" />
+<figcaption>Illustration of the CIFRE partnership with AVNIR Energy.</figcaption>
+</figure>
+
 This CIFRE partnership brings together **AVNIR Energy** and **Cemosis / IRMA, University of Strasbourg**, for the PhD of **Hanna Chetouane**, a former CSMI master’s student, supervised by **Christophe Prud’homme**.
 
 ## Supervision

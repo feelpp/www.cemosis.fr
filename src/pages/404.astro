@@ -1,8 +1,8 @@
 ---
 import Site from '../layouts/Site.astro';
 import { labels, route } from '../lib/site';
-const t = labels.fr;
+const t = labels.en;
 ---
-<Site title="404" description={t.notFoundText} lang="fr" alternate={false} noindex>
-  <section class="page-intro container"><p class="eyebrow">404</p><h1>{t.notFound}</h1><p class="lead">{t.notFoundText}</p><a class="button" href={route('fr')}>{t.home} →</a><p><a href={route('en')}>English homepage →</a></p></section>
+<Site title="404" description={t.notFoundText} lang="en" alternate={false} noindex>
+  <section class="page-intro container"><p class="eyebrow">404</p><h1>{t.notFound}</h1><p class="lead">{t.notFoundText}</p><a class="button" href={route('en')}>{t.home} →</a><p><a href={route('fr')}>Accueil français →</a></p></section>
 </Site>

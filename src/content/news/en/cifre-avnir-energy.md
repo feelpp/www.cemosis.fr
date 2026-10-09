@@ -4,8 +4,15 @@ description: "Research in vibroacoustic simulation for structural monitoring, su
 lang: "en"
 slug: "cifre-avnir-energy"
 date: "2026-10-09"
+image: "/images/cifre/industrial-structure.png"
+projects: ["cifre-avnir-energy"]
 category: "CIFRE · AVNIR Energy"
 ---
+
+<figure>
+<img src="../../../images/cifre/industrial-structure.png" alt="Transport of a large cylindrical industrial structure." width="1426" height="874" loading="lazy" />
+<figcaption>Illustration of the CIFRE partnership with AVNIR Energy.</figcaption>
+</figure>
 
 **Hanna Chetouane**, a former student of the University of Strasbourg’s CSMI master’s programme, begins a CIFRE PhD with **AVNIR Energy** and Cemosis / IRMA, supervised by **Christophe Prud’homme**.
 
