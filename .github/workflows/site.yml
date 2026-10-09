@@ -1,0 +1,63 @@
+name: Check and deploy site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Refresh selected public discussions
+        if: github.event_name != 'pull_request'
+        run: pnpm import:discussions
+        env:
+          GITHUB_TOKEN: ${{ secrets.DISCUSSIONS_TOKEN || github.token }}
+      - name: Refresh discussion media
+        if: github.event_name != 'pull_request'
+        run: pnpm import:media
+      - run: pnpm check
+      - name: Check custom-domain output
+        run: pnpm build && pnpm verify:links
+        env:
+          SITE_URL: https://www.cemosis.fr
+          SITE_BASE: /
+      - name: Build publishing output
+        run: pnpm build && pnpm verify:links
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://feelpp.github.io' }}
+          SITE_BASE: ${{ vars.SITE_BASE || '/www.cemosis.fr' }}
+      - uses: actions/upload-pages-artifact@v5
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        with:
+          path: dist
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5

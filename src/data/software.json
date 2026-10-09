@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Feel++",
+    "id": "feelpp",
+    "description": {
+      "fr": "Modélisation multiphysique, éléments finis et calcul parallèle.",
+      "en": "Multiphysics modelling, finite elements and parallel computing."
+    },
+    "repository": "https://github.com/feelpp/feelpp",
+    "documentation": "https://docs.feelpp.org/"
+  },
+  {
+    "name": "Ktirio Urban Building",
+    "id": "urban",
+    "description": {
+      "fr": "Simulation énergétique des bâtiments et des villes.",
+      "en": "Energy simulation of buildings and cities."
+    },
+    "repository": "https://github.com/feelpp/ktirio-urban-building",
+    "documentation": "https://www.hidalgo2.eu/urban-building-model/"
+  },
+  {
+    "name": "Ktirio GeoM",
+    "id": "geom",
+    "description": {
+      "fr": "Géométrie et maillage des environnements urbains pour la simulation.",
+      "en": "Geometry and meshing of urban environments for simulation."
+    },
+    "repository": "https://github.com/feelpp/ktirio-geom",
+    "documentation": "https://feelpp.github.io/ktirio-geom.docs/"
+  },
+  {
+    "name": "Ktirio GUI",
+    "id": "gui",
+    "description": {
+      "fr": "Interface graphique pour préparer, lancer et explorer les simulations Ktirio.",
+      "en": "Graphical interface to prepare, run and explore Ktirio simulations."
+    },
+    "repository": "https://github.com/feelpp/ktirio.gui",
+    "documentation": null
+  }
+]

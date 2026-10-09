@@ -1,0 +1,12 @@
+{
+  "repository": "feelpp/feelpp",
+  "source": "https://github.com/orgs/feelpp/discussions",
+  "topics": [
+    { "id": "feelpp", "name": "Feel++", "keywords": ["feel++", "feelpp"], "labels": ["benchmarking: feelpp"] },
+    { "id": "ktirio", "name": "Ktirio · Urban Building", "keywords": ["ktirio", "urban building", "urban buidling", "urban energy", "building energy", "buildings using cgal", "urban landscape", "vegetation in urban"], "labels": ["cemosis: ktirio", "model: building-energy"] },
+    { "id": "swimmer", "name": "Swimmer", "keywords": ["swimmer", "swimming"], "labels": ["cemosis: swimmer"] },
+    { "id": "hifimagnet", "name": "Hifimagnet", "keywords": ["hifimagnet", "high field magnet", "bitter magnet"], "labels": ["hifimagnet"] }
+  ],
+  "excludeNumbers": [],
+  "includeNumbers": []
+}

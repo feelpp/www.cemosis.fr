@@ -1,0 +1,8 @@
+---
+import { getCollection } from 'astro:content';
+import { route, type Language } from '../lib/site';
+interface Props { lang: Language }
+const { lang } = Astro.props;
+const items = (await getCollection('funding', ({data}) => data.lang === lang && !data.draft)).sort((a,b) => a.data.order-b.data.order);
+---
+<div class="funding-grid">{items.map(({data:item}) => <a class="funding-card" href={route(lang, `projects/${item.slug}`)}><p class="card-meta">{item.category}</p><h3>{item.title}</h3><p class="card-meta">{item.period}</p><p>{item.description}</p><span class="text-link">{lang === 'fr' ? 'Le projet' : 'The project'} →</span></a>)}</div>

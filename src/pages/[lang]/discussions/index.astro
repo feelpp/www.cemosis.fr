@@ -1,0 +1,42 @@
+---
+import Site from '../../../layouts/Site.astro';
+import DiscussionList from '../../../components/DiscussionList.astro';
+import { languages, type Language } from '../../../lib/site';
+import config from '../../../data/discussion-topics.json';
+import snapshot from '../../../data/discussions.json';
+export function getStaticPaths() { return languages.map(lang => ({ params: { lang } })); }
+const lang = Astro.params.lang as Language;
+const title = 'Discussions Feel++';
+const description = lang === 'fr' ? 'Publications et échanges sur Feel++, Ktirio, Swimmer et Hifimagnet.' : 'Publications and discussions about Feel++, Ktirio, Swimmer and Hifimagnet.';
+---
+<Site title={title} description={description} lang={lang} path="discussions">
+  <section class="page-intro container"><p class="eyebrow">Cemosis / GitHub</p><h1>{title}</h1><p class="lead">{description}</p><a class="text-link" href={config.source}>{lang === 'fr' ? 'Toutes les discussions sur GitHub' : 'All discussions on GitHub'} ↗</a></section>
+  <section class="container listing-section">
+    <div class="discussion-filters" role="group" aria-label={lang === 'fr' ? 'Filtrer par sujet' : 'Filter by topic'} hidden>
+      <button type="button" data-topic="all" aria-pressed="true">{lang === 'fr' ? 'Tous les sujets' : 'All topics'}</button>
+      {config.topics.map(topic => <button type="button" data-topic={topic.id} aria-pressed="false">{topic.name}</button>)}
+    </div>
+    <p class="discussion-count" aria-live="polite" data-total={snapshot.items.length}>{snapshot.items.length} discussions</p>
+    <DiscussionList lang={lang} />
+    <p class="team-updated">{lang === 'fr' ? 'Import du' : 'Imported on'} <time datetime={snapshot.importedAt}>{new Intl.DateTimeFormat(lang, { dateStyle: 'long', timeZone: 'Europe/Paris' }).format(new Date(snapshot.importedAt))}</time>. {lang === 'fr' ? 'Les commentaires restent sur GitHub.' : 'Comments remain on GitHub.'}</p>
+  </section>
+  <script>
+    const filters = document.querySelector<HTMLElement>('.discussion-filters');
+    if (filters) {
+      filters.hidden = false;
+      const buttons = filters.querySelectorAll<HTMLButtonElement>('button');
+      const rows = document.querySelectorAll<HTMLElement>('.discussion-row');
+      const count = document.querySelector<HTMLElement>('.discussion-count');
+      buttons.forEach(button => button.addEventListener('click', () => {
+        const selected = button.dataset.topic;
+        buttons.forEach(other => other.setAttribute('aria-pressed', String(other === button)));
+        let visible = 0;
+        rows.forEach(row => {
+          row.hidden = selected !== 'all' && !row.dataset.topics?.split(' ').includes(selected || '');
+          if (!row.hidden) visible++;
+        });
+        if (count) count.textContent = `${visible} discussions`;
+      }));
+    }
+  </script>
+</Site>

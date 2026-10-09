@@ -1,0 +1,16 @@
+---
+title: "CoE HiDALGO2"
+description: "Environmental challenge simulations on European supercomputers."
+lang: "en"
+slug: "hidalgo2"
+category: "EuroHPC JU · Union européenne"
+period: "2023–2026"
+order: 3
+source: "https://www.hidalgo2.eu/urban-building-model/"
+---
+
+HiDALGO2 is a European centre of excellence in high-performance computing, supported by the EuroHPC Joint Undertaking and participating countries (grant agreement 101093457).
+
+Cemosis develops the Urban Building pilot with Ktirio. It studies energy, thermal comfort and air quality at building and city scales, using European supercomputers.
+
+[HiDALGO2 project website](https://hidalgo2.eu/)

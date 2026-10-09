@@ -1,0 +1,26 @@
+---
+// A parametric surface illustration, not a numerical simulation result.
+const project = (u: number, v: number) => {
+  const x = u * 2.5, y = v * 2.5;
+  const z = 1.3 * Math.sin(x * 1.15) * Math.cos(y * 0.9) + 0.16 * (x * x - y * y);
+  return [320 + (x - y) * 60, 230 + (x + y) * 28 - z * 60];
+};
+const size = 26;
+const faces = [];
+for (let j = 0; j < size; j++) {
+  for (let i = 0; i < size; i++) {
+    const u = -1 + 2 * i / size, v = -1 + 2 * j / size, step = 2 / size;
+    const corners = [project(u, v), project(u + step, v), project(u + step, v + step), project(u, v + step)];
+    const warm = Math.max(0, Math.min(1, (i / size * 0.65 + j / size * 0.35)));
+    const fill = `rgb(${Math.round(50 + warm * 154)}, ${Math.round(112 + warm * 25)}, ${Math.round(111 - warm * 65)})`;
+    faces.push({ points: corners.map(p => p.map(n => n.toFixed(2)).join(',')).join(' '), fill });
+  }
+}
+---
+<svg viewBox="0 0 640 460" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="surface">
+  <defs><radialGradient id="mesh-halo"><stop stop-color="#dedfd0" stop-opacity=".9" /><stop offset="1" stop-color="#f6f5ef" stop-opacity="0" /></radialGradient></defs>
+  <ellipse cx="325" cy="270" rx="300" ry="175" fill="url(#mesh-halo)" />
+  <g stroke="#bec5b8" stroke-width=".7" stroke-dasharray="4 6"><path d="M45 300 340 435 608 310M340 435V100"/><path d="M45 300 318 165 608 310"/></g>
+  <g stroke="#f6f5ef" stroke-opacity=".44" stroke-width=".55" stroke-linejoin="round">{faces.map(f => <polygon points={f.points} fill={f.fill} fill-opacity=".93" />)}</g>
+  <g fill="#6c786e" font-size="11" font-family="monospace"><text x="50" y="325">x</text><text x="600" y="338">y</text><text x="349" y="107">z</text></g>
+</svg>

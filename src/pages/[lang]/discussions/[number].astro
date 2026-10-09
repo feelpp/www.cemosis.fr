@@ -1,0 +1,36 @@
+---
+import { marked } from 'marked';
+import sanitizeHtml from 'sanitize-html';
+import Site from '../../../layouts/Site.astro';
+import snapshot from '../../../data/discussions.json';
+import media from '../../../data/discussion-media.json';
+import Video from '../../../components/Video.astro';
+import { url } from '../../../lib/site';
+import { languages, route, dateLabel, type Language } from '../../../lib/site';
+export function getStaticPaths() {
+  return languages.flatMap(lang => snapshot.items.map(discussion => ({ params: { lang, number: String(discussion.number) }, props: { discussion } })));
+}
+const lang = Astro.params.lang as Language;
+const { discussion } = Astro.props;
+// Keep original wording; permit only locally imported media and strip untrusted embeds.
+const raw = await marked.parse(discussion.body);
+const html = sanitizeHtml(raw, {
+  allowedTags: ['p', 'br', 'h1', 'h2', 'h3', 'h4', 'ul', 'ol', 'li', 'strong', 'em', 'a', 'code', 'pre', 'blockquote', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'hr', 'del', 'img'],
+  allowedAttributes: { a: ['href', 'title'], img: ['src', 'alt', 'loading'] },
+  allowedSchemes: ['https', 'http', 'mailto'],
+  exclusiveFilter: frame => frame.tag === 'img' && !frame.attribs.src?.startsWith(url('/media/')),
+  transformTags: { img: (_tag, attributes) => {
+    const asset = (media as Record<string, { path: string; mime: string }>)[attributes.src];
+    return { tagName: 'img', attribs: { src: asset?.mime.startsWith('image/') ? url(asset.path) : '', alt: attributes.alt || discussion.title, loading: 'lazy' } };
+  }, h1: 'h2', a: (_tag, attributes) => ({ tagName: 'a', attribs: { ...attributes, href: new URL(attributes.href || '#', discussion.url).href } }) },
+});
+const localMovies = Object.entries(media).filter(([source, asset]) => asset.mime.startsWith('video/') && discussion.body.includes(source));
+const youtubeIds = [...new Set([...discussion.body.matchAll(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/)|img\.youtube\.com\/vi\/)([\w-]{11})/g)].map(match => match[1]))].filter(id => `https://img.youtube.com/vi/${id}/0.jpg` in media);
+const description = lang === 'fr' ? `Discussion Feel++ : ${discussion.title}` : `Feel++ discussion: ${discussion.title}`;
+---
+<Site title={discussion.title} description={description} lang={lang} path={`discussions/${discussion.number}`} alternate={false} switchPath={`discussions/${discussion.number}`}>
+  <section class="page-intro container"><a class="text-link" href={route(lang, 'discussions')}>← {lang === 'fr' ? 'Discussions Feel++' : 'Feel++ discussions'}</a><p class="eyebrow">{discussion.category}</p><h1>{discussion.title}</h1><p class="discussion-byline"><time datetime={discussion.createdAt}>{dateLabel(new Date(discussion.createdAt), lang)}</time> · {discussion.author}</p><a class="text-link" href={discussion.url}>{lang === 'fr' ? 'Lire et commenter sur GitHub' : 'Read and comment on GitHub'} ↗</a></section>
+  <div class="container article-shell"><p class="language-notice">{lang === 'fr' ? 'Texte original de GitHub, conservé dans sa langue de publication. Ce texte décrit la situation à sa date de publication. Les commentaires sont disponibles sur GitHub.' : 'Original GitHub text, preserved in its published language. This text describes the situation at its publication date. Comments are available on GitHub.'}</p><article class="prose imported-discussion" set:html={html} />
+    {localMovies.map(([source, asset]) => <figure class="video-figure"><video controls preload="none" aria-label={discussion.title}><source src={url(asset.path)} type={asset.mime} /><a href={source}>GitHub video</a></video><figcaption><a href={source}>{lang === 'fr' ? 'Vidéo source' : 'Source video'} ↗</a></figcaption></figure>)}
+    {youtubeIds.map(id => <Video id={id} title={discussion.title} poster={(media as Record<string, {path: string}>)[`https://img.youtube.com/vi/${id}/0.jpg`]?.path} lang={lang} />)}</div>
+</Site>

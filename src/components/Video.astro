@@ -1,0 +1,29 @@
+---
+import { url } from '../lib/site';
+interface Props { id: string; title: string; poster?: string; lang: 'fr' | 'en' }
+const { id, title, poster, lang } = Astro.props;
+---
+<figure class="video-figure">
+  <div class="video-player" data-youtube-id={id} data-video-title={title}>
+    <a class="video-launch" href={`https://www.youtube.com/watch?v=${id}`} aria-label={`${lang === 'fr' ? 'Lire' : 'Play'} : ${title}`}>
+      {poster && <img src={url(poster)} alt="" loading="lazy" width="480" height="360" />}
+      <span class="video-play">▶ <span>{lang === 'fr' ? 'Lire la vidéo' : 'Play video'}</span></span>
+    </a>
+  </div>
+  <figcaption>{title} · <a href={`https://www.youtube.com/watch?v=${id}`}>YouTube ↗</a></figcaption>
+</figure>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-youtube-id]').forEach(player => {
+    player.querySelector('a')?.addEventListener('click', event => {
+      event.preventDefault();
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${player.dataset.youtubeId}?autoplay=1&rel=0`;
+      iframe.title = player.dataset.videoTitle || 'YouTube';
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      iframe.allowFullscreen = true;
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      player.replaceChildren(iframe);
+      iframe.focus();
+    });
+  });
+</script>

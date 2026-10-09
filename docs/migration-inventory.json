@@ -1,0 +1,1476 @@
+{
+  "retrieved": "2026-10-09",
+  "scope": "131 published REST posts, 17 REST pages, top-level links on the projects page; check additional custom types and attachments before cutover.",
+  "items": [
+    {
+      "source": "https://www.cemosis.fr/blog/2020/02/05/research-engineer-job-for-eye2brain/",
+      "type": "news",
+      "title": "Research Engineer Job for Eye2brain",
+      "date": "2020-02-05T20:49:56",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2019/10/21/feel-at-unistra-open-access-week/",
+      "type": "news",
+      "title": "Feel++ at Unistra Open-Access Week",
+      "date": "2019-10-21T07:47:46",
+      "status": "adapted",
+      "destination": "en/news/feelpp-open-access",
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2019/09/27/article-in-press-biofluid-modeling-of-the-coupled-eye-brain-system-and-insights-into-simulated-microgravity-conditions/",
+      "type": "news",
+      "title": "Article in Press: Biofluid modeling of the coupled eye-brain system and insights into simulated microgravity conditions",
+      "date": "2019-09-27T08:22:17",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2019/09/27/eye2brain-ph-d-defense-of-lorenzo-sala/",
+      "type": "news",
+      "title": "Eye2brain : Ph.D. Defense of Lorenzo Sala",
+      "date": "2019-09-27T08:07:24",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2019/07/16/cemosis-at-iciam-2019/",
+      "type": "news",
+      "title": "Cemosis at ICIAM 2019",
+      "date": "2019-07-16T14:39:45",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/10/19/les-projets-de-la-seme-sont-publies/",
+      "type": "news",
+      "title": "Les projets de la SEME sont publiés",
+      "date": "2018-10-19T11:16:17",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/08/31/participation-a-la-preparation-du-hacking-industry-camp-avec-les/",
+      "type": "news",
+      "title": "Participation à la préparation du Hacking Industry Camp avec l’ES",
+      "date": "2018-08-31T15:00:21",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/08/02/workshop-modeling-the-eye-as-a-window-on-the-body/",
+      "type": "news",
+      "title": "Workshop: Modeling the eye as a window on the body",
+      "date": "2018-08-02T13:03:50",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/07/17/lorenzo-sala-presentera-un-poster-au-canum-2018-2/",
+      "type": "news",
+      "title": "Eye2Brain to be presented at WCCM XIII",
+      "date": "2018-07-17T13:25:54",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/07/12/cemosis-au-cemracs-2018/",
+      "type": "news",
+      "title": "Cemosis au CEMRACS 2018",
+      "date": "2018-07-12T14:44:44",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/07/10/paper-published-in-developmental-cell-journal/",
+      "type": "news",
+      "title": "[Paper] published in Developmental Cell journal",
+      "date": "2018-07-10T12:16:35",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/07/05/cemosis-parmi-les-offreurs-de-solution-de-la-region-grand-est/",
+      "type": "news",
+      "title": "Cemosis, parmi les “offreurs de solution de la région Grand Est”",
+      "date": "2018-07-05T08:21:40",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/07/03/un-article-sur-cemosis-dans-le-prochain-matapli/",
+      "type": "news",
+      "title": "Un article sur Cemosis dans le Matapli, le magazine de la SMAI.",
+      "date": "2018-07-03T13:25:08",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/06/28/peps-apprentissage-automatique/",
+      "type": "news",
+      "title": "PEPS apprentissage automatique",
+      "date": "2018-06-28T14:08:15",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/06/26/plenary-session-at-ecmi-2018-by-c-prudhomme/",
+      "type": "news",
+      "title": "Plenary session at Ecmi 2018 by C. Prud’homme",
+      "date": "2018-06-26T08:55:42",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/06/22/hager-and-cemosis-success-story-at-ecmi-2018/",
+      "type": "news",
+      "title": "Hager and Cemosis Success story at ECMI 2018",
+      "date": "2018-06-22T16:00:09",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/06/22/cemosis-participe-au-fui-mordicus/",
+      "type": "news",
+      "title": "Cemosis participe au FUI MORDICUS",
+      "date": "2018-06-22T12:58:58",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/06/21/la-semaine-detude-maths-entreprise-aura-lieu-en-novembre/",
+      "type": "news",
+      "title": "La Semaine d’Étude Maths-Entreprise aura lieu en novembre !",
+      "date": "2018-06-21T08:11:02",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/06/19/hemphys-talking-about-blood-microflows/",
+      "type": "news",
+      "title": "HemPhys : talking about blood microflows",
+      "date": "2018-06-19T08:10:49",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/05/31/back-from-the-conference-l-sala-was-at-arvo-2018/",
+      "type": "news",
+      "title": "[Back from the conference] L. Sala was at ARVO 2018",
+      "date": "2018-05-31T08:37:30",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/05/28/romain-hild-presentera-ses-travaux-au-canum-2018/",
+      "type": "news",
+      "title": "Romain Hild présentera ses travaux au Canum 2018",
+      "date": "2018-05-28T11:21:02",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/05/25/lorenzo-sala-presentera-un-poster-au-canum-2018/",
+      "type": "news",
+      "title": "Lorenzo Sala présentera un poster au Canum 2018",
+      "date": "2018-05-25T14:51:19",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/05/25/jean-baptiste-wahl-presentera-un-poster-au-canum-2018/",
+      "type": "news",
+      "title": "Jean-Baptiste Wahl présentera un poster au Canum 2018",
+      "date": "2018-05-25T12:10:01",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/05/25/guillaume-dolle-to-present-at-the-pdesoft-2018/",
+      "type": "news",
+      "title": "Guillaume Dollé to present at the PDESOFT 2018",
+      "date": "2018-05-25T10:30:56",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/05/24/marcelas-szopos-prix-espoir-uds/",
+      "type": "news",
+      "title": "Marcelas Szopos Prix Espoir UDS",
+      "date": "2018-05-24T06:50:39",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/04/11/matthieu-boileau-aux-journees-mathrice-2018/",
+      "type": "news",
+      "title": "Matthieu Boileau aux Journées Mathrice 2018",
+      "date": "2018-04-11T06:32:51",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/04/10/j-b-wahl-to-present-at-morepas-2018/",
+      "type": "news",
+      "title": "J.B. Wahl to present at MoRePaS 2018",
+      "date": "2018-04-10T12:15:20",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/04/10/cemosis-participe-a-une-soiree-speciale-du-festival-pint-of-science/",
+      "type": "news",
+      "title": "Cemosis participe à une soirée spéciale du festival Pint of Science",
+      "date": "2018-04-10T12:10:36",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/03/29/myriam-maumy-bertrand-organisatrice-du-forum-emploi-maths/",
+      "type": "news",
+      "title": "Myriam Maumy-Bertrand organisatrice du Forum Emploi Maths",
+      "date": "2018-03-29T10:56:57",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/03/28/le-cluster-alsacalcul-de-lunistra-au-service-des-participants-dune-competition-kaggle/",
+      "type": "news",
+      "title": "Le Cluster AlsaCalcul de l’Unistra au service des participants d’une compétition Kaggle",
+      "date": "2018-03-28T08:00:42",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/03/27/romain-hild-to-present-a-poster-at-morepas-2018/",
+      "type": "news",
+      "title": "Romain Hild to present a poster at MoRePaS 2018",
+      "date": "2018-03-27T13:51:15",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/02/28/les-fluides-une-histoire-de-calcul-scientifique/",
+      "type": "news",
+      "title": "Les fluides : une histoire de calcul scientifique",
+      "date": "2018-02-28T08:31:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/02/27/prix-cemosis-alsacalcul-au-hacking-industry-camp-2017/",
+      "type": "news",
+      "title": "Prix Cemosis-AlsaCalcul au Hacking Industry Camp 2017",
+      "date": "2018-02-27T11:11:50",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/02/26/l-sala-to-present-at-arvo-2018-conference/",
+      "type": "news",
+      "title": "L. Sala to present at ARVO 2018 Conference",
+      "date": "2018-02-26T14:22:06",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/02/26/bizz-buzz-miniconf-les-mathematiques-de-linnovation/",
+      "type": "news",
+      "title": "Bizz & Buzz miniconf : les mathématiques de l’innovation",
+      "date": "2018-02-26T07:48:52",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2018/01/17/forum-fch-entreprises-le-jeudi-18-01-2018/",
+      "type": "news",
+      "title": "Forum FCH-Entreprises le jeudi 18/01/2018",
+      "date": "2018-01-17T13:13:23",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/12/23/scientific-computings-future-is-mobile-adaptive-flexible-and-small/",
+      "type": "news",
+      "title": "Scientific Computing’s Future Is Mobile, Adaptive, Flexible and Small",
+      "date": "2017-12-23T07:48:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/10/27/participez-au-forum-emploi-maths/",
+      "type": "news",
+      "title": "Participez au Forum-Emploi-Maths",
+      "date": "2017-10-27T15:07:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/10/19/nouveaux-arrivants-dans-lequipe-cemosis/",
+      "type": "news",
+      "title": "Nouveaux arrivants dans l’équipe CEMOSIS",
+      "date": "2017-10-19T09:03:22",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/10/18/la-rd-dans-les-materiaux-une-source-de-competitivite-pour-votre-entreprise/",
+      "type": "news",
+      "title": "La R&D dans les matériaux : une source de compétitivité pour votre entreprise",
+      "date": "2017-10-18T09:08:05",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/10/17/union-cemosis-alsacalcul-nouveaux-arrivants-dans-lequipe-cemosis/",
+      "type": "news",
+      "title": "Union Cemosis-AlsaCalcul :  Nouveaux arrivants dans l’équipe CEMOSIS",
+      "date": "2017-10-17T00:48:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/10/11/best-poster-award-for-lorenzo-sala/",
+      "type": "news",
+      "title": "Best poster award for Lorenzo Sala",
+      "date": "2017-10-11T07:11:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/10/04/new-preprint-on-the-hemotum-project/",
+      "type": "news",
+      "title": "New preprint on the Hemotum++ project",
+      "date": "2017-10-04T12:00:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/10/02/cemosis-et-alsacalcul-services-sunissent/",
+      "type": "news",
+      "title": "Cemosis et AlsaCalcul Services s’unissent",
+      "date": "2017-10-02T08:43:58",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/09/14/5th-feel-user-day-4/",
+      "type": "news",
+      "title": "5th Feel++ User Day 4",
+      "date": "2017-09-14T06:00:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/09/13/5th-feel-user-day-3/",
+      "type": "news",
+      "title": "5th Feel++ User Day 3",
+      "date": "2017-09-13T06:21:23",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/09/12/5th-feel-user-day-2/",
+      "type": "news",
+      "title": "5th Feel++ User Day 2",
+      "date": "2017-09-12T06:15:04",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/09/08/new-article-on-stokes-boundary-conditions-in-press/",
+      "type": "news",
+      "title": "New article on Stokes boundary conditions in press",
+      "date": "2017-09-08T01:05:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/09/07/news-on-mt25-2017/",
+      "type": "news",
+      "title": "News on MT25 2017",
+      "date": "2017-09-07T06:58:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/09/06/5th-feel-user-days/",
+      "type": "news",
+      "title": "5th Feel++ User Days",
+      "date": "2017-09-06T14:11:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/09/06/feel-new-website/",
+      "type": "news",
+      "title": "Feel++ New Website",
+      "date": "2017-09-06T14:00:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/09/01/doe-grid-study-released-wind-energy-is-the-big-winner-red-green-and-blue/",
+      "type": "news",
+      "title": "DoE grid study released – wind energy is the big winner – Red, Green, and Blue",
+      "date": "2017-09-01T01:03:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/08/31/modeling-simulation-optimisation-survey-for-mso4sc-an-eu-einfra-h2020-project/",
+      "type": "news",
+      "title": "Modeling Simulation Optimisation Survey for MSO4SC an EU-EINFRA H2020 Project",
+      "date": "2017-08-31T07:29:19",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/07/06/intelligence-artificielle-microsoft-et-inria-a-station-f-inria/",
+      "type": "news",
+      "title": "Intelligence artificielle : Microsoft et Inria à Station F – Inria",
+      "date": "2017-07-06T06:54:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/06/27/cemosis-forum-teratec/",
+      "type": "news",
+      "title": "Cemosis @ Forum Teratec",
+      "date": "2017-06-27T05:31:12",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/06/26/origami-anything/",
+      "type": "news",
+      "title": "Origami anything",
+      "date": "2017-06-26T07:06:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/05/23/live-stream-mso4sc/",
+      "type": "news",
+      "title": "Live stream from Budapest – MSO4SC Workshop",
+      "date": "2017-05-23T06:26:55",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/05/18/workshop-on-mso4sc-in-budapest-may-22-24/",
+      "type": "news",
+      "title": "Workshop on MSO4SC in Budapest May 22-24",
+      "date": "2017-05-18T04:24:13",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/03/23/mso4sc-general-assembly-22-23-march-2017-barcelona-mso4sc/",
+      "type": "news",
+      "title": "MSO4SC General assembly 22-23 March 2017 Barcelona – MSO4SC",
+      "date": "2017-03-23T15:03:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/03/16/chercheurs-et-tpe-un-mariage-qui-gagnerait-a-etre-connu/",
+      "type": "news",
+      "title": "Chercheurs et TPE : un mariage qui gagnerait à être connu !",
+      "date": "2017-03-16T11:44:07",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/03/16/reseau-mso-modelisation-simulation-optimisation/",
+      "type": "news",
+      "title": "Réseau MSO (Modélisation, Simulation, Optimisation)",
+      "date": "2017-03-16T08:07:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/03/16/cemosis-rue-2017/",
+      "type": "news",
+      "title": "Cemosis au RUE 2017",
+      "date": "2017-03-16T02:21:24",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/03/08/forum-mathematique/",
+      "type": "news",
+      "title": "Forum Mathématique",
+      "date": "2017-03-08T08:05:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/02/03/conversation-avec-cedric-villani-plus-personne-ne-me-demande-a-quoi-servent-les-mathematiques/",
+      "type": "news",
+      "title": "Conversation avec Cédric Villani : « Plus personne ne me demande à quoi servent les mathématiques »",
+      "date": "2017-02-03T07:56:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/01/31/institut-de-recherche-mathematique-avancee-visite-du-comite-hceres/",
+      "type": "news",
+      "title": "Institut de Recherche Mathématique Avancée – Visite du comité HCERES",
+      "date": "2017-01-31T10:38:23",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/01/21/universities-race-to-nurture-start-up-founders-of-the-future/",
+      "type": "news",
+      "title": "Universities Race to Nurture Start-Up Founders of the Future",
+      "date": "2017-01-21T16:45:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/01/14/high-order-finite-element-simulations-for-fluid-dynamics-validated-by-experimental-data-from-the-fda-benchmark-nozzle-model/",
+      "type": "news",
+      "title": "High order finite element simulations for fluid dynamics validated by experimental data from the FDA benchmark nozzle model",
+      "date": "2017-01-14T07:58:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2017/01/03/boundary-conditions-involving-pressure-for-the-stokes-problem-and-applications-in-computational-hemodynamics/",
+      "type": "news",
+      "title": "Boundary conditions involving pressure for the Stokes problem and applications in computational hemodynamics",
+      "date": "2017-01-03T15:26:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/12/09/cemosis-csmi-sont-au-fem/",
+      "type": "news",
+      "title": "Cemosis et le Master CSMI seront au Forum Emploi Math",
+      "date": "2016-12-09T08:22:03",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/11/26/predical-reussit-sa-levee-de-fond-et-remercie-amies-pour-son-soutien/",
+      "type": "news",
+      "title": "PREDICAL réussit sa levée de fond et remercie AMIES pour son soutien",
+      "date": "2016-11-26T12:03:06",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/11/17/more-about-variadic-templates-simplify-c/",
+      "type": "news",
+      "title": "More About Variadic Templates – Simplify C++!",
+      "date": "2016-11-17T04:03:21",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/11/16/universite-de-strasbourg-pret-pour-lemploi-met-le-cap-sur-linternational/",
+      "type": "news",
+      "title": "Université de Strasbourg : Prêt pour l’emploi met le cap sur l’international",
+      "date": "2016-11-16T05:50:50",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/11/15/le-nerf-de-la-guerre-cest-les-maths-venez-au-forum-emploi-math-pour-rencontrer-les-mathematiciens/",
+      "type": "news",
+      "title": "Le nerf de la guerre, c’est les maths ! Venez au Forum Emploi Math pour rencontrer les mathématiciens ",
+      "date": "2016-11-15T09:00:21",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/10/31/les-entreprises-au-forum-emploi-math/",
+      "type": "news",
+      "title": "Les Entreprises au Forum Emploi Math",
+      "date": "2016-10-31T05:48:35",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/10/25/workshop-aristote-verification-validation-et-quantification-des-incertitudesen-simulation-numerique-vvuq-mardi-8-novembre-2016-a-lx-palaiseau/",
+      "type": "news",
+      "title": "Workshop Aristote : Vérification, Validation et Quantification des incertitudesen simulation numérique (VVUQ) Mardi 8 novembre 2016 à l’X, Palaiseau",
+      "date": "2016-10-25T06:58:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/10/24/lacademies-des-technologies-le-cnrs-organisent-le-colloque-modelisation-succes-et-limites/",
+      "type": "news",
+      "title": "L’Académie des Technologies & le CNRS  organisent le colloque “Modélisation : succès et limites”",
+      "date": "2016-10-24T12:09:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/10/21/phd-thesis-of-c-daversin-online/",
+      "type": "news",
+      "title": "La thèse de C. Daversin est en ligne",
+      "date": "2016-10-21T09:24:24",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/10/19/last-math-industry-funding-call-deadline-oct-31/",
+      "type": "news",
+      "title": "Last Math-Industry Funding Call – Deadline Oct 31",
+      "date": "2016-10-19T09:10:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/10/19/oct-2016-iciam-newsletter-with-an-interview-of-patrice-hauret-from-michelin/",
+      "type": "news",
+      "title": "Oct 2016 ICIAM Newsletter with an interview of Patrice Hauret from Michelin",
+      "date": "2016-10-19T08:55:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/10/19/new-report-research-and-education-in-computational-science-and-engineering/",
+      "type": "news",
+      "title": "New Report: Research and Education in Computational Science and Engineering",
+      "date": "2016-10-19T07:00:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/10/04/amies-agit-pour-la-formation/",
+      "type": "news",
+      "title": "AMIES agit pour la formation",
+      "date": "2016-10-04T06:41:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/10/03/amies-active-in-europe-and-worldwide/",
+      "type": "news",
+      "title": "AMIES, active in Europe and worldwide",
+      "date": "2016-10-03T09:16:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/10/03/home-eu-maths-in/",
+      "type": "news",
+      "title": "EU-MATHS-IN",
+      "date": "2016-10-03T07:47:39",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/10/01/using-math-to-repair-a-650-year-old-masterpiece/",
+      "type": "news",
+      "title": "Using Math to Repair a 650-Year-Old Masterpiece",
+      "date": "2016-10-01T16:01:45",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/09/29/simulation-of-the-month-real-time-3d-heat-transfer/",
+      "type": "news",
+      "title": "Simulation of the month : real-time 3D heat transfer",
+      "date": "2016-09-29T20:44:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/09/26/amies-plus-dun-million-deuros-de-peps/",
+      "type": "news",
+      "title": "AMIES : plus d’un million d’euros de PEPS !",
+      "date": "2016-09-26T07:09:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/09/19/mathematiques-oxygene-du-numerique/",
+      "type": "news",
+      "title": "Mathématiques, oxygène du numérique ",
+      "date": "2016-09-19T06:55:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/09/15/newsletter-amies/",
+      "type": "news",
+      "title": "Newsletter #35 AMIES",
+      "date": "2016-09-15T21:59:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/09/15/soutenance-de-these-de-c-daversin/",
+      "type": "news",
+      "title": "Soutenance de thèse de C. Daversin",
+      "date": "2016-09-15T19:48:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/09/12/thread-future-and-promise/",
+      "type": "news",
+      "title": "Thread, future and promise",
+      "date": "2016-09-12T06:59:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/09/05/6-sept-2016-journee-de-rentree-pour-csmi-csmi-day-return/",
+      "type": "news",
+      "title": "6 Sept. 2016 Journée de rentrée pour CSMI / CSMI day return",
+      "date": "2016-09-05T09:10:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/09/01/cedric-villani-il-ny-a-plus-assez-de-matheux-pour-lindustrie-numerique/",
+      "type": "news",
+      "title": "Cédric Villani : « Il n’y a plus assez de matheux »… pour l’industrie numérique",
+      "date": "2016-09-01T19:43:48",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/08/31/improving-workflow-by-using-clang-based-tools/",
+      "type": "news",
+      "title": "Improving workflow by using Clang-based tools",
+      "date": "2016-08-31T09:17:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/08/31/issues-and-propositions-for-industrial-mathematics/",
+      "type": "news",
+      "title": "Issues and Propositions for Industrial Mathematics",
+      "date": "2016-08-31T08:08:20",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/07/24/lettre-materalia-n13-pdf/",
+      "type": "news",
+      "title": "Lettre Materalia N°13",
+      "date": "2016-07-24T09:58:06",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/07/22/simulation-of-two-fluid-flows-using-a-finite-elementlevel-set-method-in-3d-application-to-two-drop-benchmarks/",
+      "type": "news",
+      "title": "Simulation of two-fluid flows using a finite element/level-set method in 3D. Application to two drop benchmarks",
+      "date": "2016-07-22T10:00:44",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/07/18/eu-funds-mso4sc-h2020-einfra/",
+      "type": "news",
+      "title": "EU funds E-INFRA H2020 project MSO4SC",
+      "date": "2016-07-18T23:47:12",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/07/12/a-course-in-math-modeling-at-european-conference-on-glaucoma/",
+      "type": "news",
+      "title": "A course in Math Modeling at European Conference on Glaucoma",
+      "date": "2016-07-12T04:24:22",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/07/12/abstract-on-hybrid-hiscontinuous-galerkin-method-with-integral-boundary-accepted-at-ihp-conference/",
+      "type": "news",
+      "title": "Abstract on Hybrid Discontinuous Galerkin method with integral boundary accepted at IHP conference",
+      "date": "2016-07-12T04:23:01",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/07/11/instituts-carnot-un-tremplin-pour-les-maths-smiles/",
+      "type": "news",
+      "title": "Instituts Carnot, un tremplin pour les Maths : SMILES !",
+      "date": "2016-07-11T07:05:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/07/06/semaine-de-modelisation-ecmi-2016/",
+      "type": "news",
+      "title": "Semaine de modélisation ECMI 2016",
+      "date": "2016-07-06T22:28:24",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/07/06/coup-de-projecteur-sur-notre-collaboration-avec-electricite-de-strasbourg/",
+      "type": "news",
+      "title": "Coup de projecteur sur notre collaboration avec Electricité de Strasbourg",
+      "date": "2016-07-06T15:15:22",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/07/06/philippe-lavocat-est-nomme-pdg-de-genci/",
+      "type": "news",
+      "title": "Philippe LAVOCAT est nommé PDG de Genci",
+      "date": "2016-07-06T07:06:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/07/05/cemosis-and-his-partners-cemracs16/",
+      "type": "news",
+      "title": "Cemosis and his partners invest in Cemracs’16",
+      "date": "2016-07-05T11:48:02",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/07/05/icatto2016/",
+      "type": "news",
+      "title": "Eye2brain will be @ ICATTO2016",
+      "date": "2016-07-05T11:10:42",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/07/05/funding-of-a-phd-for-the-eye2brain-project/",
+      "type": "news",
+      "title": "Funding of a Phd for the Eye2Brain project",
+      "date": "2016-07-05T04:35:20",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/07/04/simultaneous-empirical-interpolation-and-reduced-basis-method-application-to-non-linear-multi-physics-problem/",
+      "type": "news",
+      "title": "Simultaneous empirical interpolation and reduced basis method. Application to non-linear multi-physics problem",
+      "date": "2016-07-04T07:02:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/07/01/mathematics-for-europe-report-on-open-consultation-etp4hpc/",
+      "type": "news",
+      "title": "Mathematics for Europe – Report on open consultation | etp4hpc",
+      "date": "2016-07-01T06:08:20",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/30/materalia-news-juin-2016-pdf/",
+      "type": "news",
+      "title": "Newsletter Materalia  Juin 2016",
+      "date": "2016-06-30T10:55:08",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/30/cemosis-project-cemracs-2016/",
+      "type": "news",
+      "title": "A Cemosis project in Health at Cemracs 2016",
+      "date": "2016-06-30T09:20:50",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/30/cemosis-partner-of-the-cemracs-2016/",
+      "type": "news",
+      "title": "Cemosis partner of the Cemracs 2016",
+      "date": "2016-06-30T04:45:06",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/23/big-data-lenjeu-majeur-de-lenseignement-au-xxi%e1%b5%89-siecle/",
+      "type": "news",
+      "title": "Big data : l’enjeu majeur de l’enseignement au XXIᵉ siècle",
+      "date": "2016-06-23T13:19:29",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/21/cemosis-alsacalcul-simseo/",
+      "type": "news",
+      "title": "Cemosis, partenaire SIMSEO d’AlsaCalcul Services en modélisation, simulation et calcul haute performance",
+      "date": "2016-06-21T06:46:55",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/20/huawei-ouvre-en-france-son-deuxieme-centre-mondial-de-recherche-en-mathematiques/",
+      "type": "news",
+      "title": "Huawei ouvre en France son deuxième centre mondial de recherche en mathématiques",
+      "date": "2016-06-20T06:47:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/15/20eme-rencontre-smai-math-industrie-sur-le-theme-de-lenergie/",
+      "type": "news",
+      "title": "20ème rencontre SMAI math industrie sur le thème de l’énergie",
+      "date": "2016-06-15T09:00:40",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/14/fujitsu-va-construire-le-superordinateur-le-plus-puissant-du-japon-pour-les-universites-de-tokyo-et-de-tsukuba/",
+      "type": "news",
+      "title": "Fujitsu va construire le superordinateur le plus puissant du Japon pour les universités de Tokyo et de Tsukuba",
+      "date": "2016-06-14T07:00:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/14/calcul-scientifique-loreal-groupe/",
+      "type": "news",
+      "title": "Calcul scientifique – L’Oréal Groupe",
+      "date": "2016-06-14T06:53:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/13/partenariat-master-csmi-et-ensiie/",
+      "type": "news",
+      "title": "Partenariat Master CSMI et ENSIIE",
+      "date": "2016-06-13T10:12:01",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/13/maths-deep-impact/",
+      "type": "news",
+      "title": "Maths : deep impact",
+      "date": "2016-06-13T06:58:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/13/declaration-commune-des-societes-savantes-de-mathematiques-et-dinformatique-sur-la-politique-scientifique-de-lagence-pour-la-recherche/",
+      "type": "news",
+      "title": "Déclaration commune des sociétés savantes de Mathématiques et d’Informatique sur la politique scientifique de l’Agence pour la Recherche",
+      "date": "2016-06-13T06:55:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/13/a-new-model-for-the-master-csmi/",
+      "type": "news",
+      "title": "A new model for the Master CSMI",
+      "date": "2016-06-13T04:56:20",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/13/nouvelle-maquette-master-csmi/",
+      "type": "news",
+      "title": "Une nouvelle maquette pour le Master CSMI",
+      "date": "2016-06-13T04:22:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/10/la-valorisation-de-la-recherche-en-france-cest-complexe-technos-et-innovations/",
+      "type": "news",
+      "title": "La valorisation de la recherche en France, c’est complexe – Technos et Innovations",
+      "date": "2016-06-10T07:25:10",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/09/prix-de-these/",
+      "type": "news",
+      "title": "Prix de thèse Mathématiques-Entreprises",
+      "date": "2016-06-09T18:56:08",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/09/the-mathematics-of-history/",
+      "type": "news",
+      "title": "The mathematics of history",
+      "date": "2016-06-09T07:00:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/08/david-sumpter-soccermatics-talks-at-google/",
+      "type": "news",
+      "title": "David Sumpter: “Soccermatics” | Talks at Google",
+      "date": "2016-06-08T08:57:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/07/ted-hidden-mathematical-truths-permeate-our-whole-physical-world-inside-the-thrill-of-mathematical-discovery/",
+      "type": "news",
+      "title": "TED: “Hidden mathematical truths permeate our whole physical world.” \n\nInside the thrill of mathematical discovery:",
+      "date": "2016-06-07T06:00:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/07/panorama-of-me-collaboration/",
+      "type": "news",
+      "title": "A panorama of mathematics entreprises collaborations @ Cemosis",
+      "date": "2016-06-07T00:22:19",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/06/06/keynote-lecture-eccomas16/",
+      "type": "news",
+      "title": "Keynote lecture @ Eccomas’16",
+      "date": "2016-06-06T22:11:35",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/05/13/cemosis-dans-les-dna/",
+      "type": "news",
+      "title": "Cemosis dans les DNA",
+      "date": "2016-05-13T10:40:04",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/blog/2016/05/01/holo3-starts/",
+      "type": "news",
+      "title": "The Holo3 project starts",
+      "date": "2016-05-01T23:47:41",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/mso4sc-general-assembly-strasbourg/",
+      "type": "page",
+      "title": "MSO4SC General Assembly – Strasbourg",
+      "date": "2018-03-23T13:22:36",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/physics/",
+      "type": "page",
+      "title": "Physics",
+      "date": "2017-01-30T05:28:04",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/offers/",
+      "type": "page",
+      "title": "Offers / Offres",
+      "date": "2016-11-16T04:44:34",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/terms-conditions/",
+      "type": "page",
+      "title": "Terms and Conditions",
+      "date": "2016-10-25T21:16:50",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/old_team/",
+      "type": "page",
+      "title": "Team (old version)",
+      "date": "2016-10-23T20:56:00",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/alsacalcul-services/",
+      "type": "page",
+      "title": "AlsaCalcul Services",
+      "date": "2016-07-20T07:31:54",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/software/",
+      "type": "page",
+      "title": "Software",
+      "date": "2016-07-14T05:26:28",
+      "status": "adapted",
+      "destination": "fr/software",
+      "note": "Structural content rewritten; current team supplied by owner."
+    },
+    {
+      "source": "https://www.cemosis.fr/software/feelpp/",
+      "type": "page",
+      "title": "Feel++",
+      "date": "2016-07-14T02:49:12",
+      "status": "adapted",
+      "destination": "fr/software",
+      "note": "Structural content rewritten; current team supplied by owner."
+    },
+    {
+      "source": "https://www.cemosis.fr/health/",
+      "type": "page",
+      "title": "Health",
+      "date": "2016-07-03T21:45:10",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/multi-disciplinary/",
+      "type": "page",
+      "title": "Multi-Disciplinary",
+      "date": "2016-07-03T21:44:42",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/math-entreprise/",
+      "type": "page",
+      "title": "Math-Entreprise",
+      "date": "2016-07-03T21:43:01",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/gallery/",
+      "type": "page",
+      "title": "Gallery",
+      "date": "2016-06-13T07:22:44",
+      "status": "pending",
+      "destination": null,
+      "note": ""
+    },
+    {
+      "source": "https://www.cemosis.fr/news/",
+      "type": "page",
+      "title": "News",
+      "date": "2015-04-13T23:54:44",
+      "status": "adapted",
+      "destination": "fr/news",
+      "note": "Structural content rewritten; current team supplied by owner."
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/",
+      "type": "page",
+      "title": "Projects",
+      "date": "2015-04-13T20:01:40",
+      "status": "adapted",
+      "destination": "fr/projects",
+      "note": "Structural content rewritten; current team supplied by owner."
+    },
+    {
+      "source": "https://www.cemosis.fr/get-in-touch/",
+      "type": "page",
+      "title": "Get in touch",
+      "date": "2015-04-08T18:39:18",
+      "status": "adapted",
+      "destination": "fr/contact",
+      "note": "Structural content rewritten; current team supplied by owner."
+    },
+    {
+      "source": "https://www.cemosis.fr/",
+      "type": "page",
+      "title": "Home",
+      "date": "2015-04-08T18:39:04",
+      "status": "adapted",
+      "destination": "fr/",
+      "note": "Structural content rewritten; current team supplied by owner."
+    },
+    {
+      "source": "https://www.cemosis.fr/about/",
+      "type": "page",
+      "title": "About",
+      "date": "2015-04-08T18:38:57",
+      "status": "adapted",
+      "destination": "fr/about",
+      "note": "Structural content rewritten; current team supplied by owner."
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/4fastsim-ibat/",
+      "type": "project",
+      "status": "adapted",
+      "destination": "fr/projects/4fastsim-ibat"
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/4fastsim/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/analyse-et-prediction-de-consommation-electrique-electricite-de-strasbourg/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/angiotk/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/bioreactor-sivibir/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/blood-rheology/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/chorus-airbus/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/electis/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/es-classification-load-curves/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/eye2brain/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/gazomat/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/hager/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/hemotum/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/high-field-magnets/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/holo3/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/micro-swimmer/",
+      "type": "project",
+      "status": "adapted",
+      "destination": "fr/projects/micro-swimmer"
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/mso4sc/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/optical-tomography/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/plasticomnium/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/projet-data4urbanism/",
+      "type": "project",
+      "status": "adapted",
+      "destination": "fr/projects/projet-data4urbanism"
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/simseo/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/tonus/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    },
+    {
+      "source": "https://www.cemosis.fr/projects/vivabrain/",
+      "type": "project",
+      "status": "pending",
+      "destination": null
+    }
+  ]
+}

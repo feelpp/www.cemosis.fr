@@ -1,0 +1,15 @@
+---
+import { getCollection } from 'astro:content';
+import Site from '../../../layouts/Site.astro';
+import FundingList from '../../../components/FundingList.astro';
+import ProjectCard from '../../../components/ProjectCard.astro';
+import { languages, labels, type Language } from '../../../lib/site';
+export function getStaticPaths() { return languages.map(lang => ({ params: { lang } })); }
+const lang = Astro.params.lang as Language;
+const t = labels[lang];
+const projects = (await getCollection('projects', ({ data }) => data.lang === lang && !data.draft)).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+<Site title={t.projects} description={t.projectPageIntro} lang={lang} path="projects">
+  <section class="page-intro container"><p class="eyebrow">Cemosis / {t.projects}</p><h1 class="multiline">{t.projectPageTitle}</h1><p class="lead">{t.projectPageIntro}</p></section>
+  <section class="container listing-section"><FundingList lang={lang} /><h2 class="archive-heading">{lang === 'fr' ? 'Archives des projets' : 'Project archives'}</h2><div class="projects-grid">{projects.map(project => <ProjectCard project={project} lang={lang} />)}</div>{projects.length === 0 && <p>{t.noProjects}</p>}</section>
+</Site>

@@ -1,0 +1,10 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { labels, route, url, type Language } from '../lib/site';
+interface Props { project: CollectionEntry<'projects'>; lang: Language }
+const { project: { data: p }, lang } = Astro.props;
+---
+<a class="project-card" href={route(lang, `projects/${p.slug}`)}>
+  <div class="project-image"><img src={url(p.image)} width="800" height="520" loading="lazy" alt={p.imageAlt} /><span class="image-tag">{p.category}</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+  <div class="project-copy"><div class="card-meta">{p.historical ? `${labels[lang].archive} / ` : ''}{p.date.getUTCFullYear()}</div><h3>{p.title}</h3><p>{p.description}</p><span class="text-link">{labels[lang].read} <span aria-hidden="true">→</span></span></div>
+</a>

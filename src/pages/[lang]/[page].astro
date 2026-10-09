@@ -1,0 +1,22 @@
+---
+import { getCollection, render } from 'astro:content';
+import Site from '../../layouts/Site.astro';
+import SoftwareList from '../../components/SoftwareList.astro';
+import Team from '../../components/Team.astro';
+import { labels } from '../../lib/site';
+export async function getStaticPaths() {
+  const pages = await getCollection('pages', ({ data }) => !data.draft);
+  return pages.map(page => ({ params: { lang: page.data.lang, page: page.data.slug }, props: { page, alternate: pages.some(p => p.data.lang !== page.data.lang && p.data.slug === page.data.slug) } }));
+}
+const { page, alternate } = Astro.props;
+const { Content } = await render(page);
+const { lang, title, description, slug } = page.data;
+---
+<Site title={title} description={description} lang={lang} path={slug} alternate={alternate}>
+  <section class="page-intro container"><p class="eyebrow">Cemosis / {labels[lang][slug as 'about'] ?? title}</p><h1>{title}</h1><p class="lead">{description}</p></section>
+  <div class:list={['container', slug !== 'software' && 'article-shell', slug === 'software' && 'listing-section']}>
+    {slug === 'software' && <SoftwareList lang={lang} />}
+    {slug === 'about' && <Team lang={lang} />}
+    <article class="prose"><Content /></article>
+  </div>
+</Site>

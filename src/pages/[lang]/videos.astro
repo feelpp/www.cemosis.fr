@@ -1,0 +1,14 @@
+---
+import Site from '../../layouts/Site.astro';
+import Video from '../../components/Video.astro';
+import videos from '../../data/videos.json';
+import { languages, type Language } from '../../lib/site';
+export function getStaticPaths() { return languages.map(lang => ({ params: { lang } })); }
+const lang = Astro.params.lang as Language;
+const title = lang === 'fr' ? 'Vidéos' : 'Videos';
+const description = lang === 'fr' ? 'Visualisations et démonstrations de Cemosis : Ktirio Urban Building.' : 'Cemosis visualisations and demonstrations: Ktirio Urban Building.';
+---
+<Site lang={lang} title={title} description={description} path="videos">
+  <section class="page-intro container"><p class="eyebrow">Ktirio Urban Building</p><h1>{title}</h1><p class="lead">{description}</p><a class="text-link" href={videos.source}>{lang === 'fr' ? 'La chaîne Cemosis — Université de Strasbourg' : 'Cemosis — University of Strasbourg channel'} ↗</a></section>
+  <section class="container video-grid">{videos.items.map(video => <Video id={video.id} title={video.title} poster={video.poster} lang={lang} />)}</section>
+</Site>

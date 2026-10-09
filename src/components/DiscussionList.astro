@@ -1,0 +1,13 @@
+---
+import snapshot from '../data/discussions.json';
+import topics from '../data/discussion-topics.json';
+import { route, dateLabel, type Language } from '../lib/site';
+interface Props { lang: Language; limit?: number; featured?: boolean }
+const { lang, limit, featured = false } = Astro.props;
+const selection = featured ? topics.topics.flatMap(topic => { const item = snapshot.items.find(item => item.topics.includes(topic.id)); return item ? [item] : []; }).filter((item, index, all) => all.findIndex(other => other.number === item.number) === index) : snapshot.items;
+const discussions = limit ? selection.slice(0, limit) : selection;
+---
+<div class="discussion-list">{discussions.map(item => <a href={route(lang, `discussions/${item.number}`)} class="discussion-row" data-topics={item.topics.join(' ')}>
+  <div class="discussion-meta"><time datetime={item.createdAt}>{dateLabel(new Date(item.createdAt), lang)}</time><span>{item.topics.map(id => topics.topics.find(topic => topic.id === id)?.name).join(' · ')}</span></div>
+  <h3>{item.title}</h3><span class="text-link">{lang === 'fr' ? 'Lire la discussion' : 'Read discussion'} <span aria-hidden="true">→</span></span>
+</a>)}</div>

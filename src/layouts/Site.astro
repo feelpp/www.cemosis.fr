@@ -1,0 +1,76 @@
+---
+import '../styles/global.css';
+import { labels, route, url, type Language } from '../lib/site';
+interface Props { title: string; description: string; lang: Language; path?: string; alternate?: boolean; noindex?: boolean; switchPath?: string }
+const { title, description, lang, path = '', alternate = true, noindex = false, switchPath } = Astro.props;
+const t = labels[lang];
+const other = lang === 'fr' ? 'en' : 'fr';
+const navigation = ['services', 'projects', 'software', 'about', 'news'] as const;
+const canonical = new URL(route(lang, path), Astro.site);
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title === 'Cemosis' ? `${title} — ${t.footerText}` : `${title} | Cemosis`}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#ffffff" />
+    {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonical} />}
+    {alternate && !noindex && <>
+      <link rel="alternate" hreflang="fr" href={new URL(route('fr', path), Astro.site)} />
+      <link rel="alternate" hreflang="en" href={new URL(route('en', path), Astro.site)} />
+    </>}
+    <meta property="og:title" content={`${title} | Cemosis`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(url('images/social-card.png'), Astro.site)} />
+    <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_GB'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t.skip}</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="header-identity">
+          <a class="unistra-brand" href="https://www.unistra.fr/"><img src={url('images/unistra-signature.svg')} width="173" height="73" alt="Université de Strasbourg" /></a>
+          <a class="brand" href={route(lang)} aria-label={`Cemosis — ${t.home}`}><span class="brand-logo"><img src={url('images/logo-cemosis.png')} width="800" height="800" alt="Cemosis — Centre de modélisation et de simulation de Strasbourg" /></span></a>
+        </div>
+        <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false">{t.menu} <span aria-hidden="true">☰</span></button>
+        <nav id="navigation" aria-label={t.footerLinks}>
+          {navigation.map(item => <a href={route(lang, item)} aria-current={path.split('/')[0] === item ? 'page' : undefined}>{t[item]}</a>)}
+          <a class="language-switch" href={route(other, switchPath ?? (alternate ? path : ''))} lang={other} hreflang={other} aria-label={alternate || switchPath ? (other === 'fr' ? 'Passer en français' : 'Switch to English') : (other === 'fr' ? 'Accueil français — traduction indisponible' : 'English homepage — translation unavailable')}>{other.toUpperCase()}</a>
+          <a href={route(lang, 'contact')} aria-current={path === 'contact' ? 'page' : undefined}>{t.contact}</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><a class="unistra-footer" href="https://www.unistra.fr/"><img src={url('images/unistra-signature.svg')} width="173" height="73" alt="Université de Strasbourg" /></a><a class="footer-brand" href={route(lang)}>Cemosis</a><p>{t.footerText}</p></div>
+        <div><h2>{t.footerLinks}</h2>{navigation.map(item => <a href={route(lang, item)}>{t[item]}</a>)}<a href={route(lang, 'discussions')}>Discussions Feel++</a><a href={route(lang, 'videos')}>{lang === 'fr' ? 'Vidéos' : 'Videos'}</a></div>
+        <div><h2>{t.footerContact}</h2><address>7 rue René Descartes<br />Strasbourg, France</address><a href="mailto:contact@cemosis.fr">contact@cemosis.fr ↗</a><a href="tel:+33368850259">+33 3 68 85 02 59</a></div>
+      </div>
+      <div class="container footer-bottom"><span>© {new Date().getUTCFullYear()} Cemosis</span><a href="https://github.com/feelpp/www.cemosis.fr">GitHub ↗</a><span>Strasbourg, France</span></div>
+    </footer>
+    <script>
+      const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
+      const nav = document.querySelector<HTMLElement>('#navigation');
+      toggle?.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        nav?.classList.toggle('is-open', !expanded);
+      });
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape') {
+          const wasOpen = toggle?.getAttribute('aria-expanded') === 'true';
+          toggle?.setAttribute('aria-expanded', 'false');
+          nav?.classList.remove('is-open');
+          if (wasOpen) toggle?.focus();
+        }
+      });
+    </script>
+  </body>
+</html>

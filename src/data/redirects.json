@@ -1,0 +1,12 @@
+[
+  { "from": "about", "to": "fr/about" },
+  { "from": "get-in-touch", "to": "fr/contact" },
+  { "from": "projects", "to": "fr/projects" },
+  { "from": "news", "to": "fr/news" },
+  { "from": "software", "to": "fr/software" },
+  { "from": "software/feelpp", "to": "fr/software" },
+  { "from": "projects/4fastsim-ibat", "to": "fr/projects/4fastsim-ibat" },
+  { "from": "projects/micro-swimmer", "to": "fr/projects/micro-swimmer" },
+  { "from": "projects/projet-data4urbanism", "to": "fr/projects/projet-data4urbanism" },
+  { "from": "blog/2019/10/21/feel-at-unistra-open-access-week", "to": "en/news/feelpp-open-access" }
+]

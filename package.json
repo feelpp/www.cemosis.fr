@@ -1,0 +1,32 @@
+{
+  "name": "cemosis-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "verify:links": "node scripts/check-links.mjs",
+    "import:discussions": "node scripts/import-discussions.mjs",
+    "import:media": "node scripts/import-media.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.4",
+    "astro": "7.3.8",
+    "marked": "^18.1.0",
+    "sanitize-html": "^2.18.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@types/sanitize-html": "^2.16.2",
+    "node-html-parser": "^9.0.4",
+    "typescript": "~5.9.3",
+    "yaml": "^2.9.1"
+  }
+}

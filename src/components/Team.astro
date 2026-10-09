@@ -1,0 +1,11 @@
+---
+import team from '../data/team.json';
+import { dateLabel, type Language } from '../lib/site';
+interface Props { lang: Language }
+const { lang } = Astro.props;
+---
+<section class="team-section" aria-labelledby="team-title">
+  <div class="section-heading"><h2 id="team-title">{lang === 'fr' ? 'L’équipe' : 'Team'}</h2></div>
+  <div class="team-grid">{team.members.map(member => <div class="team-card"><span class="team-initials" aria-hidden="true">{member.initials}</span><h3>{member.name}</h3><p>{member.role[lang]}</p></div>)}</div>
+  <p class="team-updated">{lang === 'fr' ? 'Équipe mise à jour le' : 'Team updated on'} <time datetime={team.updated}>{dateLabel(new Date(team.updated), lang)}</time>.</p>
+</section>

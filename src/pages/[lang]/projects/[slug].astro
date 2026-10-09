@@ -1,0 +1,16 @@
+---
+import { getCollection, render } from 'astro:content';
+import Site from '../../../layouts/Site.astro';
+import { labels, route, url, dateLabel } from '../../../lib/site';
+export async function getStaticPaths() {
+  const projects = [...await getCollection('projects', ({ data }) => !data.draft), ...await getCollection('funding', ({ data }) => !data.draft)];
+  return projects.map(project => ({ params: { lang: project.data.lang, slug: project.data.slug }, props: { project, alternate: projects.some(p => p.data.lang !== project.data.lang && p.data.slug === project.data.slug) } }));
+}
+const { project, alternate } = Astro.props;
+const { Content } = await render(project);
+const p = project.data as typeof project.data & { date?: Date; period?: string; image?: string; imageAlt?: string; historical?: boolean }, t = labels[p.lang];
+---
+<Site title={p.title} description={p.description} lang={p.lang} path={`projects/${p.slug}`} alternate={alternate}>
+  <section class="page-intro container"><a class="text-link" href={route(p.lang, 'projects')}>← {t.backProjects}</a><p class="eyebrow">{p.category}</p><h1>{p.title}</h1>{p.period && <p class="card-meta">{p.period}</p>}<p class="lead">{p.description}</p>{p.date && <p class="card-meta">{t.published} <time datetime={p.date.toISOString()}>{dateLabel(p.date, p.lang)}</time></p>}</section>
+  <div class="container article-shell">{p.image && <img class="article-image" src={url(p.image)} alt={p.imageAlt} width="1000" height="650" />}{p.historical && <p class="archive-note">{t.archiveNote}</p>}<article class="prose"><Content /></article>{p.source && <p class="source-link"><a href={p.source}>{t.source} ↗</a></p>}</div>
+</Site>
