@@ -358,3 +358,19 @@ small { font-size: .9rem; }
 .project-illustration { margin: 0 0 2.5rem; background: #f5f5ef; border: 1px solid var(--line); }
 .project-illustration .article-image { display: block; width: 100%; height: auto; max-height: 560px; object-fit: contain; }
 .project-illustration figcaption { padding: .85rem 1.2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+
+/* A shared illustration and matching treatment for both homepage taxonomies. */
+.home-intro { background-image: linear-gradient(90deg, rgba(255,255,255,.94), rgba(255,255,255,.82)), var(--city-background); background-size: cover; background-position: center; }
+.home-intro .hero { grid-template-columns: 1fr 1fr; align-items: start; gap: 2rem 3rem; }
+.home-intro .hero-copy { grid-column: 1 / -1; }
+.home-intro .hero-copy h1 { font-size: clamp(2rem, 3.5vw, 3.2rem); line-height: 1.1; }
+.home-intro .hero-description { margin-bottom: 0; }
+.hero-group-title { font-size: 1.1rem; margin: 0 0 .75rem; }
+.home-intro .topic-tags { margin: 0 0 1.6rem; gap: .55rem; }
+.home-intro .topic-tags a { border-left: 3px solid var(--accent); font-size: .95rem; background: rgba(255,255,255,.9); }
+.home-intro .topic-tags a:hover { background: #ffdd00; }
+.home-intro .research-strip { background: rgba(255,255,255,.75); }
+@media (max-width: 700px) {
+  .home-intro { background-image: linear-gradient(rgba(255,255,255,.94), rgba(255,255,255,.85)), var(--city-background); }
+  .home-intro .hero { grid-template-columns: 1fr; min-height: auto; gap: 1.5rem; }
+}

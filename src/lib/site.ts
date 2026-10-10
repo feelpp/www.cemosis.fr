@@ -7,11 +7,11 @@ export const dateLabel = (date: Date, lang: Language) => new Intl.DateTimeFormat
 
 export const labels = {
   fr: {
-    domains: 'Domaines', publications: 'Publications', home: 'Accueil', services: 'Recherche', projects: 'Projets', software: 'Logiciels', about: 'À propos', news: 'Actualités', contact: 'Contact',
+    domains: 'Domaines d’application', publications: 'Publications', home: 'Accueil', services: 'Thématiques de recherche', projects: 'Projets', software: 'Logiciels', about: 'À propos', news: 'Actualités', contact: 'Contact',
     skip: 'Aller au contenu', menu: 'Menu', close: 'Fermer', read: 'Découvrir le projet', allProjects: 'Tous les projets',
     eyebrow: 'Université de Strasbourg',
     heroA: 'Modélisation', heroB: 'et simulation', heroC: '',
-    heroText: 'Cemosis est une plateforme de recherche de l’Université de Strasbourg, dédiée à la modélisation, à la simulation et au calcul scientifique.',
+    heroText: 'Cemosis est une plateforme de recherche de l’Université de Strasbourg, associant modèles mathématiques, données et intelligence artificielle pour la recherche interdisciplinaire.',
     explore: 'Nos activités', meshCaption: 'Surface paramétrique', meshNote: 'Surface mathématique illustrative',
     mission: 'Domaines de recherche', missionText: 'Mathématiques appliquées, méthodes numériques et collaborations interdisciplinaires.',
     hosted: 'Une plateforme de l’Université de Strasbourg, à l’IRMA.',
@@ -31,11 +31,11 @@ export const labels = {
     notFound: 'Page introuvable', notFoundText: 'La page demandée est introuvable. Retrouvez nos expertises et projets depuis l’accueil.',
   },
   en: {
-    domains: 'Domains', publications: 'Publications', home: 'Home', services: 'Research', projects: 'Projects', software: 'Software', about: 'About', news: 'News', contact: 'Contact',
+    domains: 'Application domains', publications: 'Publications', home: 'Home', services: 'Research topics', projects: 'Projects', software: 'Software', about: 'About', news: 'News', contact: 'Contact',
     skip: 'Skip to content', menu: 'Menu', close: 'Close', read: 'Explore the project', allProjects: 'All projects',
     eyebrow: 'University of Strasbourg',
     heroA: 'Modelling', heroB: 'and simulation', heroC: '',
-    heroText: 'Cemosis is a University of Strasbourg research platform for modelling, simulation and scientific computing.',
+    heroText: 'Cemosis is a University of Strasbourg research platform bringing together mathematical models, data and artificial intelligence for interdisciplinary research.',
     explore: 'Research activities', meshCaption: 'Parametric surface', meshNote: 'Illustrative mathematical surface',
     mission: 'Research areas', missionText: 'Applied mathematics, numerical methods and interdisciplinary collaboration.',
     hosted: 'A University of Strasbourg platform, hosted at IRMA.',
