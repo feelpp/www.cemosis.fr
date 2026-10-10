@@ -3,8 +3,13 @@ title: "JNL-G"
 description: "Le jumeau numérique du Laboratoire national des champs magnétiques intenses à Grenoble."
 lang: "fr"
 slug: "jnl-g"
+domains: [energy, industry]
+topics: [data-processing, modeling, simulation, hpc, machine-learning, ai, digital-twin, uncertainty-quantification]
 category: "ANR · HiFiMagnet"
 period: "2026–2030"
+image: "/images/jnl-g/magnet-power-cooling.png"
+imageAlt: "Schéma de l’aimant du LNCMI et des installations électriques et de refroidissement."
+imageCaption: "Aimant, alimentation électrique et refroidissement : systèmes représentés dans le jumeau numérique JNL-G."
 order: 2
 source: "https://anr.fr/Projet-ANR-25-CE46-1157"
 ---

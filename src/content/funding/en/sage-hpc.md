@@ -3,8 +3,12 @@ title: "SAGE-HPC"
 description: "Multi-fidelity optimisation and high-performance computing."
 lang: "en"
 slug: "sage-hpc"
+topics: []
 category: "PEPR NumPEx · France 2030"
 period: "2026–2030"
+image: "/images/sage-hpc/benchmark-families.png"
+imageAlt: "Simulation collage illustrating numerical benchmark families."
+imageCaption: "Simulation benchmark families from the SAGE-HPC kickoff presentation."
 order: 1
 source: "https://numpex.org/fr/projets-appel-a-projets-2025/"
 ---

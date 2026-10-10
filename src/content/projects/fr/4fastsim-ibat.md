@@ -4,6 +4,7 @@ description: "Associer simulation thermique et données de capteurs pour explore
 lang: fr
 slug: 4fastsim-ibat
 date: 2019-10-21
+topics: []
 category: Énergie
 image: /images/building-thermal.jpg
 imageAlt: "Image infrarouge d’un bâtiment illustrant les différences de température."

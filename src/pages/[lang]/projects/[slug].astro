@@ -1,6 +1,8 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Site from '../../../layouts/Site.astro';
+import DomainTags from '../../../components/DomainTags.astro';
+import TopicTags from '../../../components/TopicTags.astro';
 import RelatedNews from '../../../components/RelatedNews.astro';
 import { labels, route, url, dateLabel } from '../../../lib/site';
 export async function getStaticPaths() {
@@ -9,9 +11,9 @@ export async function getStaticPaths() {
 }
 const { project, alternate } = Astro.props;
 const { Content } = await render(project);
-const p = project.data as typeof project.data & { date?: Date; period?: string; image?: string; imageAlt?: string; historical?: boolean }, t = labels[p.lang];
+const p = project.data as typeof project.data & { date?: Date; period?: string; image?: string; imageAlt?: string; imageCaption?: string; historical?: boolean }, t = labels[p.lang];
 ---
 <Site title={p.title} description={p.description} lang={p.lang} path={`projects/${p.slug}`} alternate={alternate}>
-  <section class="page-intro container"><a class="text-link" href={route(p.lang, 'projects')}>← {t.backProjects}</a><p class="eyebrow">{p.category}</p><h1>{p.title}</h1>{p.period && <p class="card-meta">{p.period}</p>}<p class="lead">{p.description}</p>{p.date && <p class="card-meta">{t.published} <time datetime={p.date.toISOString()}>{dateLabel(p.date, p.lang)}</time></p>}</section>
-  <div class="container article-shell">{p.image && <img class="article-image" src={url(p.image)} alt={p.imageAlt} width="1000" height="650" />}{p.historical && <p class="archive-note">{t.archiveNote}</p>}<article class="prose"><Content /></article><RelatedNews lang={p.lang} project={p.slug} />{p.source && <p class="source-link"><a href={p.source}>{t.source} ↗</a></p>}</div>
+  <section class="page-intro container"><a class="text-link" href={route(p.lang, 'projects')}>← {t.backProjects}</a><p class="eyebrow">{p.category}</p><h1>{p.title}</h1>{p.period && <p class="card-meta">{p.period}</p>}<p class="lead">{p.description}</p><TopicTags lang={p.lang} ids={p.topics} /><DomainTags lang={p.lang} ids={p.domains} />{p.date && <p class="card-meta">{t.published} <time datetime={p.date.toISOString()}>{dateLabel(p.date, p.lang)}</time></p>}</section>
+  <div class="container article-shell">{p.image && <figure class="project-illustration"><img class="article-image" src={url(p.image)} alt={p.imageAlt ?? p.title} />{p.imageCaption && <figcaption>{p.imageCaption}</figcaption>}</figure>}{p.historical && <p class="archive-note">{t.archiveNote}</p>}<article class="prose"><Content /></article><RelatedNews lang={p.lang} project={p.slug} />{p.source && <p class="source-link"><a href={p.source}>{t.source} ↗</a></p>}</div>
 </Site>

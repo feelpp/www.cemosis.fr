@@ -3,8 +3,13 @@ title: "CoE HiDALGO2"
 description: "Environmental challenge simulations on European supercomputers."
 lang: "en"
 slug: "hidalgo2"
+domains: [cities-buildings, environment, energy]
+topics: []
 category: "EuroHPC JU · European Union"
 period: "2023–2026"
+image: "/images/chicago/overview.png"
+imageAlt: "Overview of the Chicago urban reconstruction with Ktirio."
+imageCaption: "Urban modelling with Ktirio Urban Building, a HiDALGO2 use case."
 order: 3
 source: "https://www.hidalgo2.eu/urban-building-model/"
 ---

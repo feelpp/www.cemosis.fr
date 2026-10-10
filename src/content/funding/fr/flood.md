@@ -3,8 +3,13 @@ title: "FLOOD · Inondations urbaines"
 description: "Simulation des inondations urbaines avec Feel++ et Ktirio Urban Building."
 lang: "fr"
 slug: "flood"
+domains: [cities-buildings, environment]
+topics: [modeling, simulation, hpc, data-processing]
 category: "Poste rouge INSMI–CNRS · Coopération internationale"
 period: "Fin septembre – fin novembre 2026"
+image: "/images/chicago/river-lake.png"
+imageAlt: "Reconstruction urbaine Ktirio des bâtiments, de la rivière et du lac à Chicago."
+imageCaption: "Géométrie urbaine Ktirio illustrant le contexte de modélisation de FLOOD."
 order: 5
 ---
 

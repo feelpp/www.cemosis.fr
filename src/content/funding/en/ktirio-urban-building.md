@@ -3,7 +3,12 @@ title: "Ktirio Urban Building"
 description: "Urban models and simulation at building and city scales."
 lang: "en"
 slug: "ktirio-urban-building"
+domains: [cities-buildings, environment, energy]
+topics: [modeling, simulation, optimization, ai, machine-learning, sciml, signal-image, data-processing, hpc, digital-twin, uncertainty-quantification]
 category: "Software project · Urban modelling"
+image: "/images/chicago/downtown.png"
+imageAlt: "Geometric reconstruction of downtown Chicago with Ktirio."
+imageCaption: "Chicago urban reconstruction with Ktirio Urban Building."
 order: 6
 ---
 

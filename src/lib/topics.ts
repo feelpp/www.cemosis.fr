@@ -1,0 +1,15 @@
+export const topicIds = ['modeling', 'simulation', 'optimization', 'ai', 'machine-learning', 'sciml', 'signal-image', 'data-processing', 'hpc', 'digital-twin', 'uncertainty-quantification'] as const;
+export type TopicId = typeof topicIds[number];
+export const topics = [
+  { id: 'modeling', en: 'Modelling', fr: 'Modélisation', description: { en: 'Mathematical models of physical systems.', fr: 'Modèles mathématiques des systèmes physiques.' } },
+  { id: 'simulation', en: 'Simulation', fr: 'Simulation', description: { en: 'Numerical methods and simulation of physical phenomena.', fr: 'Méthodes numériques et simulation des phénomènes physiques.' } },
+  { id: 'optimization', en: 'Optimisation', fr: 'Optimisation', description: { en: 'Design, inverse problems and optimal control.', fr: 'Conception, problèmes inverses et contrôle optimal.' } },
+  { id: 'ai', en: 'Artificial intelligence (AI)', fr: 'Intelligence artificielle (IA)', description: { en: 'AI methods for scientific research.', fr: 'Méthodes d’intelligence artificielle pour la recherche scientifique.' } },
+  { id: 'machine-learning', en: 'Machine learning', fr: 'Apprentissage automatique', description: { en: 'Learning from data for prediction and analysis.', fr: 'Apprentissage à partir de données pour la prédiction et l’analyse.' } },
+  { id: 'sciml', en: 'Scientific machine learning (SciML)', fr: 'Apprentissage scientifique (SciML)', description: { en: 'Combining physical models, numerical methods and machine learning.', fr: 'Combinaison de modèles physiques, de méthodes numériques et d’apprentissage automatique.' } },
+  { id: 'signal-image', en: 'Signal and image processing', fr: 'Traitement du signal et des images', description: { en: 'Processing, reconstruction and analysis of signals and images.', fr: 'Traitement, reconstruction et analyse des signaux et des images.' } },
+  { id: 'data-processing', en: 'Data processing', fr: 'Traitement des données', description: { en: 'Scientific data preparation, analysis and interpretation.', fr: 'Préparation, analyse et interprétation des données scientifiques.' } },
+  { id: 'hpc', en: 'High-performance computing (HPC)', fr: 'Calcul haute performance (HPC)', description: { en: 'Parallel computing, scientific software and computing infrastructure.', fr: 'Calcul parallèle, logiciels scientifiques et infrastructures de calcul.' } },
+  { id: 'digital-twin', en: 'Digital twin', fr: 'Jumeau numérique', description: { en: 'Connecting numerical models and observations to represent and monitor physical systems.', fr: 'Relier modèles numériques et observations pour représenter et suivre les systèmes physiques.' } },
+  { id: 'uncertainty-quantification', en: 'Uncertainty quantification', fr: 'Quantification des incertitudes', description: { en: 'Assessing how uncertainty in data and models affects predictions.', fr: 'Évaluer l’effet des incertitudes des données et des modèles sur les prédictions.' } },
+] satisfies { id: TopicId; en: string; fr: string; description: { en: string; fr: string } }[];

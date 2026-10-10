@@ -79,3 +79,7 @@ User-supplied LNCMI magnets/power/cooling diagram, copied unchanged to `public/i
 ## Exa-MA general assembly 2027
 
 `public/images/exama/inria-bordeaux-numpex.png`: editorial composite of the Inria Talence building photograph (© Inria / Photo B. Fourrier), from https://www.inria.fr/fr/centre-inria-universite-bordeaux and its 2021-12/Inria-0333-044 (1).jpg asset, with the official NumPEx swirl from https://numpex.org/wp-content/uploads/sites/6/2024/12/Logo-NumPEx-couleurs-etat-v.4-web.png. Logo placement/composite produced with imagegen; source credit retained in both articles.
+
+Brain Organ-on-Chip illustration: `public/images/brain-organ-on-chip/chip.png`, extracted unchanged from slide 3 of the user-provided presentation. Research cards reuse existing project illustrations; urban flood cards use the Ktirio city reconstruction to illustrate the modelling context.
+
+SAGE-HPC: `public/images/sage-hpc/benchmark-families.png` copied unchanged from the local kickoff presentation assets (`NUMPEX/SAGE-HPC/slides.sage-hpc.kickoff.20260616/assets`). All project pages use local illustrations with alt text; urban images used for FLOOD are explicitly labelled as modelling context.

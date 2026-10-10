@@ -4,6 +4,7 @@ description: "Connecting transport, weather and air-quality data to observe mobi
 lang: en
 slug: projet-data4urbanism
 date: 2018-04-10
+topics: []
 category: Mobility
 image: /images/urban-mobility.jpg
 imageAlt: "An illustration of urban transport and mobility."

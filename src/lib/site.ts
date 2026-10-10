@@ -7,7 +7,7 @@ export const dateLabel = (date: Date, lang: Language) => new Intl.DateTimeFormat
 
 export const labels = {
   fr: {
-    publications: 'Publications', home: 'Accueil', services: 'Recherche', projects: 'Projets', software: 'Logiciels', about: 'À propos', news: 'Actualités', contact: 'Contact',
+    domains: 'Domaines', publications: 'Publications', home: 'Accueil', services: 'Recherche', projects: 'Projets', software: 'Logiciels', about: 'À propos', news: 'Actualités', contact: 'Contact',
     skip: 'Aller au contenu', menu: 'Menu', close: 'Fermer', read: 'Découvrir le projet', allProjects: 'Tous les projets',
     eyebrow: 'Université de Strasbourg',
     heroA: 'Modélisation', heroB: 'et simulation', heroC: '',
@@ -31,7 +31,7 @@ export const labels = {
     notFound: 'Page introuvable', notFoundText: 'La page demandée est introuvable. Retrouvez nos expertises et projets depuis l’accueil.',
   },
   en: {
-    publications: 'Publications', home: 'Home', services: 'Research', projects: 'Projects', software: 'Software', about: 'About', news: 'News', contact: 'Contact',
+    domains: 'Domains', publications: 'Publications', home: 'Home', services: 'Research', projects: 'Projects', software: 'Software', about: 'About', news: 'News', contact: 'Contact',
     skip: 'Skip to content', menu: 'Menu', close: 'Close', read: 'Explore the project', allProjects: 'All projects',
     eyebrow: 'University of Strasbourg',
     heroA: 'Modelling', heroB: 'and simulation', heroC: '',
@@ -60,12 +60,14 @@ export const expertise = {
     { code: '01 / MSO', title: 'Modélisation & simulation', text: 'Modèles mathématiques, méthodes numériques et optimisation.' },
     { code: '02 / DATA', title: 'Science des données', text: 'Analyse statistique et apprentissage.' },
     { code: '03 / HPC', title: 'Calcul haute performance', text: 'Calcul parallèle et infrastructures scientifiques.' },
+    { code: '05 / AI', title: 'IA, apprentissage & SciML', text: 'Modèles physiques et apprentissage automatique.' },
     { code: '04 / IMAGE', title: 'Signal & images', text: 'Traitement, reconstruction et analyse.' },
   ],
   en: [
     { code: '01 / MSO', title: 'Modelling & simulation', text: 'Mathematical models, numerical methods and optimisation.' },
     { code: '02 / DATA', title: 'Data science', text: 'Statistical analysis and machine learning.' },
     { code: '03 / HPC', title: 'High-performance computing', text: 'Parallel computing and scientific infrastructure.' },
+    { code: '05 / AI', title: 'AI, machine learning & SciML', text: 'Physical models and scientific machine learning.' },
     { code: '04 / IMAGE', title: 'Signal & images', text: 'Processing, reconstruction and analysis.' },
   ],
 };

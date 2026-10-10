@@ -3,15 +3,15 @@ title: "CIFRE · AVNIR Energy"
 description: "Simulation vibroacoustique et surveillance de l’état des structures."
 lang: "fr"
 slug: "cifre-avnir-energy"
+domains: [industry]
+topics: [modeling, simulation, signal-image]
 category: "CIFRE · Partenariat industriel"
 period: "2026–2029"
+image: "/images/cifre/industrial-structure.png"
+imageAlt: "Transport d’une grande structure industrielle cylindrique."
+imageCaption: "Illustration du partenariat CIFRE avec AVNIR Energy."
 order: 4
 ---
-
-<figure>
-<img src="../../../images/cifre/industrial-structure.png" alt="Transport d’une grande structure industrielle cylindrique." width="1426" height="874" loading="lazy" />
-<figcaption>Illustration du partenariat CIFRE avec AVNIR Energy.</figcaption>
-</figure>
 
 Ce partenariat CIFRE associe **AVNIR Energy** et **Cemosis / IRMA, Université de Strasbourg**, autour de la thèse de **Hanna Chetouane**, ancienne étudiante du master CSMI, sous la direction de **Christophe Prud’homme**.
 

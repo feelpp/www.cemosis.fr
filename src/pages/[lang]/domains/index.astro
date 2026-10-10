@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import Site from '../../../layouts/Site.astro';
+import ResearchProjectCards from '../../../components/ResearchProjectCards.astro';
+import { domains } from '../../../lib/domains';
+import { languages, route, type Language } from '../../../lib/site';
+export function getStaticPaths() { return languages.map(lang => ({ params: { lang } })); }
+const lang = Astro.params.lang as Language;
+const title = lang === 'fr' ? 'Domaines d’application' : 'Application domains';
+const description = lang === 'fr' ? 'Les champs d’application des méthodes et logiciels de Cemosis.' : 'The fields where Cemosis research methods and scientific software are applied.';
+const projects = [...await getCollection('funding'), ...await getCollection('projects')].filter(({data}) => data.lang === lang && !data.draft);
+---
+<Site title={title} description={description} lang={lang} path="domains">
+  <section class="page-intro container"><p class="eyebrow">Cemosis</p><h1>{title}</h1><p class="lead">{description}</p>
+    <ul class="topic-tags" aria-label={title}>{domains.map(domain => <li><a href={`#domain-${domain.id}`}>{domain[lang]}</a></li>)}</ul>
+    <a class="text-link" href={route(lang, 'services')}>{lang === 'fr' ? 'Explorer les thématiques de recherche' : 'Explore research topics'} →</a>
+  </section>
+  <div class="container article-shell">{domains.map(domain => {
+    const related = projects.filter(({data}) => data.domains.includes(domain.id));
+    return <section class="research-topic" id={`domain-${domain.id}`}><h2>{domain[lang]}</h2>{related.length > 0 && <ResearchProjectCards projects={related} lang={lang} />}</section>;
+  })}</div>
+</Site>

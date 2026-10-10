@@ -3,8 +3,13 @@ title: "FLOOD · Urban flooding"
 description: "Urban flood simulation with Feel++ and Ktirio Urban Building."
 lang: "en"
 slug: "flood"
+domains: [cities-buildings, environment]
+topics: [modeling, simulation, hpc, data-processing]
 category: "INSMI–CNRS visiting position · International collaboration"
 period: "Late September – late November 2026"
+image: "/images/chicago/river-lake.png"
+imageAlt: "Ktirio urban reconstruction showing buildings, river and lake in Chicago."
+imageCaption: "Ktirio urban geometry illustrates the modelling context of FLOOD."
 order: 5
 ---
 

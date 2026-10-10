@@ -3,8 +3,13 @@ title: "JNL-G"
 description: "A digital twin of the French National High Magnetic Field Laboratory in Grenoble."
 lang: "en"
 slug: "jnl-g"
+domains: [energy, industry]
+topics: [data-processing, modeling, simulation, hpc, machine-learning, ai, digital-twin, uncertainty-quantification]
 category: "ANR · HiFiMagnet"
 period: "2026–2030"
+image: "/images/jnl-g/magnet-power-cooling.png"
+imageAlt: "Diagram of the LNCMI magnet, electrical power supply and cooling installations."
+imageCaption: "Magnet, power supply and cooling: systems represented in the JNL-G digital twin."
 order: 2
 source: "https://anr.fr/Projet-ANR-25-CE46-1157"
 ---

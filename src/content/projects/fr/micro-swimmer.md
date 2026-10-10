@@ -4,6 +4,7 @@ description: "Comprendre et contrôler le mouvement d’un micro-nageur élastiq
 lang: fr
 slug: micro-swimmer
 date: 2019-10-21
+topics: []
 category: Santé
 image: /images/micro-swimmer.jpg
 imageAlt: "Illustration du projet de micro-nageur magnétique."

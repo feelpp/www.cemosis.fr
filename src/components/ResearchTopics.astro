@@ -1,0 +1,18 @@
+---
+import ResearchProjectCards from './ResearchProjectCards.astro';
+import { getCollection } from 'astro:content';
+import { topics } from '../lib/topics';
+import { route, type Language } from '../lib/site';
+interface Props { lang: Language }
+const { lang } = Astro.props;
+const projects = [...await getCollection('funding'), ...await getCollection('projects')].filter(({data}) => data.lang === lang && !data.draft);
+---
+<div class="research-topics">{topics.map(topic => {
+  const related = projects.filter(({data}) => data.topics.includes(topic.id));
+  return <section id={topic.id} class="research-topic">
+    <h2>{topic[lang]}</h2><p>{topic.description[lang]}</p>
+    {related.length > 0 && <><h3>{lang === 'fr' ? 'Projets associés' : 'Related projects'}</h3><ResearchProjectCards projects={related} lang={lang} /></>}
+  </section>;
+})}</div>
+
+<p class="source-link"><a class="text-link" href={route(lang, 'domains')}>{lang === 'fr' ? 'Explorer les domaines d’application' : 'Explore application domains'} →</a></p>

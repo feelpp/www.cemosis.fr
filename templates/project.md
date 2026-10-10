@@ -4,7 +4,10 @@ description: "One sentence explaining the problem and the approach."
 lang: en
 slug: your-project
 date: 2026-10-09
-category: Modeling
+category: Modelling
+# Choose IDs from docs/research-topics.md; keep the same IDs in both languages.
+topics: []
+domains: []
 image: /images/your-project.jpg
 imageAlt: "Describe what the image shows."
 featured: false

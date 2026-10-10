@@ -1,6 +1,8 @@
 import { defineCollection } from 'astro:content';
 import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
+import { domainIds } from './lib/domains';
+import { topicIds } from './lib/topics';
 
 const common = {
   title: z.string(),
@@ -19,6 +21,7 @@ const projects = defineCollection({
     category: z.string(),
     image: z.string().startsWith('/images/'),
     imageAlt: z.string(),
+    domains: z.array(z.enum(domainIds)).default([]), topics: z.array(z.enum(topicIds)).default([]),
     featured: z.boolean().default(false),
     source: z.url().optional(),
     historical: z.boolean().default(false),
@@ -34,6 +37,6 @@ const pages = defineCollection({
 });
 const funding = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/funding', generateId }),
-  schema: z.object({ ...common, category: z.string(), period: z.string().optional(), order: z.number(), source: z.url().optional() }),
+  schema: z.object({ ...common, domains: z.array(z.enum(domainIds)).default([]), topics: z.array(z.enum(topicIds)).default([]), image: z.string().startsWith('/images/').optional(), imageAlt: z.string().optional(), imageCaption: z.string().optional(), category: z.string(), period: z.string().optional(), order: z.number(), source: z.url().optional() }),
 });
 export const collections = { projects, news, pages, funding };

@@ -3,8 +3,12 @@ title: "Exa-MA"
 description: "Méthodes et algorithmes pour le calcul exascale."
 lang: "fr"
 slug: "exama"
+topics: [hpc, modeling, simulation, machine-learning, ai, sciml]
 category: "PEPR NumPEx · France 2030"
 period: "2024–2030"
+image: "/images/exama/inria-bordeaux-numpex.png"
+imageAlt: "Bâtiment Inria à Talence avec le logo NumPEx."
+imageCaption: "Inria Talence, lieu de l’assemblée générale 2027. © Inria / B. Fourrier ; logo NumPEx superposé."
 order: 0
 source: "https://exa-ma.numpex.fr/"
 ---

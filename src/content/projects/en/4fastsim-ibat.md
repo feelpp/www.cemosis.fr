@@ -4,6 +4,7 @@ description: "Combining thermal simulation and sensor data to explore energy sav
 lang: en
 slug: 4fastsim-ibat
 date: 2019-10-21
+topics: []
 category: Energy
 image: /images/building-thermal.jpg
 imageAlt: "An infrared image of a building showing temperature differences."

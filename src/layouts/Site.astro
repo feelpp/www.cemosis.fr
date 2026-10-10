@@ -5,7 +5,7 @@ interface Props { title: string; description: string; lang: Language; path?: str
 const { title, description, lang, path = '', alternate = true, noindex = false, switchPath } = Astro.props;
 const t = labels[lang];
 const other = lang === 'fr' ? 'en' : 'fr';
-const navigation = ['services', 'projects', 'software', 'publications', 'about', 'news'] as const;
+const navigation = ['services', 'domains', 'projects', 'software', 'publications', 'about', 'news'] as const;
 const canonical = new URL(route(lang, path), Astro.site);
 ---
 <!doctype html>

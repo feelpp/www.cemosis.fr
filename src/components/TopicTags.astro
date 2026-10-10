@@ -1,0 +1,9 @@
+---
+import { topics, type TopicId } from '../lib/topics';
+import { route, type Language } from '../lib/site';
+interface Props { lang: Language; ids: TopicId[] }
+const { lang, ids } = Astro.props;
+---
+{ids.length > 0 && <ul class="topic-tags" aria-label={lang === 'fr' ? 'Thématiques de recherche' : 'Research topics'}>
+  {topics.filter(topic => ids.includes(topic.id)).map(topic => <li><a href={`${route(lang, 'services')}#${topic.id}`}>{topic[lang]}</a></li>)}
+</ul>}

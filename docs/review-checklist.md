@@ -84,3 +84,7 @@ FLOOD: public summaries use the scientific scope of the supplied CNRS proposal (
 Pierre-Antoine Senger announcement: 6 January 2026 start supplied by the owner. CSMI degree, Christophe Prud’homme as advisor and FOM/ROM scope verified against the JNL-G kickoff overview (Google Slides 1dI9xkoMzHbR1rinRnB53TdPOkxRCXCXYOBz0jGdk_Xg). Internal slides and personal profile details are not published.
 
 JNL-G general assembly news: dates 9–10 September 2026 and LNCMI Grenoble location confirmed in work calendar event AG JNL-G; scientific programme checked against Christophe Trophime’s 7 September agenda email. Calendar end 11 September is exclusive. Public summary excludes addresses, contact information, private links, correspondence and unverified meeting outcomes.
+
+Brain Organ-on-Chip: summary based on the user-provided internal seminar `ooc_overview (3) (1).pdf` dated 7 July 2026; start January 2025 and end 2027 confirmed by Christophe. Presentation is not published with the site. Current capabilities and planned calibration work are distinguished.
+
+InflamTwin-ICU: public summary based on the non-confidential abstracts in the user-provided proposal and the local article.dt.sepsis README. Funding not secured, as confirmed by Christophe. No budget, private contacts, clinical data or complete proposal published; duration remains proposed, without invented start/end dates.

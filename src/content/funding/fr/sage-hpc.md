@@ -3,8 +3,12 @@ title: "SAGE-HPC"
 description: "Optimisation multi-fidélité et calcul haute performance."
 lang: "fr"
 slug: "sage-hpc"
+topics: []
 category: "PEPR NumPEx · France 2030"
 period: "2026–2030"
+image: "/images/sage-hpc/benchmark-families.png"
+imageAlt: "Collage de simulations illustrant les familles de cas tests numériques."
+imageCaption: "Familles de cas tests de simulation issues de la présentation de lancement SAGE-HPC."
 order: 1
 source: "https://numpex.org/fr/projets-appel-a-projets-2025/"
 ---

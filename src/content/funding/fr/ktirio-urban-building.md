@@ -3,7 +3,12 @@ title: "Ktirio Urban Building"
 description: "Modèles urbains et simulation à l’échelle des bâtiments et des villes."
 lang: "fr"
 slug: "ktirio-urban-building"
+domains: [cities-buildings, environment, energy]
+topics: [modeling, simulation, optimization, ai, machine-learning, sciml, signal-image, data-processing, hpc, digital-twin, uncertainty-quantification]
 category: "Projet logiciel · Modélisation urbaine"
+image: "/images/chicago/downtown.png"
+imageAlt: "Reconstruction géométrique du centre de Chicago avec Ktirio."
+imageCaption: "Reconstruction urbaine de Chicago avec Ktirio Urban Building."
 order: 6
 ---
 

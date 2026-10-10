@@ -1,0 +1,7 @@
+---
+import { domains, type DomainId } from '../lib/domains';
+import { route, type Language } from '../lib/site';
+interface Props { lang: Language; ids: DomainId[] }
+const { lang, ids } = Astro.props;
+---
+{ids.length > 0 && <div class="application-domains"><p class="card-meta">{lang === 'fr' ? 'Domaines d’application' : 'Application domains'}</p><ul class="topic-tags">{domains.filter(domain => ids.includes(domain.id)).map(domain => <li><a href={`${route(lang, 'domains')}#domain-${domain.id}`}>{domain[lang]}</a></li>)}</ul></div>}

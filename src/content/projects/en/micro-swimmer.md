@@ -4,6 +4,7 @@ description: "Understanding and controlling an elastic micro-swimmer driven by a
 lang: en
 slug: micro-swimmer
 date: 2019-10-21
+topics: []
 category: Health
 image: /images/micro-swimmer.jpg
 imageAlt: "Illustration from the magnetic micro-swimmer project."
