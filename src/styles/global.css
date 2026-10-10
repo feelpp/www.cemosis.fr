@@ -364,8 +364,10 @@ small { font-size: .9rem; }
 .home-intro .hero { grid-template-columns: 1fr 1fr; align-items: start; gap: 2rem 3rem; }
 .home-intro .hero-copy { grid-column: 1 / -1; }
 .home-intro .hero-copy h1 { font-size: clamp(2rem, 3.5vw, 3.2rem); line-height: 1.1; }
-.home-intro .hero-description { margin-bottom: 0; }
-.hero-group-title { font-size: 1.1rem; margin: 0 0 .75rem; }
+.home-intro .hero-description { margin-bottom: 0; max-width: 680px; font-size: clamp(1.2rem, 1.5vw, 1.35rem); line-height: 1.6; color: var(--ink); }
+.home-intro .eyebrow { font-size: 1.05rem; }
+.home-intro .research-inner > p { font-size: 1rem; }
+.hero-group-title { font-size: 1.25rem; margin: 0 0 .75rem; }
 .home-intro .topic-tags { margin: 0 0 1.6rem; gap: .55rem; }
 .home-intro .topic-tags a { border-left: 3px solid var(--accent); font-size: .95rem; background: rgba(255,255,255,.9); }
 .home-intro .topic-tags a:hover { background: #ffdd00; }
