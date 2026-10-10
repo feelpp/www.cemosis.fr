@@ -1,5 +1,5 @@
 ---
-title: "CIFRE · AVNIR Energy"
+title: "CIFRE AVNIR Energy"
 description: "Simulation vibroacoustique et surveillance de l’état des structures."
 lang: "fr"
 slug: "cifre-avnir-energy"

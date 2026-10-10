@@ -6,7 +6,7 @@ slug: "cifre-avnir-energy"
 date: "2026-10-09"
 image: "/images/cifre/industrial-structure.png"
 projects: ["cifre-avnir-energy"]
-category: "CIFRE · AVNIR Energy"
+category: "CIFRE AVNIR Energy"
 ---
 
 <figure>

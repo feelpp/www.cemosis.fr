@@ -1,5 +1,5 @@
 ---
-title: "CIFRE · AVNIR Energy"
+title: "CIFRE AVNIR Energy"
 description: "Vibroacoustic simulation and structural health monitoring."
 lang: "en"
 slug: "cifre-avnir-energy"
