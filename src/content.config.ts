@@ -29,7 +29,7 @@ const projects = defineCollection({
 });
 const news = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/news', generateId }),
-  schema: z.object({ ...common, date: z.coerce.date(), endDate: z.coerce.date().optional(), category: z.string(), image: z.string().startsWith('/images/').optional(), projects: z.array(z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/)).default([]), source: z.url().optional(), historical: z.boolean().default(false) }),
+  schema: z.object({ ...common, date: z.coerce.date(), endDate: z.coerce.date().optional(), category: z.string(), image: z.string().startsWith('/images/').optional(), imageFit: z.enum(['cover', 'contain']).default('cover'), projects: z.array(z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/)).default([]), source: z.url().optional(), historical: z.boolean().default(false) }),
 });
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/pages', generateId }),
