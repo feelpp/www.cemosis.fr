@@ -17,6 +17,11 @@ Abdoulaye Diallo, Zohra Djatouti and Céline Van Landeghem. Their current/former
 membership is left `unspecified` unless confirmed. Internal `notes` and evidence
 `sources` are not printed as public biographical copy.
 
+Javier Cladellas is listed as a former member, as confirmed by the owner on
+12 November 2026, with data analysis, modelling and simulation work on Ktirio
+Urban Building documented in the project discussions. His contract years and
+specific funding remain unspecified.
+
 ## Contracts and project history
 
 `contracts` can contain any number of separate contracts, including concurrent
