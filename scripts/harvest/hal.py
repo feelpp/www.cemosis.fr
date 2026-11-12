@@ -50,6 +50,13 @@ FIELDS = [
     "openAccess_bool",
     "citationFull_s",
     "fileMain_s",
+    "funding_s",
+    "anrProjectReference_s",
+    "anrProjectAcronym_s",
+    "anrProjectTitle_s",
+    "europeanProjectReference_s",
+    "europeanProjectAcronym_s",
+    "europeanProjectTitle_s",
 ]
 
 
@@ -83,6 +90,12 @@ def _first_str(value: Any) -> str:
     if isinstance(value, list):
         return str(value[0]) if value else ""
     return str(value) if value is not None else ""
+
+
+def _strings(value: Any) -> list[str]:
+    """HAL fields may contain a scalar, a list, or no value."""
+    values = value if isinstance(value, list) else [value]
+    return list(dict.fromkeys(str(item).strip() for item in values if item is not None and str(item).strip()))
 
 
 def infer_publication_type(
@@ -343,4 +356,11 @@ def format_publication(pub: dict[str, Any]) -> dict[str, Any]:
         "open_access": pub.get("openAccess_bool", False),
         "citation": pub.get("citationFull_s", ""),
         "pdf_url": pub.get("fileMain_s", ""),
+        # Multi-valued project fields are not guaranteed to be parallel arrays.
+        # Preserve them separately rather than guessing which values pair up.
+        "funding": {field: _strings(pub.get(field)) for field in (
+            "funding_s", "anrProjectReference_s", "anrProjectAcronym_s",
+            "anrProjectTitle_s", "europeanProjectReference_s",
+            "europeanProjectAcronym_s", "europeanProjectTitle_s",
+        )},
     }

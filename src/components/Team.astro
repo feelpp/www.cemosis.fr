@@ -1,11 +1,22 @@
 ---
-import team from '../data/team.json';
+import { peopleData, getPeopleDirectory } from '../lib/people';
+import PersonCard from './PersonCard.astro';
+import DoctoralResearch from './DoctoralResearch.astro';
 import { dateLabel, type Language } from '../lib/site';
 interface Props { lang: Language }
 const { lang } = Astro.props;
+const people = await getPeopleDirectory(lang);
+const roster = people.filter(person => person.showInTeam);
+const groups = [
+  { status: 'current', title: lang === 'fr' ? 'Équipe actuelle' : 'Current team' },
+  { status: 'former', title: lang === 'fr' ? 'Ancien·nes membres' : 'Former members' },
+  { status: 'unspecified', title: lang === 'fr' ? 'Contributions à Cemosis' : 'Cemosis contributors' },
+].map(group => ({ ...group, people: roster.filter(person => person.status === group.status) })).filter(group => group.people.length);
 ---
 <section class="team-section" aria-labelledby="team-title">
   <div class="section-heading"><h2 id="team-title">{lang === 'fr' ? 'L’équipe' : 'Team'}</h2></div>
-  <div class="team-grid">{team.members.map(member => <div class="team-card"><span class="team-initials" aria-hidden="true">{member.initials}</span><h3>{member.name}</h3><p>{member.role[lang]}</p></div>)}</div>
-  <p class="team-updated">{lang === 'fr' ? 'Équipe mise à jour le' : 'Team updated on'} <time datetime={team.updated}>{dateLabel(new Date(team.updated), lang)}</time>.</p>
+  <nav class="people-navigation" aria-label={lang === 'fr' ? 'Équipe et doctorats' : 'People and doctorates'}><a href="#doctoral-research">{lang === 'fr' ? `Doctorats depuis ${peopleData.doctoralSince}` : `Doctorates since ${peopleData.doctoralSince}`} ↓</a></nav>
+  {groups.map(group => <section class="team-group"><h3>{group.title}</h3><div class="team-grid">{group.people.map(person => <PersonCard person={person} lang={lang} />)}</div></section>)}
+  <p class="team-updated">{lang === 'fr' ? 'Annuaire mis à jour le' : 'Directory updated on'} <time datetime={peopleData.updated}>{dateLabel(new Date(peopleData.updated), lang)}</time>.</p>
 </section>
+<DoctoralResearch people={people} since={peopleData.doctoralSince} lang={lang} />

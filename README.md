@@ -76,8 +76,10 @@ links are emitted only for published translation pairs.
 
 ### Update the team or contact details
 
-- Current names and bilingual roles: `src/data/team.json`. Update its `updated`
-  date when the roster changes. The About page renders this data automatically.
+- People, bilingual roles, multiple contracts and doctoral history:
+  `src/data/people.yaml`. Update its `updated` date when the roster changes.
+  The About and project pages render reciprocal person/project links.
+  See [docs/people.md](docs/people.md) for dates, funding and thesis sources.
 - Institutional links: `src/data/institutions.json`.
 - Contact content: `src/content/pages/{fr,en}/contact.md`.
 - Shared footer contact details: `src/layouts/Site.astro`.

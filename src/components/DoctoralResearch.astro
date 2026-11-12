@@ -1,0 +1,37 @@
+---
+import type { getPeopleDirectory } from '../lib/people';
+import { dateLabel, type Language } from '../lib/site';
+import PersonContracts from './PersonContracts.astro';
+interface Props { people: Awaited<ReturnType<typeof getPeopleDirectory>>; since: number; lang: Language }
+const { people, since, lang } = Astro.props;
+const fr = lang === 'fr';
+const doctors = people.filter(person => person.doctorate && (person.doctorate.status !== 'defended' || Number(person.doctorate.defenseDate!.slice(0, 4)) >= since));
+const groups = [
+  { title: fr ? 'Doctorats en cours ou annoncés' : 'Ongoing or announced doctorates', people: doctors.filter(p => p.doctorate!.status !== 'defended') },
+  { title: fr ? 'Thèses soutenues' : 'Defended theses', people: doctors.filter(p => p.doctorate!.status === 'defended').sort((a, b) => b.doctorate!.defenseDate!.localeCompare(a.doctorate!.defenseDate!)) },
+];
+---
+{doctors.length > 0 && <section class="doctoral-section" id="doctoral-research" aria-labelledby="doctoral-title">
+  <h2 id="doctoral-title">{fr ? `Recherche doctorale depuis ${since}` : `Doctoral research since ${since}`}</h2>
+  <p>{fr ? 'Les travaux doctoraux associés à Cemosis et à ses collaborations scientifiques. Les périodes de doctorat et les dates de soutenance sont distinctes des années de contrat.' : 'Doctoral work associated with Cemosis and its scientific collaborations. Doctoral periods and defense dates are distinct from employment contract years.'}</p>
+  {groups.filter(group => group.people.length).map(group => <section class="doctoral-group">
+    <h3>{group.title}</h3>
+    <div class="doctoral-table-scroll" tabindex="0" role="region" aria-label={group.title}><table class="doctoral-table">
+      <thead><tr><th scope="col">{fr ? 'Doctorant·e' : 'Researcher'}</th><th scope="col">{fr ? 'Sujet et établissement' : 'Topic and university'}</th><th scope="col">{fr ? 'Période / soutenance' : 'Period / defense'}</th></tr></thead>
+      <tbody>{group.people.map(person => {
+        const d = person.doctorate!;
+        const end = d.defenseDate?.slice(0, 4);
+        return <tr id={person.showInTeam ? `doctorate-${person.id}` : `person-${person.id}`} data-doctorate={person.id} data-doctorate-status={d.status}>
+          <th scope="row">{person.showInTeam ? <a href={`#person-${person.id}`}>{person.name}</a> : person.name}
+            {person.projects.length > 0 && <ul>{person.projects.map(project => <li><a href={project.href}>{project.title}</a>{project.role && <span> · {project.role}</span>}</li>)}</ul>}
+          </th>
+          <td><a href={d.source}>{d.title[lang]}</a><p>{d.university}</p>{d.supervisors.length > 0 && <p class="doctoral-supervisors">{fr ? 'Direction :' : 'Supervision:'} {d.supervisors.join(', ')}</p>}{!person.showInTeam && <PersonContracts person={person} lang={lang} />}</td>
+          <td>{d.startYear && <p>{end ? `${d.startYear}–${end}` : `${d.status === 'announced' ? (fr ? 'Début annoncé :' : 'Announced start:') : (fr ? 'Depuis' : 'Since')} ${d.startYear}`}</p>}
+            {d.periodSource && <p><a href={d.periodSource}>{fr ? 'Source de la période' : 'Source for period'}</a></p>}
+            {d.defenseDate ? <p>{fr ? 'Soutenance :' : 'Defended:'} <time datetime={d.defenseDate}>{dateLabel(new Date(d.defenseDate), lang)}</time></p> : <p>{d.status === 'announced' ? (fr ? 'Doctorat annoncé' : 'Announced PhD') : (fr ? 'En cours' : 'Ongoing')}</p>}
+          </td>
+        </tr>;
+      })}</tbody>
+    </table></div>
+  </section>)}
+</section>}

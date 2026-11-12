@@ -18,6 +18,19 @@ class HarvestTests(unittest.TestCase):
         self.assertEqual(params["q"], "collCode_s:CEMOSIS")
         self.assertEqual(params["fq"], [])
 
+    def test_funding_fields_are_harvested_and_normalized(self):
+        record = hal.format_publication({
+            "funding_s": "Supported by Exa-MA (ANR-22-EXNU-0002)",
+            "anrProjectReference_s": ["ANR-22-EXNU-0002", "ANR-22-EXNU-0002", None, ""],
+            "europeanProjectAcronym_s": ["HiDALGO2"],
+        })
+        self.assertEqual(record["funding"]["funding_s"], ["Supported by Exa-MA (ANR-22-EXNU-0002)"])
+        self.assertEqual(record["funding"]["anrProjectReference_s"], ["ANR-22-EXNU-0002"])
+        self.assertEqual(record["funding"]["europeanProjectAcronym_s"], ["HiDALGO2"])
+        self.assertEqual(record["funding"]["anrProjectTitle_s"], [])
+        self.assertTrue(set(record["funding"]).issubset(hal.FIELDS))
+        self.assertTrue(all(not values for values in hal.format_publication({})["funding"].values()))
+
     def test_deduplicates_versions_but_preserves_distinct_ids(self):
         records = [{"halId_s": "hal-one", "version_i": 1}, {"halId_s": "hal-one", "version_i": 2}, {"halId_s": "hal-two", "version_i": 1}]
         selected = hal.select_best_versions(records)

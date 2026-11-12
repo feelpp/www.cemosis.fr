@@ -1,10 +1,13 @@
 ---
 import redirects from '../data/redirects.json';
-import { url } from '../lib/site';
+import { languages, url } from '../lib/site';
+import { projectAliases } from '../lib/project-funding';
 export function getStaticPaths() {
-  return redirects.map(({ from, to }) => ({ params: { legacy: from }, props: { to } }));
+  const aliases = languages.flatMap(lang => Object.entries(projectAliases).map(([alias, project]) => ({ from: `${lang}/projects/${alias}`, to: `${lang}/projects/${project}` })));
+  return [...redirects, ...aliases].map(({ from, to }) => ({ params: { legacy: from }, props: { to } }));
 }
 const target = url(`${Astro.props.to}/`);
+const lang = Astro.props.to.startsWith('en/') ? 'en' : 'fr';
 ---
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="refresh" content={`0;url=${target}`} /><meta name="robots" content="noindex" /><link rel="canonical" href={new URL(target, Astro.site)} /><title>Cemosis — Page déplacée / Page moved</title></head><body><p>Cette page a déménagé. / This page has moved.</p><a href={target}>Continuer / Continue →</a></body></html>
+<html lang={lang}><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="refresh" content={`0;url=${target}`} /><meta name="robots" content="noindex" /><link rel="canonical" href={new URL(target, Astro.site)} /><title>Cemosis — Page déplacée / Page moved</title></head><body><p>Cette page a déménagé. / This page has moved.</p><a href={target}>Continuer / Continue →</a></body></html>

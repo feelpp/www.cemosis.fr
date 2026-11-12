@@ -1,0 +1,15 @@
+---
+import { contractYears, contractDuration } from '../lib/people-schema';
+import type { getPeopleDirectory } from '../lib/people';
+import type { Language } from '../lib/site';
+interface Props { person: Awaited<ReturnType<typeof getPeopleDirectory>>[number]; lang: Language }
+const { person, lang } = Astro.props;
+const contracts = person.contracts.filter(contract => contractYears(contract, lang) || contract.durationYears || contract.role || contract.note || contract.projectLinks.length || contract.funders.length);
+---
+{contracts.length > 0 && <div class="person-contracts"><p><strong>{lang === 'fr' ? 'Contrats' : 'Contracts'}</strong></p><ol>{contracts.map(contract => <li data-person-contract>
+  {contract.role && <p>{contract.role[lang]}</p>}
+  {(contractYears(contract, lang) || contract.durationYears) && <p class="contract-years">{[contractYears(contract, lang), contractDuration(contract, lang)].filter(Boolean).join(' · ')}</p>}
+  {contract.projectLinks.length > 0 && <ul>{contract.projectLinks.map(project => <li><a href={project.href}>{project.title}</a></li>)}</ul>}
+  {contract.funders.length > 0 && <p>{lang === 'fr' ? 'Financement :' : 'Funding:'} {contract.funders.map((funder, index) => <>{index > 0 && ', '}{funder.href ? <a href={funder.href}>{funder.title}</a> : funder.title}</>)}</p>}
+  {contract.note && <p>{contract.note[lang]}</p>}
+</li>)}</ol></div>}

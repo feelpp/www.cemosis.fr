@@ -1,0 +1,22 @@
+---
+import { route, type Language } from '../lib/site';
+import { publicationTypeLabel, publicationYear, type LinkedPublication } from '../lib/publications';
+interface Props { publication: LinkedPublication; lang: Language }
+const { publication: p, lang } = Astro.props;
+const fr = lang === 'fr';
+const fundingGroups = [
+  { label: fr ? 'Références ANR' : 'ANR references', values: p.funding.anrProjectReference_s },
+  { label: fr ? 'Projets ANR' : 'ANR projects', values: [...p.funding.anrProjectAcronym_s, ...p.funding.anrProjectTitle_s] },
+  { label: fr ? 'Références européennes' : 'European references', values: p.funding.europeanProjectReference_s },
+  { label: fr ? 'Projets européens' : 'European projects', values: [...p.funding.europeanProjectAcronym_s, ...p.funding.europeanProjectTitle_s] },
+  { label: fr ? 'Remerciements / financements' : 'Acknowledgments / funding', values: p.funding.funding_s },
+].filter(group => group.values.length);
+---
+<li id={p.hal_id} data-publication data-year={publicationYear(p, lang)} data-type={p.type} data-projects={p.projects.map(project => project.slug).join(' ')} data-search={[p.title, ...p.authors, p.journal, p.conference, p.hal_id, p.doi, ...p.projects.map(project => project.title), ...fundingGroups.flatMap(group => group.values)].join(' ')}>
+  <p class="publication-meta">{publicationYear(p, lang)} · {publicationTypeLabel(p.type, lang)}</p>
+  <h3><a href={p.url}>{p.title}</a></h3><p>{p.authors.join(', ')}</p>
+  {(p.journal || p.conference) && <p><em>{p.journal || p.conference}</em></p>}
+  {p.projects.length > 0 && <div class="publication-projects"><span>{fr ? 'Projets associés :' : 'Associated projects:'}</span><ul>{p.projects.map(project => <li><a href={route(lang, `projects/${project.slug}`)}>{project.title}</a></li>)}</ul></div>}
+  <div class="publication-links"><a href={p.url}>HAL ↗</a>{p.doi && <a href={`https://doi.org/${p.doi}`}>DOI ↗</a>}{p.pdf_url && <a href={p.pdf_url}>{fr ? 'Texte intégral ↗' : 'Full text ↗'}</a>}</div>
+  {fundingGroups.length > 0 && <details class="publication-funding"><summary>{fr ? 'Financements et remerciements dans HAL' : 'Funding and acknowledgments in HAL'}</summary><dl>{fundingGroups.map(group => <><dt>{group.label}</dt><dd>{group.values.map(value => <p>{value}</p>)}</dd></>)}</dl></details>}
+</li>

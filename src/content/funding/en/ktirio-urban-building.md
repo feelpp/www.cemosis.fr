@@ -17,3 +17,9 @@ order: 6
 The work is supported by [CoE HiDALGO2](../hidalgo2/) and [Exa-MA](../exama/). The urban models are also directly linked to the [FLOOD project](../flood/) for flood simulation.
 
 [Source code](https://github.com/feelpp/ktirio-urban-building) · [Ktirio software](../../software/)
+
+## Former name: 4fastsim-ibat
+
+Ktirio Urban Building was previously named **4fastsim-ibat**. The archived project description, published on 21 October 2019, focused on reducing energy consumption in existing buildings by combining thermal simulation, learning methods and sensor data.
+
+Its objectives were to build a building information model (BIM), develop a fast 3D thermal model combining physical simulation and neural networks, and use sensors deployed on the IBat platform. The work used Feel++ and brought together Cemosis and Synapse-Concept, with funding from the Région Grand Est.

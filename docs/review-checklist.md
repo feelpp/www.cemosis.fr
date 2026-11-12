@@ -6,9 +6,10 @@ remaining archive migration are pending that review.
 ## Pages to review
 
 - `/fr/` and `/en/`: homepage, expertise, selected projects, software and contact.
-- `/fr/about/` and `/en/about/`: the current five-person team, supplied by the site
-  owner on 9 October 2026. Historical personnel have not been carried into the
-  current roster.
+- `/fr/about/` and `/en/about/`: the owner-confirmed current team, additional
+  contributors, contract funding and the dedicated doctoral history since 2012.
+  Membership status and missing contract years remain explicit in `people.yaml`;
+  see `docs/people.md` for source provenance and outstanding dates.
 - `/fr/services/`, `/fr/software/`, `/fr/contact/` and their English versions.
 - Project listings and the three translated project descriptions.
 - The dated Open Access Week news item and its English version.

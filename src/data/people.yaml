@@ -1,0 +1,526 @@
+# Shared bilingual people directory. Unknown contract years stay null.
+# Project roles and doctorate dates are separate from employment contracts.
+# showInTeam: false keeps doctoral-cohort records in the dedicated PhD section.
+updated: 2026-11-10
+source: Current team names and roles supplied by the site owner on 9 October 2026. Additional names, funding
+  and Luca Berti's project history supplied on 10 November 2026. Descriptive work areas also use the cited
+  public sources.
+doctoralSince: 2012
+people:
+  - id: christophe-prudhomme
+    name: Christophe Prud'homme
+    initials: CP
+    status: current
+    contractBased: false
+    role:
+      fr: Directeur
+      en: Director
+    projects:
+      - project: exama
+      - project: sage-hpc
+      - project: jnl-g
+      - project: hidalgo2
+      - project: ktirio-urban-building
+      - project: cifre-avnir-energy
+      - project: flood
+      - project: brain-organ-on-chip
+      - project: micro-swimmer
+      - project: inflamtwin-icu
+    contracts: []
+  - id: vincent-chabannes
+    name: Vincent Chabannes
+    initials: VC
+    status: current
+    contractBased: false
+    role:
+      fr: Responsable de l’ingénierie et des infrastructures
+      en: Head of engineering and infrastructure
+    projects:
+      - project: exama
+      - project: hidalgo2
+      - project: ktirio-urban-building
+      - project: cifre-avnir-energy
+      - project: flood
+      - project: micro-swimmer
+    contracts: []
+    doctorate:
+      title:
+        fr: Vers la simulation des écoulements sanguins
+        en: Towards Blood Flow Simulation
+      university: Grenoble
+      status: defended
+      startYear: null
+      defenseDate: 2013-07-08
+      source: https://theses.fr/2013GRENM061
+      supervisors:
+        - Christophe Prud'homme
+  - id: juliette-antonczak
+    name: Juliette Antonczak
+    initials: JA
+    status: current
+    contractBased: true
+    role:
+      fr: Gestion de projets et valorisation
+      en: Project management and knowledge transfer
+    contracts: []
+    notes: Contract years, funding and specific project assignments need confirmation.
+  - id: gwenolle-chappron
+    name: Gwenolle Chappron
+    initials: GC
+    status: current
+    contractBased: true
+    role:
+      fr: Ingénieure en génie civil
+      en: Civil engineer
+    projects:
+      - project: ktirio-urban-building
+    contracts: []
+    sources:
+      - https://github.com/orgs/feelpp/discussions/2257
+  - id: philippe-pincon
+    name: Philippe Pincon
+    initials: PP
+    status: current
+    contractBased: true
+    role:
+      fr: Modélisation et simulation
+      en: Modelling and simulation
+    projects:
+      - project: ktirio-urban-building
+    contracts: []
+    sources:
+      - https://github.com/orgs/feelpp/discussions/2257
+  - id: luca-berti
+    name: Luca Berti
+    initials: LB
+    status: unspecified
+    contractBased: true
+    projects:
+      - project: micro-swimmer
+        role:
+          fr: Recherche doctorale
+          en: PhD research
+      - project: ktirio-urban-building
+        role:
+          fr: Travaux après le doctorat
+          en: Research after the PhD
+    contracts: []
+    notes: PhD on micro-swimming, followed by Ktirio Urban Building and its former aliases. The owner has not yet
+      supplied contract counts or years.
+    doctorate:
+      title:
+        fr: Méthodes numériques et optimization pour la micro-natation
+        en: Numerical methods and optimization for micro-swimming
+      university: Strasbourg
+      status: defended
+      startYear: 2018
+      defenseDate: 2021-12-13
+      source: https://theses.fr/2021STRAD021
+      supervisors:
+        - Christophe Prud'homme
+      periodSource: https://www-sop.inria.fr/members/Laetitia.Giraldi/CV_Giraldi_en.pdf
+  - id: maryam-maslek
+    name: Maryam Maslek
+    initials: MM
+    status: unspecified
+    contractBased: true
+    role:
+      fr: Modélisation météorologique, analyse et transfert de données
+      en: Meteorological modelling, data analysis and transfer
+    projects:
+      - project: ktirio-urban-building
+    contracts: []
+    sources:
+      - https://github.com/orgs/feelpp/discussions/2257
+  - id: patrick-lemoine
+    name: Patrick Lemoine
+    initials: PL
+    status: unspecified
+    contractBased: true
+    role:
+      fr: Programmation de tâches parallèles et sur GPU
+      en: Parallel task and GPU programming
+    projects:
+      - project: ktirio-urban-building
+    contracts:
+      - startYear: null
+        endYear: null
+        durationYears: 2
+        funding:
+          - source: iti-irmia-plus-plus
+    sources:
+      - https://github.com/orgs/feelpp/discussions/2257
+  - id: abdoulaye-diallo
+    name: Abdoulaye Diallo
+    initials: AD
+    status: unspecified
+    contractBased: true
+    projects:
+      - project: ktirio-urban-building
+    contracts:
+      - startYear: null
+        endYear: null
+        funding:
+          - project: hidalgo2
+    sources:
+      - https://hal.science/hal-04590586
+  - id: zohra-djatouti
+    name: Zohra Djatouti
+    initials: ZD
+    status: unspecified
+    contractBased: true
+    role:
+      fr: Thermique du bâtiment
+      en: Building thermics
+    projects:
+      - project: ktirio-urban-building
+    contracts: []
+    sources:
+      - https://ibat.docs.cemosis.fr/ibat/latest/reports/thomas-saigre-tardif/index.html
+  - id: celine-van-landeghem
+    name: Céline Van Landeghem
+    initials: CVL
+    status: unspecified
+    contractBased: true
+    role:
+      fr: Recherche doctorale en micro-natation
+      en: Doctoral research in micro-swimming
+    projects:
+      - project: micro-swimmer
+    contracts:
+      - startYear: null
+        endYear: null
+        funding:
+          - source: iti-irmia-plus-plus
+        note:
+          fr: Le financement ITI s’est terminé vers novembre–décembre 2025.
+          en: ITI funding ended around November–December 2025.
+    notes: The known ITI funding end is not used as a confirmed contract end year.
+    doctorate:
+      title:
+        fr: Micro-natation dans des environnements complexes
+        en: Micro-swimming in complex environments
+      university: Strasbourg
+      status: defended
+      startYear: 2022
+      defenseDate: 2025-10-14
+      source: https://theses.fr/2025STRAD021
+      supervisors:
+        - Christophe Prud'homme
+        - Laetitia Giraldi
+      periodSource: https://www-sop.inria.fr/members/Laetitia.Giraldi/CV_Giraldi_en.pdf
+  - id: ranine-tarabay
+    name: Ranine Tarabay
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects: []
+    contracts: []
+    doctorate:
+      title:
+        fr: Simulations des écoulements sanguins dans des réseaux vasculaires complexes
+        en: Modeling of blood flow in real vascular networks
+      university: Strasbourg
+      status: defended
+      startYear: null
+      defenseDate: 2016-09-26
+      source: https://theses.fr/2016STRAD034
+      supervisors:
+        - Christophe Prud'homme
+        - Nicolas Passat
+  - id: abdoulaye-samake
+    name: Abdoulaye Samaké
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects: []
+    contracts: []
+    doctorate:
+      title:
+        fr: Méthodes non-conformes de décomposition de domaine à grande échelle
+        en: Large scale nonconforming domain decomposition methods
+      university: Grenoble
+      status: defended
+      startYear: null
+      defenseDate: 2014-12-08
+      source: https://theses.fr/2014GRENM066
+      supervisors:
+        - Christophe Prud'homme
+        - Frédéric Nataf
+  - id: stephane-veys
+    name: Stéphane Veys
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects: []
+    contracts: []
+    doctorate:
+      title:
+        fr: "Un Framework de calcul pour la méthode des bases réduites : applications à des problèmes non-linéaire
+          multi-physiques"
+        en: "A computational reduced basis framework : applications to nonlinears multiphysics problems"
+      university: Grenoble
+      status: defended
+      startYear: null
+      defenseDate: 2014-11-26
+      source: https://theses.fr/2014GRENM069
+      supervisors:
+        - Christophe Prud'homme
+  - id: pierre-jolivet
+    name: Pierre Jolivet
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects: []
+    contracts: []
+    doctorate:
+      title:
+        fr: Méthodes de décomposition de domaine. Application au calcul haute performance
+        en: Domain decomposition methods. Application to high-performance computing
+      university: Grenoble
+      status: defended
+      startYear: null
+      defenseDate: 2014-10-02
+      source: https://theses.fr/2014GRENM040
+      supervisors:
+        - Christophe Prud'homme
+        - Frédéric Nataf
+  - id: cecile-daversin-catty
+    name: Cécile Daversin-Catty
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects: []
+    contracts: []
+    doctorate:
+      title:
+        fr: "Bases réduites pour des problèmes multi-physiques non-linéaires de grande taille : application au design
+          d'aimants à haut champ"
+        en: "Reduced basis method applied to large non-linear multi-physics problems : application to high field
+          magnets design"
+      university: Strasbourg
+      status: defended
+      startYear: null
+      defenseDate: 2016-09-19
+      source: https://theses.fr/2016STRAD019
+      supervisors:
+        - Christophe Prud'homme
+        - Eric Beaugnon
+  - id: guillaume-dolle
+    name: Guillaume Dollé
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects: []
+    contracts: []
+    doctorate:
+      title:
+        fr: Tomographie optique diffuse et de fluorescence pour la détection de tumeurs
+        en: Diffuse optical tomography and fluorescence for tumour detection
+      university: Strasbourg
+      status: defended
+      startYear: null
+      defenseDate: 2018-09-24
+      source: https://theses.fr/2018STRAD029
+      supervisors:
+        - Christophe Prud'homme
+        - Zakaria Belhachmi
+  - id: jean-baptiste-wahl
+    name: Jean-Baptiste Wahl
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects: []
+    contracts: []
+    doctorate:
+      title:
+        fr: La méthode des bases réduites appliquées à des simulations d'aérothermie
+        en: The Reduced basis method applied to aerothermal simulations
+      university: Strasbourg
+      status: defended
+      startYear: null
+      defenseDate: 2018-09-13
+      source: https://theses.fr/2018STRAD024
+      supervisors:
+        - Christophe Prud'homme
+        - Yannick Hoarau
+  - id: jean-marc-gratien
+    name: Jean-Marc Gratien
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects: []
+    contracts: []
+    doctorate:
+      title:
+        fr: Programmation générative appliquée au prototypage d'Applications performantes sur des architectures
+          massivement parallèles pour l'approximation volumes finis de systèmes physiques complexes
+        en: A DSEL in C++ for lowest-order methods for diffusive problem on general meshes
+      university: Grenoble
+      status: defended
+      startYear: null
+      defenseDate: 2013-05-27
+      source: https://theses.fr/2013GRENM018
+      supervisors:
+        - Christophe Prud'homme
+        - Jean-François Méhaut
+        - Daniele Antonio Di Pietro
+  - id: romain-hild
+    name: Romain Hild
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects: []
+    contracts: []
+    doctorate:
+      title:
+        fr: Contrôle et optimisation de champs magnétiques intenses
+        en: Control and optimization of high magnetic fields
+      university: Strasbourg
+      status: defended
+      startYear: null
+      defenseDate: 2020-11-27
+      source: https://theses.fr/2020STRAD031
+      supervisors:
+        - Christophe Prud'homme
+  - id: lorenzo-sala
+    name: Lorenzo Sala
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects: []
+    contracts: []
+    doctorate:
+      title:
+        fr: Modélisation mathématique et simulation de flux sanguins oculaires et leur interactions
+        en: Mathematical modelling and simulation of ocular blood flows and their interactions
+      university: Strasbourg
+      status: defended
+      startYear: null
+      defenseDate: 2019-09-27
+      source: https://theses.fr/2019STRAD021
+      supervisors:
+        - Christophe Prud'homme
+        - Giovanna Guidoboni
+  - id: thomas-saigre
+    name: Thomas Saigre
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects: []
+    contracts: []
+    doctorate:
+      title:
+        fr: "Modélisation mathématique, simulation et réduction d’ordre de flux oculaires et leurs interactions :
+          construire le jumeau numérique de l'oeil"
+        en: "Mathematical modeling, simulation and order reduction of ocular flows and their interactions : building
+          the digital twin of the eye"
+      university: Strasbourg
+      status: defended
+      startYear: null
+      defenseDate: 2024-12-20
+      source: https://theses.fr/2024STRAD052
+      supervisors:
+        - Christophe Prud'homme
+        - Marcela Gabriela Szopos
+  - id: bruno-weber
+    name: Bruno Weber
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects: []
+    contracts: []
+    doctorate:
+      title:
+        fr: "Optimisation de code Galerkin discontinu sur ordinateur hybride : application à la simulation numérique
+          en électromagnétisme"
+        en: "Discontinuous Galerkin code optimization on hybrid computer : application to the numerical simulation in
+          electromagnetism"
+      university: Strasbourg
+      status: defended
+      startYear: null
+      defenseDate: 2018-11-26
+      source: https://theses.fr/2018STRAD046
+      supervisors:
+        - Philippe Helluy
+  - id: michel-massaro
+    name: Michel Massaro
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects: []
+    contracts: []
+    doctorate:
+      title:
+        fr: Méthodes numériques pour les plasmas sur architectures multicoeurs
+        en: Numerical methods for plasmas on massively parallel architectures
+      university: Strasbourg
+      status: defended
+      startYear: null
+      defenseDate: 2016-12-16
+      source: https://theses.fr/2016STRAD052
+      supervisors:
+        - Philippe Helluy
+  - id: thi-trang-nhung-pham
+    name: Thi Trang Nhung Pham
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects: []
+    contracts: []
+    doctorate:
+      title:
+        fr: Méthodes numériques pour l'équation de Vlasov réduite
+        en: Numerical methods for the reduced Vlasov equation
+      university: Strasbourg
+      status: defended
+      startYear: null
+      defenseDate: 2016-12-19
+      source: https://theses.fr/2016STRAD051
+      supervisors:
+        - Philippe Helluy
+  - id: pierre-antoine-senger
+    name: Pierre-Antoine Senger
+    status: current
+    showInTeam: false
+    contractBased: true
+    projects:
+      - project: jnl-g
+        role:
+          fr: Recherche doctorale
+          en: PhD research
+    contracts: []
+    doctorate:
+      title:
+        fr: "Modélisation mathématique, simulation et réduction d'ordre : construire le jumeau numérique du LNCMI-G"
+        en: "Modélisation mathématique, simulation et réduction d'ordre : construire le jumeau numérique du LNCMI-G"
+      university: Strasbourg
+      status: ongoing
+      startYear: 2026
+      source: https://theses.fr/s431115
+      supervisors:
+        - Christophe Prud'homme
+  - id: hanna-chetouane
+    name: Hanna Chetouane
+    status: unspecified
+    showInTeam: false
+    contractBased: true
+    projects:
+      - project: cifre-avnir-energy
+        role:
+          fr: Doctorat CIFRE
+          en: CIFRE PhD
+    contracts: []
+    doctorate:
+      title:
+        fr: Simulation vibroacoustique de structures minces et surveillance de leur intégrité
+        en: Vibroacoustic simulation of thin structures and structural health monitoring
+      university: Strasbourg
+      status: announced
+      startYear: 2026
+      source: https://www.cemosis.fr/en/news/cifre-avnir-energy/
+      supervisors:
+        - Christophe Prud'homme
+        - Vincent Chabannes
+    notes: Topic paraphrased from the CIFRE announcement; no theses.fr record found as of 2026-11-10.
+      Start/contract dates still need confirmation.

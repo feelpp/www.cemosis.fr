@@ -1,0 +1,53 @@
+---
+import { fundingSources, getProjectCatalog } from '../lib/project-funding';
+import { route, type Language } from '../lib/site';
+interface Props { lang: Language; project: string }
+const { lang, project } = Astro.props;
+const fr = lang === 'fr';
+const catalog = await getProjectCatalog(lang);
+const current = catalog.find(p => p.slug === project);
+const funders = (current?.fundedBy ?? []).flatMap(relation => {
+  const target = relation.project ? catalog.find(p => p.slug === relation.project) : undefined;
+  const source = relation.source ? fundingSources[relation.source] : undefined;
+  return target || source ? [{
+    title: target?.title ?? source!.title[lang],
+    href: target ? route(lang, `projects/${target.slug}`) : source?.url,
+    project: target?.slug,
+    source: relation.source,
+    coverage: relation.coverage,
+    recipient: relation.recipient,
+    status: relation.status,
+    period: relation.period?.[lang],
+    grants: target?.grants ?? source?.grants ?? [],
+    aspects: relation.aspects?.[lang] ?? [],
+  }] : [];
+});
+const supported = catalog.flatMap(target => {
+  const relation = target.fundedBy.find(funding => funding.project === project);
+  return relation ? [{ target, coverage: relation.coverage, recipient: relation.recipient, status: relation.status, period: relation.period?.[lang], aspects: relation.aspects?.[lang] ?? [] }] : [];
+});
+---
+{(funders.length > 0 || (current?.grants.length ?? 0) > 0) && <section class="project-funding" aria-labelledby="project-funding-title">
+  <h2 id="project-funding-title">{fr ? 'Financements' : 'Funding'}</h2>
+  {current && current.grants.length > 0 && <ul class="project-grants" aria-label={fr ? 'Références du projet' : 'Project grant references'}>{current.grants.map(grant => <li data-project-grant={grant.reference}>{grant.program && `${grant.program} · `}{grant.source ? <a href={grant.source}>{grant.reference}</a> : grant.reference}</li>)}</ul>}
+  {funders.length > 0 && <ul>{funders.map(({ title, href, project: funder, source, coverage, recipient, status, period, grants, aspects }) => <li data-funding-relation={funder ? 'received' : undefined} data-funder={funder} data-funding-source={source} data-funded-project={project} data-funding-status={status}>
+    {href ? <a href={href}>{title}</a> : <span>{title}</span>}
+    {coverage === 'partial' && <span> · {fr ? 'Financement partiel' : 'Partial funding'}</span>}
+    {status && <span> · {status === 'active' ? (fr ? 'Financement actif' : 'Active funding') : (fr ? 'Soutien antérieur' : 'Past support')}</span>}
+    {grants.length > 0 && <ul class="funding-grants">{grants.map(grant => <li data-grant-reference={grant.reference}>{grant.program && `${grant.program} · `}{grant.source ? <a href={grant.source}>{grant.reference}</a> : grant.reference}</li>)}</ul>}
+    {recipient && <p>{fr ? 'Bénéficiaire :' : 'Recipient:'} {recipient}</p>}
+    {period && <p>{period}</p>}
+    {aspects.length > 0 && <ul class="funding-aspects">{aspects.map(aspect => <li>{aspect}</li>)}</ul>}
+  </li>)}</ul>}
+</section>}
+{supported.length > 0 && <section class="project-funding" aria-labelledby="supported-projects-title">
+  <h2 id="supported-projects-title">{fr ? 'Projets soutenus' : 'Supported projects'}</h2>
+  <ul>{supported.map(({ target, coverage, recipient, status, period, aspects }) => <li data-funding-relation="provided" data-funder={project} data-funded-project={target.slug} data-funding-status={status}>
+    <a href={route(lang, `projects/${target.slug}`)}>{target.title}</a>
+    {coverage === 'partial' && <span> · {fr ? 'Financement partiel' : 'Partial funding'}</span>}
+    {status && <span> · {status === 'active' ? (fr ? 'Financement actif' : 'Active funding') : (fr ? 'Soutien antérieur' : 'Past support')}</span>}
+    {recipient && <p>{fr ? 'Bénéficiaire :' : 'Recipient:'} {recipient}</p>}
+    {period && <p>{period}</p>}
+    {aspects.length > 0 && <ul class="funding-aspects">{aspects.map(aspect => <li>{aspect}</li>)}</ul>}
+  </li>)}</ul>
+</section>}

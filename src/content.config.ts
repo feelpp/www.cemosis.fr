@@ -13,6 +13,7 @@ const common = {
 };
 // Keep translation IDs distinct even though their public slugs match.
 const generateId = ({ entry }: { entry: string }) => entry.replace(/\.md$/, '');
+const imageCredit = z.object({ authors: z.string(), source: z.url(), license: z.string(), licenseUrl: z.url() }).optional();
 const projects = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/projects', generateId }),
   schema: z.object({
@@ -37,6 +38,6 @@ const pages = defineCollection({
 });
 const funding = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/funding', generateId }),
-  schema: z.object({ ...common, domains: z.array(z.enum(domainIds)).default([]), topics: z.array(z.enum(topicIds)).default([]), image: z.string().startsWith('/images/').optional(), imageAlt: z.string().optional(), imageCaption: z.string().optional(), category: z.string(), period: z.string().optional(), order: z.number(), source: z.url().optional() }),
+  schema: z.object({ ...common, imageCredit, imageFit: z.enum(['cover', 'contain']).default('cover'), domains: z.array(z.enum(domainIds)).default([]), topics: z.array(z.enum(topicIds)).default([]), image: z.string().startsWith('/images/').optional(), imageAlt: z.string().optional(), imageCaption: z.string().optional(), category: z.string(), period: z.string().optional(), order: z.number(), source: z.url().optional() }),
 });
 export const collections = { projects, news, pages, funding };

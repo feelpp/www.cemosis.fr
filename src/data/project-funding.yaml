@@ -1,0 +1,128 @@
+# Shared by both languages. Keys and fundedBy.project values are project-page slugs.
+# fundedBy.source refers to institutional fundingSources without a project page.
+# aliases are former project slugs; they redirect and match funding metadata.
+# publicationMatching identifies publications from explicit HAL funding evidence.
+# fundedBy describes project support; it does NOT attribute every funder publication
+# to every supported project. Names/references must identify the particular project.
+fundingSources:
+  cnrs-poste-rouge:
+    title:
+      en: INSMI–CNRS visiting research position (poste rouge)
+      fr: Poste rouge INSMI–CNRS
+  iti-irmia-plus-plus:
+    title:
+      en: ITI IRMiA++
+      fr: ITI IRMiA++
+    url: https://irmiapp.unistra.fr/the-institute/affiliation-and-thanks/
+    grants:
+      - reference: ANR-10-IDEX-0002
+        program: IdEx Unistra
+        source: https://irmiapp.unistra.fr/the-institute/affiliation-and-thanks/
+      - reference: ANR-20-SFRI-0012
+        program: SFRI-STRAT’US
+        source: https://irmiapp.unistra.fr/the-institute/affiliation-and-thanks/
+  anr-nemo:
+    title:
+      en: ANR NEMO
+      fr: ANR NEMO
+    grants:
+      - reference: ANR-21-CE45-0013
+        program: ANR
+        source: https://anr.fr/Projet-ANR-21-CE45-0013
+    url: https://anr.fr/Projet-ANR-21-CE45-0013
+
+projects:
+  exama:
+    grants:
+      - reference: ANR-22-EXNU-0002
+        program: ANR · NumPEx
+        source: https://anr.fr/Projet-ANR-22-EXNU-0002
+    publicationMatching:
+      names: [Exa-MA, ExaMA, Methods and Algorithms for Exascale]
+
+  hidalgo2:
+    publicationMatching:
+      references: ['101093457']
+      names: [HiDALGO2, HiDALGO 2]
+
+  jnl-g:
+    grants:
+      - reference: ANR-25-CE46-1157
+        program: ANR
+        source: https://anr.fr/Projet-ANR-25-CE46-1157
+    publicationMatching:
+      names: [JNL-G]
+    fundedBy:
+      - project: exama
+
+  sage-hpc:
+    grants:
+      - reference: ANR-25-EXNU-0004
+        program: ANR · NumPEx
+        source: 'https://api.archives-ouvertes.fr/ref/anrproject/?q=docid:307157&wt=json'
+    publicationMatching:
+      names: [SAGE-HPC, SageHPC]
+    fundedBy:
+      - project: exama
+
+  brain-organ-on-chip:
+    publicationMatching:
+      names: [Brain Organ-on-Chip]
+    fundedBy:
+      - project: exama
+        aspects:
+          en:
+            - High-performance computing (HPC)
+            - High-performance data analytics (HPDA)
+            - Inverse problems
+          fr:
+            - Calcul haute performance (HPC)
+            - Analyse de données haute performance (HPDA)
+            - Problèmes inverses
+
+  ktirio-urban-building:
+    aliases: [4fastsim-ibat]
+    publicationMatching:
+      names: [Ktirio Urban Building, Ktirio Urban Buildings]
+    fundedBy:
+      - project: hidalgo2
+      - project: exama
+
+  cifre-avnir-energy:
+    publicationMatching:
+      names: [CIFRE AVNIR Energy]
+    fundedBy:
+      - project: exama
+        coverage: partial
+
+  inflamtwin-icu:
+    publicationMatching:
+      names: [InflamTwin-ICU]
+
+  projet-data4urbanism:
+    publicationMatching:
+      names: [Data4Urbanism]
+
+  flood:
+    fundedBy:
+      - project: exama
+      - source: cnrs-poste-rouge
+        recipient: Abdoulaye Samaké
+
+  micro-swimmer:
+    publicationMatching:
+      references: [ANR-21-CE45-0013]
+      names: [NEMO]
+    fundedBy:
+      - project: sage-hpc
+        status: active
+      - project: exama
+        status: active
+      - source: iti-irmia-plus-plus
+        status: past
+        recipient: Céline Van Landeghem
+        period:
+          en: Funding ended around November–December 2025
+          fr: Financement terminé vers novembre–décembre 2025
+      - source: anr-nemo
+        status: past

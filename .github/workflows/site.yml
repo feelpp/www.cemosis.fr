@@ -31,6 +31,10 @@ jobs:
           python-version: '3.12'
       - name: Test HAL harvesting and fallback
         run: python3 scripts/test-publications.py
+      - name: Test publication and project matching
+        run: node scripts/test-publication-projects.mjs
+      - name: Test people and contract histories
+        run: node scripts/test-people.mjs
       - name: Refresh Cemosis HAL publications
         if: github.event_name != 'pull_request'
         run: pnpm import:publications

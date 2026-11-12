@@ -8,7 +8,7 @@ does not relicense those assets.
 | --- | --- | --- |
 | `public/images/logo-cemosis.png` | Owner-supplied `logoCemosis.png` (Hidalgo2 training assets) | Existing Cemosis logo; original file preserved |
 | `public/images/building-thermal.jpg` | https://www.cemosis.fr/wp-content/uploads/2019/10/infrared-building-42671.jpg | 4fastsim-ibat project illustration |
-| `public/images/micro-swimmer.jpg` | https://www.cemosis.fr/wp-content/uploads/2018/07/Micro-swimmers.jpg | Magnetic micro-swimmer project illustration |
+| `public/images/micro-swimmer.jpg` | https://www.cemosis.fr/wp-content/uploads/2018/07/Micro-swimmers.jpg | Historical magnetic micro-swimmer illustration; replaced on current pages |
 | `public/images/urban-mobility.jpg` | https://www.cemosis.fr/wp-content/uploads/2018/04/mobilit%C3%A9.jpg | Data4Urbanism project illustration |
 
 `src/components/Surface.astro`, `public/favicon.svg` and the social-card artwork
@@ -83,3 +83,31 @@ User-supplied LNCMI magnets/power/cooling diagram, copied unchanged to `public/i
 Brain Organ-on-Chip illustration: `public/images/brain-organ-on-chip/chip.png`, extracted unchanged from slide 3 of the user-provided presentation. Research cards reuse existing project illustrations; urban flood cards use the Ktirio city reconstruction to illustrate the modelling context.
 
 SAGE-HPC: `public/images/sage-hpc/benchmark-families.png` copied unchanged from the local kickoff presentation assets (`NUMPEX/SAGE-HPC/slides.sage-hpc.kickoff.20260616/assets`). All project pages use local illustrations with alt text; urban images used for FLOOD are explicitly labelled as modelling context.
+
+
+## Micro-swimming — licensed project illustration
+
+`public/images/micro-swimmer/elastic-magneto-swimmer.png` is the graphical abstract
+from Christophe Prud’homme, Vincent Chabannes, Laëtitia Giraldi, Agathe Chouippe
+and Céline Van Landeghem, *Two-way Coupling of Fluid–Structure Interaction for
+Elastic Magneto-Swimmers: A Finite Element ALE Approach* (2025), HAL **hal-05482283v1**.
+
+- Source record: https://inria.hal.science/hal-05482283v1
+- Source PDF: https://inria.hal.science/hal-05482283/file/article.magnetoswimmer.jfs.pdf
+- License: **CC BY 4.0**, https://creativecommons.org/licenses/by/4.0/
+- License evidence: the HAL PDF cover explicitly states CC BY 4.0; HAL API
+  `licence_s` also reports https://creativecommons.org/licenses/by/4.0/.
+  The arXiv copy uses a different distribution license; this asset was extracted
+  from the HAL deposit, not from arXiv.
+- Retrieved on 10 November 2026. Extracted unchanged from physical PDF page 2
+  using Poppler `pdfimages -f 1 -l 2 -png`; image 005 is the 1986 × 790 pixel
+  graphical abstract. No cropping, recolouring or scientific content changes.
+- Source PDF SHA-256: `a8681032101954754d281812f7645297aa3241aaa9b6fa489f322abd248ef040`.
+- Local PNG SHA-256: `14d6e9c4f2b4db27e48c64a19bad1ea701e0067e2147d3df3029fd4645568e13`.
+
+Both project pages show all five authors, a source link and a CC BY 4.0 license
+link. Research cards retain the author/license credit and link to the project
+page for full attribution. The illustration uses `contain` fitting to preserve
+its diagram labels. It depicts the team's numerical modelling framework, not a
+microscopy photograph or a clinical result. The original 300 × 300 illustration
+is preserved as a historical asset.

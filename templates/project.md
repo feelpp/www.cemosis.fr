@@ -13,6 +13,8 @@ imageAlt: "Describe what the image shows."
 featured: false
 draft: true
 historical: false
+# Add funding relationships and HAL matching rules in src/data/project-funding.yaml.
+# See docs/publications.md.
 ---
 
 ## The challenge

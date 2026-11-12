@@ -3,10 +3,127 @@
     "source": "HAL",
     "collection": "CEMOSIS",
     "query": "collCode_s:CEMOSIS",
-    "harvested_at": "2026-10-09T14:18:12.689164+00:00",
-    "total_count": 94
+    "harvested_at": "2026-11-10T03:06:22.210133+00:00",
+    "total_count": 96
   },
   "publications": [
+    {
+      "publication_type": "preprint",
+      "publication_type_label": "Preprint / unpublished",
+      "hal_doc_type": "UNDEFINED",
+      "hal_doc_type_label": "",
+      "hal_id": "hal-05840728",
+      "hal_version": 1,
+      "hal_versions_found": 1,
+      "url": "https://hal.science/hal-05840728v1",
+      "title": "Hybridizable Discontinuous Galerkin methods for the Keller-Segel model",
+      "authors": [
+        "Silvia Bertoluzza",
+        "Gabriella Bretti",
+        "Micol Pennacchio",
+        "Christophe Prud'Homme"
+      ],
+      "date": "2026-10-23",
+      "year": 2026,
+      "type": "UNDEFINED",
+      "journal": "",
+      "conference": "",
+      "doi": "",
+      "abstract": "We propose a hybridizable discontinuous Galerkin (HDG) finite element method to approximate the solution of the time-dependent Keller-Segel model, a drift-diffusion system describing chemotactic cell movement. We develop and analyze the corresponding HDG scheme, and establish theoretical convergence results for the proposed discretization. Finally, we present numerical experiments that confirm the theoretical findings.",
+      "keywords": [
+        "Hybridizable discontinuous Galerkin",
+        "Keller-Segel model",
+        "Chemotaxis",
+        "Finite element methods"
+      ],
+      "domains": [
+        "0.math",
+        "1.math.math-na"
+      ],
+      "open_access": true,
+      "citation": "Silvia Bertoluzza, Gabriella Bretti, Micol Pennacchio, Christophe Prud'Homme. Hybridizable Discontinuous Galerkin methods for the Keller-Segel model. 2026. <a target=\"_blank\" href=\"https://hal.science/hal-05840728v1\">&#x27E8;hal-05840728&#x27E9;</a>",
+      "pdf_url": "https://hal.science/hal-05840728/document",
+      "funding": {
+        "funding_s": [
+          "Italian Ministry of Research: “D34Health – Digital Driven Diagnostics, prognostics and therapeutics for sustainable Health care”, complementary actions to the NRRP, grant PNC0000001.Micol Pennacchio was partially supported by ICSC – Centro Nazionale di Ricerca in High Performance Computing, Big Data, and Quantum Computing, funded by the European Union – NextGenerationEU."
+        ],
+        "anrProjectReference_s": [
+          "ANR-22-EXNU-0002"
+        ],
+        "anrProjectAcronym_s": [
+          "Exa-MA"
+        ],
+        "anrProjectTitle_s": [
+          "Methods and Algorithms for Exascale"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
+    },
+    {
+      "publication_type": "preprint",
+      "publication_type_label": "Preprint / unpublished",
+      "hal_doc_type": "UNDEFINED",
+      "hal_doc_type_label": "",
+      "hal_id": "hal-05845796",
+      "hal_version": 1,
+      "hal_versions_found": 1,
+      "url": "https://hal.science/hal-05845796v1",
+      "title": "Layered Reproducibility for High-Performance Computing Applications: The Feel++ and Ktirio Urban Buildings Case Study",
+      "authors": [
+        "Javier Cladellas",
+        "Vincent Chabannes",
+        "Christophe Prud'Homme"
+      ],
+      "date": "2026-05-26",
+      "year": 2026,
+      "type": "UNDEFINED",
+      "journal": "",
+      "conference": "",
+      "doi": "",
+      "abstract": "<div><p>The High-Performance Computing (HPC) community struggles with reproducibility due to complex software stacks, heterogeneous hardware, and expensive validation cycles. This contribution presents a layered reproducibility strategy in which Feel++ provides a traceable software supply chain and Ktirio Urban Buildings (KUB) builds on it to manage versioned urban-building data, executable simulations, and checksum-verifiable result artifacts. Feel++ treats continuous integration (CI) plans, CMake presets, packaging manifests, public software metadata, operations commands, containers, software bill of materials (SBOM)/provenance metadata, and Feel++ Benchmarking reports for Feel++ and KUB cases as repositoryowned artifacts. KUB applies this foundation to City Energy Model Database (CEMDB) datasets, manifests, Findable, Accessible, Interoperable, and Reusable (FAIR) packaging, and verifiable outputs for computationally expensive simulations. The case study shifts reproducibility from late manual packaging to an artifact chain linking source commits, packages, containers, benchmark configurations, dataset versions, provenance records, and generated results.</p></div>",
+      "keywords": [
+        "Software provenance",
+        "Urban building simulation",
+        "Containerization",
+        "Continuous benchmarking",
+        "Reproducibility",
+        "High-performance computing",
+        "High-performance computing reproducibility continuous benchmarking software provenance containerization urban building simulation"
+      ],
+      "domains": [
+        "0.info",
+        "1.info.info-dc"
+      ],
+      "open_access": true,
+      "citation": "Javier Cladellas, Vincent Chabannes, Christophe Prud'Homme. Layered Reproducibility for High-Performance Computing Applications: The Feel++ and Ktirio Urban Buildings Case Study. 2026. <a target=\"_blank\" href=\"https://hal.science/hal-05845796v1\">&#x27E8;hal-05845796&#x27E9;</a>",
+      "pdf_url": "https://hal.science/hal-05845796/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-22-EXNU-0002",
+          "ANR-22-EXNU-0006"
+        ],
+        "anrProjectAcronym_s": [
+          "Exa-MA",
+          "Exa-DI"
+        ],
+        "anrProjectTitle_s": [
+          "Methods and Algorithms for Exascale",
+          "Development and integration project"
+        ],
+        "europeanProjectReference_s": [
+          "101093457"
+        ],
+        "europeanProjectAcronym_s": [
+          "HiDALGO2"
+        ],
+        "europeanProjectTitle_s": [
+          "HPC and Big Data Technologies for Global Challenges"
+        ]
+      }
+    },
     {
       "publication_type": "preprint",
       "publication_type_label": "Preprint / unpublished",
@@ -43,7 +160,22 @@
       ],
       "open_access": true,
       "citation": "Joubine Aghili, Hassan Ballout, Yvon Maday, Christophe Prud'Homme. Nonlinear compressive reduced basis approximation : when Taylor meets Kolmogorov. 2026. <a target=\"_blank\" href=\"https://hal.science/hal-05466017v1\">&#x27E8;hal-05466017&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-05466017/document"
+      "pdf_url": "https://hal.science/hal-05466017/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-22-EXNU-0002"
+        ],
+        "anrProjectAcronym_s": [
+          "Exa-MA"
+        ],
+        "anrProjectTitle_s": [
+          "Methods and Algorithms for Exascale"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -79,7 +211,25 @@
       ],
       "open_access": true,
       "citation": "Thomas Saigre, Vincent Chabannes, Christophe Prud'Homme, Marcela Szopos. Mathematical modeling and simulation of coupled aqueous humor flow and temperature distribution in a realistic 3D human eye geometry. <i>International Journal for Numerical Methods in Biomedical Engineering</i>, 2026, 42 (1), pp.e70132. <a target=\"_blank\" href=\"https://dx.doi.org/10.1002/cnm.70132\">&#x27E8;10.1002/cnm.70132&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-04918559v3\">&#x27E8;hal-04918559v3&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-04918559/document"
+      "pdf_url": "https://hal.science/hal-04918559/document",
+      "funding": {
+        "funding_s": [
+          "Cemosis platform at the University of Strasbourg",
+          "French Ministry of Higher Education, Research and Innovation"
+        ],
+        "anrProjectReference_s": [
+          "ANR-22-EXNU-0002"
+        ],
+        "anrProjectAcronym_s": [
+          "Exa-MA"
+        ],
+        "anrProjectTitle_s": [
+          "Methods and Algorithms for Exascale"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "preprint",
@@ -119,7 +269,31 @@
       ],
       "open_access": true,
       "citation": "Christophe Prud'Homme, Vincent Chabannes, Laetitia Giraldi, Agathe Chouippe, Céline Van Landeghem. Two-way Coupling of Fluid-Structure Interaction for Elastic Magneto-Swimmers: A Finite Element ALE Approach. 2025. <a target=\"_blank\" href=\"https://inria.hal.science/hal-05482283v1\">&#x27E8;hal-05482283&#x27E9;</a>",
-      "pdf_url": "https://inria.hal.science/hal-05482283/document"
+      "pdf_url": "https://inria.hal.science/hal-05482283/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-IDEX-0002",
+          "ANR-20-SFRI-0012",
+          "ANR-21-CE45-0013",
+          "ANR-22-EXNU-0002"
+        ],
+        "anrProjectAcronym_s": [
+          "UNISTRA",
+          "STRAT'US",
+          "NEMO",
+          "Exa-MA"
+        ],
+        "anrProjectTitle_s": [
+          "Par-delà les frontières, l'Université de Strasbourg",
+          "Façonner les talents en formation et en recherche à l'Université de Strasbourg",
+          "Contrôle de micro-nageurs magnétiques dans des milieux complexes et confinés",
+          "Methods and Algorithms for Exascale"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -163,7 +337,24 @@
       ],
       "open_access": true,
       "citation": "Paguiel Javan Hossie, Béatrice Laroche, Thibault Malou, Lucas Perrin, Thomas Saigre, et al.. Surrogate modeling of interactions in microbial communities through Physics-Informed Neural Networks.. <i>ESAIM: Proceedings and Surveys</i>, 2025, 81, pp.104-122. <a target=\"_blank\" href=\"https://dx.doi.org/10.1051/proc/202581104\">&#x27E8;10.1051/proc/202581104&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.inrae.fr/hal-04440736v3\">&#x27E8;hal-04440736v3&#x27E9;</a>",
-      "pdf_url": "https://hal.inrae.fr/hal-04440736/document"
+      "pdf_url": "https://hal.inrae.fr/hal-04440736/document",
+      "funding": {
+        "funding_s": [
+          "The author’s contribution was permitted in part by funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation program (Grant agreement ERC-2017-AdG No. 788191 - Homo.symbiosus"
+        ],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [
+          "788191"
+        ],
+        "europeanProjectAcronym_s": [
+          "Homo.symbiosus"
+        ],
+        "europeanProjectTitle_s": [
+          "Assessing, preserving and restoring man-microbes symbiosis"
+        ]
+      }
     },
     {
       "publication_type": "preprint",
@@ -205,7 +396,28 @@
       ],
       "open_access": true,
       "citation": "Hassan Ballout, Yvon Maday, Christophe Prud'Homme. COMBINED GALERKIN AND REGRESSION BASED ALGORITHM FOR PARAMETER DEPENDANT PDE'S. 2025. <a target=\"_blank\" href=\"https://cnrs.hal.science/hal-05143191v1\">&#x27E8;hal-05143191&#x27E9;</a>",
-      "pdf_url": "https://cnrs.hal.science/hal-05143191/document"
+      "pdf_url": "https://cnrs.hal.science/hal-05143191/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-22-EXNU-0002"
+        ],
+        "anrProjectAcronym_s": [
+          "Exa-MA"
+        ],
+        "anrProjectTitle_s": [
+          "Methods and Algorithms for Exascale"
+        ],
+        "europeanProjectReference_s": [
+          "810367"
+        ],
+        "europeanProjectAcronym_s": [
+          "EMC2"
+        ],
+        "europeanProjectTitle_s": [
+          "Extreme-scale Mathematically-based Computational Chemistry"
+        ]
+      }
     },
     {
       "publication_type": "software",
@@ -239,7 +451,16 @@
       ],
       "open_access": true,
       "citation": "Vincent Chabannes, Christophe Prud'Homme, Thomas Saigre, Sala Lorenzo, Marcela Szopos, et al.. A 3D geometrical model and meshing procedures for the human eyeball. 2025, <a target=\"_blank\" style=\"word-break: break-all;\" href=\"https://archive.softwareheritage.org/browse/swh:1:dir:a275c7afe02abd36a1124d0c6746fc45ee61c4f3\">&#x27E8;swh:1:dir:a275c7afe02abd36a1124d0c6746fc45ee61c4f3&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-05106849v1\">&#x27E8;hal-05106849&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -279,7 +500,16 @@
       ],
       "open_access": true,
       "citation": "Abdoulaye Samaké, Mahamadou Alassane, Amadou Mahamane. A Numerical Framework for Pollutant Transport in Shallow‐Water Flows: Application to the Niger River in Bamako. <i>Journal of Applied Mathematics</i>, 2025, 2025, <a target=\"_blank\" href=\"https://dx.doi.org/10.1155/jama/6702536\">&#x27E8;10.1155/jama/6702536&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-05109537v1\">&#x27E8;hal-05109537&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-05109537/document"
+      "pdf_url": "https://hal.science/hal-05109537/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "poster",
@@ -317,7 +547,22 @@
       ],
       "open_access": true,
       "citation": "Thomas Saigre, Vincent Chabannes, Giovanna Guidoboni, Christophe Prud'Homme, Marcela Szopos, et al.. Effect of Cooling of the Ocular Surface on Endothelial Cell Sedimentation in Cell Injection Therapy: Insights from Computational Fluid Dynamics. <i>ARVO 2025</i>, May 2025, Salt Lake City, United States. <a target=\"_blank\" href=\"https://hal.science/hal-05072761v1\">&#x27E8;hal-05072761&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-05072761/document"
+      "pdf_url": "https://hal.science/hal-05072761/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-22-EXNU-0002"
+        ],
+        "anrProjectAcronym_s": [
+          "Exa-MA"
+        ],
+        "anrProjectTitle_s": [
+          "Methods and Algorithms for Exascale"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "poster",
@@ -357,7 +602,22 @@
       ],
       "open_access": true,
       "citation": "Lucas Palazzolo, Mickael Binois, Luca Berti, Laëtitia Giraldi. Parametric shape optimization of flagellated microswimmers using Bayesian techniques. <i>SAMO 2025 - International Conference on Sensitivity Analysis of Model Output</i>, Apr 2025, Grenoble, France. <a target=\"_blank\" href=\"https://hal.science/hal-05010013v1\">&#x27E8;hal-05010013&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-05010013/document"
+      "pdf_url": "https://hal.science/hal-05010013/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-21-CE45-0013"
+        ],
+        "anrProjectAcronym_s": [
+          "NEMO"
+        ],
+        "anrProjectTitle_s": [
+          "Contrôle de micro-nageurs magnétiques dans des milieux complexes et confinés"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -397,7 +657,22 @@
       ],
       "open_access": true,
       "citation": "Lucas Palazzolo, Mickael Binois, Luca Berti, Laëtitia Giraldi. Parametric Shape Optimization of Flagellated Micro-Swimmers Using Bayesian Techniques. <i>Physical Review Fluids</i>, 2025, <a target=\"_blank\" href=\"https://dx.doi.org/10.1103/PhysRevFluids.10.034101\">&#x27E8;10.1103/PhysRevFluids.10.034101&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-04699705v2\">&#x27E8;hal-04699705v2&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-04699705/document"
+      "pdf_url": "https://hal.science/hal-04699705/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-21-CE45-0013"
+        ],
+        "anrProjectAcronym_s": [
+          "NEMO"
+        ],
+        "anrProjectTitle_s": [
+          "Contrôle de micro-nageurs magnétiques dans des milieux complexes et confinés"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -440,7 +715,28 @@
       ],
       "open_access": true,
       "citation": "Christophe Prud'Homme, Vincent Chabannes, Luca Berti, Maryam Maslek, Philippe Pincon, et al.. Ktirio Urban Building: A Computational Framework for City Energy Simulations Enhanced by CI/CD Innovations on EuroHPC Systems. <i>15th International Conference on Parallel Processing and Applied Mathematics (PPAM 2024)</i>, Sep 2024, Ostrava, Czech Republic. pp.17-34, <a target=\"_blank\" href=\"https://dx.doi.org/10.1007/978-3-031-85703-4_2\">&#x27E8;10.1007/978-3-031-85703-4_2&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-04590586v1\">&#x27E8;hal-04590586&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-04590586/document"
+      "pdf_url": "https://hal.science/hal-04590586/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-22-EXNU-0002"
+        ],
+        "anrProjectAcronym_s": [
+          "Exa-MA"
+        ],
+        "anrProjectTitle_s": [
+          "Methods and Algorithms for Exascale"
+        ],
+        "europeanProjectReference_s": [
+          "101093457"
+        ],
+        "europeanProjectAcronym_s": [
+          "HiDALGO2"
+        ],
+        "europeanProjectTitle_s": [
+          "HPC and Big Data Technologies for Global Challenges"
+        ]
+      }
     },
     {
       "publication_type": "preprint",
@@ -471,7 +767,28 @@
       ],
       "open_access": true,
       "citation": "Christophe Prud'Homme, Yvon Maday, Hassan Ballout. Nonlinear compressive reduced basis approximation for multi-parameter elliptic problem. 2024. <a target=\"_blank\" href=\"https://hal.science/hal-04628481v1\">&#x27E8;hal-04628481&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-04628481/document"
+      "pdf_url": "https://hal.science/hal-04628481/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-22-EXNU-0002"
+        ],
+        "anrProjectAcronym_s": [
+          "Exa-MA"
+        ],
+        "anrProjectTitle_s": [
+          "Methods and Algorithms for Exascale"
+        ],
+        "europeanProjectReference_s": [
+          "ERC-2018-SYG-810367"
+        ],
+        "europeanProjectAcronym_s": [
+          "EMC2"
+        ],
+        "europeanProjectTitle_s": [
+          "Extreme-scale Mathematically-based Computational Chemistry"
+        ]
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -508,7 +825,16 @@
       ],
       "open_access": true,
       "citation": "Thomas Saigre, Christophe Prud'Homme, Marcela Szopos, Vincent Chabannes. A coupled fluid-dynamics-heat transfer model for 3D simulations of the aqueous humor flow in the human eye. <i>CMBE24</i>, Jun 2024, Arlington (Virginia), United States. pp.508-512. <a target=\"_blank\" href=\"https://hal.science/hal-04558924v1\">&#x27E8;hal-04558924&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-04558924/document"
+      "pdf_url": "https://hal.science/hal-04558924/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -547,7 +873,22 @@
       ],
       "open_access": true,
       "citation": "Jérémie Muzet, Christophe Trophime, Xavier Chaud, Christophe Prudhomme, Vincent Chabannes. 2D Axisymmetric Modeling of the HTS Insert Nougat in a Background Magnetic Field Generated by Resistive Magnet. <i>IEEE Transactions on Applied Superconductivity</i>, 2024, 34 (5), pp.4903005. <a target=\"_blank\" href=\"https://dx.doi.org/10.1109/TASC.2024.3362749\">&#x27E8;10.1109/TASC.2024.3362749&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-04484273v1\">&#x27E8;hal-04484273&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-04484273/document"
+      "pdf_url": "https://hal.science/hal-04484273/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [
+          "951714"
+        ],
+        "europeanProjectAcronym_s": [
+          "SuperEMFL"
+        ],
+        "europeanProjectTitle_s": [
+          "Superconducting magnets for the European  Magnet Field Laboratory"
+        ]
+      }
     },
     {
       "publication_type": "journal-article",
@@ -592,7 +933,33 @@
       ],
       "open_access": true,
       "citation": "Céline Van Landeghem, Luca Berti, Vincent Chabannes, Agathe Chouippe, Laëtitia Giraldi, et al.. Mathematical and computational framework for moving and colliding rigid bodies in a Newtonian fluid. <i>Annals of Mathematical Sciences and Applications</i>, 2024, pp.59-89. <a target=\"_blank\" href=\"https://dx.doi.org/10.4310/AMSA.2024.v9.n1.a2\">&#x27E8;10.4310/AMSA.2024.v9.n1.a2&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-04101291v2\">&#x27E8;hal-04101291v2&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-04101291/document"
+      "pdf_url": "https://hal.science/hal-04101291/document",
+      "funding": {
+        "funding_s": [
+          "ITI Irmia++, and Cemosis."
+        ],
+        "anrProjectReference_s": [
+          "ANR-21-CE45-0013",
+          "ANR-10-IDEX-0002",
+          "ANR-11-LABX-0055",
+          "ANR-20-SFRI-0012"
+        ],
+        "anrProjectAcronym_s": [
+          "NEMO",
+          "UNISTRA",
+          "IRMIA",
+          "STRAT'US"
+        ],
+        "anrProjectTitle_s": [
+          "Contrôle de micro-nageurs magnétiques dans des milieux complexes et confinés",
+          "Par-delà les frontières, l'Université de Strasbourg",
+          "Institut de Recherche en Mathématiques, ses Interactions et Applications",
+          "Façonner les talents en formation et en recherche à l'Université de Strasbourg"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -627,7 +994,16 @@
       ],
       "open_access": true,
       "citation": "Thomas Saigre, Christophe Prud'Homme, Marcela Szopos. Model Order Reduction and Sensitivity Analysis for complex ocular simulations inside the human eyeball. <i>CompBioMed Conference 2023</i>, Sep 2023, Munich, Germany. <a target=\"_blank\" href=\"https://cnrs.hal.science/hal-04229070v1\">&#x27E8;hal-04229070&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "poster",
@@ -671,7 +1047,16 @@
       ],
       "open_access": true,
       "citation": "Jeremie Muzet, Vincent Chabannes, Christophe Prud'Homme, Christophe Trophime, Xavier Chaud. 2D axisymmetric modeling of the HTS Insert Nougat in a background magnetic field generated by resistive magnet.. <i>International Conference on Magnet Technology (MT-28)</i>, Sep 2023, Aix-en- Provence, France. <a target=\"_blank\" href=\"https://mt28.aoscongres.com/\"></a>, 106. <a target=\"_blank\" href=\"https://cnrs.hal.science/hal-04220944v1\">&#x27E8;hal-04220944&#x27E9;</a>",
-      "pdf_url": "https://cnrs.hal.science/hal-04220944/document"
+      "pdf_url": "https://cnrs.hal.science/hal-04220944/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -715,7 +1100,16 @@
       ],
       "open_access": true,
       "citation": "Christophe Trophime, Jeremie Muzet, Debray Francois, Christophe Prud'Homme, Vincent Chabannes. MagnetDB a platform for the simulation of High Field Magnet. <i>MT28 International Conference on Magnet Technologies</i>, ITER Organization, Sep 2023, Aix - en - Provence, France. <a target=\"_blank\" href=\"https://cnrs.hal.science/hal-04220904v1\">&#x27E8;hal-04220904&#x27E9;</a>",
-      "pdf_url": "https://cnrs.hal.science/hal-04220904/document"
+      "pdf_url": "https://cnrs.hal.science/hal-04220904/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -760,7 +1154,20 @@
       ],
       "open_access": false,
       "citation": "Silvia Bertoluzza, Giovanna Guidoboni, Romain Hild, Daniele Prada, Christophe Prud'Homme, et al.. A HDG Method for Elliptic Problems with Integral Boundary Condition: Theory and Applications. <i>Journal of Scientific Computing</i>, 2023, 95 (1), pp.6. <a target=\"_blank\" href=\"https://dx.doi.org/10.1007/s10915-023-02109-5\">&#x27E8;10.1007/s10915-023-02109-5&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.inrae.fr/hal-04073316v1\">&#x27E8;hal-04073316&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [
+          "NSF-DMS 1853222/2021192"
+        ],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": [
+          "European Union’s Horizon 2020 research and innovation program under grant agreement No 731063"
+        ]
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -790,7 +1197,16 @@
       ],
       "open_access": true,
       "citation": "Christophe Trophime, Christophe Prud'Homme. HiFiMagnet : a toolchain for the design and simulation of High Field Magnets. <i>EMFL Days 20222</i>, Sep 2022, Kerkrade, Netherlands. <a target=\"_blank\" href=\"https://cnrs.hal.science/hal-03786695v1\">&#x27E8;hal-03786695&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "preprint",
@@ -829,7 +1245,16 @@
       ],
       "open_access": false,
       "citation": "Christophe Trophime, Vincent Chabannes, Christophe Prud'Homme, Romain Hild, Francois Debray. HiFiMagnet a toolchain for the design and simulation of high field magnets. 2022. <a target=\"_blank\" href=\"https://cnrs.hal.science/hal-03690050v1\">&#x27E8;hal-03690050&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "preprint",
@@ -869,7 +1294,18 @@
       ],
       "open_access": true,
       "citation": "Luca Berti, Zakarya El Khiyati, Youssef Essousy, Christophe Prud'Homme, Laetitia Giraldi. Reinforcement learning with function approximation for 3-spheres swimmer. 2022. <a target=\"_blank\" href=\"https://inria.hal.science/hal-03538754v1\">&#x27E8;hal-03538754&#x27E9;</a>",
-      "pdf_url": "https://inria.hal.science/hal-03538754/document"
+      "pdf_url": "https://inria.hal.science/hal-03538754/document",
+      "funding": {
+        "funding_s": [
+          "The authors thank the Academy “Complex Systems” for the financial support during their research stay."
+        ],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "preprint",
@@ -905,7 +1341,16 @@
       ],
       "open_access": true,
       "citation": "Luca Berti, Mickael Binois, François Alouges, Matthieu Aussal, Christophe Prud'Homme, et al.. Shapes enhancing the propulsion of multiflagellated helical microswimmers. 2021. <a target=\"_blank\" href=\"https://hal.science/hal-03166010v1\">&#x27E8;hal-03166010&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -947,7 +1392,16 @@
       ],
       "open_access": true,
       "citation": "Christophe Prud'Homme, Lorenzo Sala, Marcela Szopos. Uncertainty propagation and sensitivity analysis: results from the Ocular Mathematical Virtual Simulator. <i>Mathematical Biosciences and Engineering</i>, 2021, Volume 18 (Issue 3), pp.2010-2032. <a target=\"_blank\" href=\"https://dx.doi.org/10.3934/mbe.2021105\">&#x27E8;10.3934/mbe.2021105&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-03123856v1\">&#x27E8;hal-03123856&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-03123856/document"
+      "pdf_url": "https://hal.science/hal-03123856/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -978,7 +1432,16 @@
       ],
       "open_access": true,
       "citation": "Luca Berti, Laetitia Giraldi, Christophe Prud'Homme. Swimming at Low Reynolds Number. <i>ESAIM: Proceedings and Surveys</i>, 2020, 67, pp.46-60. <a target=\"_blank\" href=\"https://dx.doi.org/10.1051/proc/202067004\">&#x27E8;10.1051/proc/202067004&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-02369537v1\">&#x27E8;hal-02369537&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-02369537/document"
+      "pdf_url": "https://hal.science/hal-02369537/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -1014,7 +1477,24 @@
       ],
       "open_access": true,
       "citation": "Michele Giuliano Carlino, Philippe Ricka, Minh Phan, Silvia Bertoluzza, Micol Pennacchio, et al.. Geometry description and mesh construction from medical imaging. <i>ESAIM: Proceedings and Surveys</i>, 2020, 67, pp.161-177. <a target=\"_blank\" href=\"https://dx.doi.org/10.1051/proc/202067010\">&#x27E8;10.1051/proc/202067010&#x27E9;</a>. <a target=\"_blank\" href=\"https://inria.hal.science/hal-02072342v3\">&#x27E8;hal-02072342v3&#x27E9;</a>",
-      "pdf_url": "https://inria.hal.science/hal-02072342/document"
+      "pdf_url": "https://inria.hal.science/hal-02072342/document",
+      "funding": {
+        "funding_s": [
+          "his  paper  has  been  realized  in  the  framework  of  ERC  Project  CHANGE,  which  has  received  funding  from  the  EuropeanResearch Council (ERC) under the European Unions Horizon 2020 research and innovation programme (grant agreement No694515."
+        ],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [
+          "694515"
+        ],
+        "europeanProjectAcronym_s": [
+          "CHANGE"
+        ],
+        "europeanProjectTitle_s": [
+          "New CHallenges for (adaptive) PDE solvers: the interplay of ANalysis and GEometry"
+        ]
+      }
     },
     {
       "publication_type": "journal-article",
@@ -1047,7 +1527,16 @@
       ],
       "open_access": false,
       "citation": "A. Lotfi, D. Marcsa, Z. Horvath, Christophe Prud'Homme, Vincent Chabannes. Coupled physics solvers for analysing the magneto‐thermal behaviour of a permanent magnet synchronous machines. <i>PAMM</i>, 2019, 19 (1), <a target=\"_blank\" href=\"https://dx.doi.org/10.1002/pamm.201900261\">&#x27E8;10.1002/pamm.201900261&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-02369286v1\">&#x27E8;hal-02369286&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "poster",
@@ -1089,7 +1578,16 @@
       ],
       "open_access": true,
       "citation": "François Debray, Cédric Grand-Clément, Olivier Jay, Romain Hild, Christophe Prud'Homme, et al.. Integrating Modeling Toolchain into High Field Magnet Monitoring and Control system. <i>International Conference on Magnet Technology MT26</i>, Sep 2019, Vancouver, Canada. <a target=\"_blank\" href=\"https://hal.science/hal-02477407v1\">&#x27E8;hal-02477407&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-02477407/document"
+      "pdf_url": "https://hal.science/hal-02477407/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "report",
@@ -1129,7 +1627,16 @@
       ],
       "open_access": true,
       "citation": "Lucie Quibel, Philippe Helluy, Marie Chion, Philippe Ricka. Mélanger des gaz raides pour créer de nouvelles lois d'état. [Rapport de recherche] IRMA, Université de Strasbourg; EDF R&D. 2019. <a target=\"_blank\" href=\"https://hal.science/hal-02114552v1\">&#x27E8;hal-02114552&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-02114552/document"
+      "pdf_url": "https://hal.science/hal-02114552/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "thesis",
@@ -1179,7 +1686,16 @@
       ],
       "open_access": true,
       "citation": "Sever Adrian Hirstoaga. Design and performant implementation of numerical methods for multiscale problems in plasma physics. Analysis of PDEs [math.AP]. Université de Strasbourg, IRMA UMR 7501, 2019. <a target=\"_blank\" href=\"https://theses.hal.science/tel-02081304v1\">&#x27E8;tel-02081304&#x27E9;</a>",
-      "pdf_url": "https://theses.hal.science/tel-02081304/document"
+      "pdf_url": "https://theses.hal.science/tel-02081304/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "report",
@@ -1211,7 +1727,16 @@
       ],
       "open_access": true,
       "citation": "Raphaël Bulle, François Der Hovsepian, Francisco Nicolás, Jean-Christophe Sick. Image search, Match the fastener. [Research Report] Université de strasbourg; University of Luxembourg; Rayce EURL. 2019. <a target=\"_blank\" href=\"https://hal.science/hal-02078958v1\">&#x27E8;hal-02078958&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-02078958/document"
+      "pdf_url": "https://hal.science/hal-02078958/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -1243,7 +1768,16 @@
       ],
       "open_access": true,
       "citation": "Christophe Prud'Homme, Zakaria Belhachmi, Guillaume Dollé, Murielle Torregrossa. The Direct Robin Boundary Value Parabolic System of Time-Resolved Diffuse Optical Tomography with Fluorescence. <i>Journal of Mathematical Study</i>, 2019, 52 (3), pp.341-358. <a target=\"_blank\" href=\"https://dx.doi.org/10.4208/jms.v52n3.19.07\">&#x27E8;10.4208/jms.v52n3.19.07&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-02301423v1\">&#x27E8;hal-02301423&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -1279,7 +1813,16 @@
       ],
       "open_access": false,
       "citation": "Lorenzo Sala, Giovanna Guidoboni, C. Prud’homme, Marcela Szopos, Alice Chandra Verticchio Vercellin, et al.. A web-based interface for ocular hemodynamics and biomechanics analysis via the Ocular Mathematical Virtual Simulator. <i>ARVO</i>, 2019, Annual Meeting, United States. <a target=\"_blank\" href=\"https://hal.science/hal-03901634v1\">&#x27E8;hal-03901634&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -1327,7 +1870,25 @@
       ],
       "open_access": true,
       "citation": "Fabrizia Salerni, Rodolfo Repetto, Alon Harris, Peter Pinsky, Christophe Prud'Homme, et al.. Biofluid modeling of the coupled eye-brain system and insights into simulated microgravity conditions. <i>PLoS ONE</i>, 2019, 14 (8), pp.e0216012. <a target=\"_blank\" href=\"https://dx.doi.org/10.1371/journal.pone.0216012\">&#x27E8;10.1371/journal.pone.0216012&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-02298705v1\">&#x27E8;hal-02298705&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-02298705/document"
+      "pdf_url": "https://hal.science/hal-02298705/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-IDEX-0002",
+          "ANR-11-LABX-0055"
+        ],
+        "anrProjectAcronym_s": [
+          "UNISTRA",
+          "IRMIA"
+        ],
+        "anrProjectTitle_s": [
+          "Par-delà les frontières, l'Université de Strasbourg",
+          "Institut de Recherche en Mathématiques, ses Interactions et Applications"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "thesis",
@@ -1374,7 +1935,16 @@
       ],
       "open_access": true,
       "citation": "Frédéric Bertrand. Contributions à la modélisation statistique et à ses applications en biologie et dans le monde industriel. Statistiques [math.ST]. Université de Strasbourg, 2018. <a target=\"_blank\" href=\"https://theses.hal.science/tel-01937183v1\">&#x27E8;tel-01937183&#x27E9;</a>",
-      "pdf_url": "https://theses.hal.science/tel-01937183/document"
+      "pdf_url": "https://theses.hal.science/tel-01937183/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "thesis",
@@ -1439,7 +2009,16 @@
       ],
       "open_access": true,
       "citation": "Bruno Weber. Optimisation de code Galerkin discontinu sur ordinateur hybride : application à la simulation numérique en électromagnétisme. Informatique et langage [cs.CL]. Université de Strasbourg, 2018. Français. <a target=\"_blank\" href=\"https://www.theses.fr/2018STRAD046\">&#x27E8;NNT : 2018STRAD046&#x27E9;</a>. <a target=\"_blank\" href=\"https://theses.hal.science/tel-01911261v3\">&#x27E8;tel-01911261v3&#x27E9;</a>",
-      "pdf_url": "https://theses.hal.science/tel-01911261/document"
+      "pdf_url": "https://theses.hal.science/tel-01911261/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "poster",
@@ -1475,7 +2054,16 @@
       ],
       "open_access": true,
       "citation": "Christophe Trophime, Cédric Grandclement, Olivier Jay, Christophe Prud'Homme, Guillaume Dollé, et al.. Towards a better Monitoring and Control System: Integrating Modeling Toolchain. <i>EMFL Days</i>, Oct 2018, Arles, France. <a target=\"_blank\" href=\"https://hal.science/hal-01939392v1\">&#x27E8;hal-01939392&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01939392/document"
+      "pdf_url": "https://hal.science/hal-01939392/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -1521,7 +2109,25 @@
       ],
       "open_access": true,
       "citation": "Thibaut Métivet, Vincent Chabannes, Mourad Ismail, Christophe Prud'Homme. High-order finite-element framework for the efficient simulation of multifluid flows. <i>Mathematics </i>, 2018, 6 (10), <a target=\"_blank\" href=\"https://dx.doi.org/10.3390/math6100203\">&#x27E8;10.3390/math6100203&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-01865602v1\">&#x27E8;hal-01865602&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01865602/document"
+      "pdf_url": "https://hal.science/hal-01865602/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-11-LABX-0055",
+          "ANR-12-MONU-0010"
+        ],
+        "anrProjectAcronym_s": [
+          "IRMIA",
+          "VIVABRAIN"
+        ],
+        "anrProjectTitle_s": [
+          "Institut de Recherche en Mathématiques, ses Interactions et Applications",
+          "Simulation d'angiographies virtuelles à partir de modèles vasculaires 3D et 3D+t"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "thesis",
@@ -1559,7 +2165,16 @@
       ],
       "open_access": true,
       "citation": "Guillaume Dollé. Diffuse optical tomography and fluorescence for tumour detection. Medical Imaging. Université de Strasbourg, 2018. English. <a target=\"_blank\" href=\"https://www.theses.fr/2018STRAD029\">&#x27E8;NNT : 2018STRAD029&#x27E9;</a>. <a target=\"_blank\" href=\"https://theses.hal.science/tel-01875748v2\">&#x27E8;tel-01875748v2&#x27E9;</a>",
-      "pdf_url": "https://theses.hal.science/tel-01875748/document"
+      "pdf_url": "https://theses.hal.science/tel-01875748/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "thesis",
@@ -1604,7 +2219,16 @@
       ],
       "open_access": true,
       "citation": "Jean-Baptiste Wahl. The Reduced basis method applied to aerothermal simulations. Thermics [physics.class-ph]. Université de Strasbourg, 2018. English. <a target=\"_blank\" href=\"https://www.theses.fr/2018STRAD024\">&#x27E8;NNT : 2018STRAD024&#x27E9;</a>. <a target=\"_blank\" href=\"https://theses.hal.science/tel-01869098v3\">&#x27E8;tel-01869098v3&#x27E9;</a>",
-      "pdf_url": "https://theses.hal.science/tel-01869098/document"
+      "pdf_url": "https://theses.hal.science/tel-01869098/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -1636,7 +2260,16 @@
       ],
       "open_access": false,
       "citation": "Lorenzo Sala, Christophe Prud'Homme, Giovanna Guidoboni, Marcela Szopos. Ocular mathematical virtual simulator: A hemodynamical and biomechanical study towards clinical applications. <i>Journal of Coupled Systems and Multiscale Dynamics</i>, 2018, 6 (3), pp.241-247. <a target=\"_blank\" href=\"https://dx.doi.org/10.1166/jcsmd.2018.1165\">&#x27E8;10.1166/jcsmd.2018.1165&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-02114295v1\">&#x27E8;hal-02114295&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -1675,7 +2308,16 @@
       ],
       "open_access": true,
       "citation": "Romain Hild, Christophe Prud'Homme, Christophe Trophime. Optimization and control of magnetic high fields. <i>Canum 2018</i>, May 2018, Agde, France. <a target=\"_blank\" href=\"https://hal.science/hal-01803943v1\">&#x27E8;hal-01803943&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "poster",
@@ -1706,7 +2348,16 @@
       ],
       "open_access": true,
       "citation": "Jean-Baptiste Wahl, Christophe Prud'Homme, Y. Hoarau. The Reduced Basis Method Applied to Aerothermal Simulations. <i>CANUM</i>, May 2018, Cap d'Agde, France. <a target=\"_blank\" href=\"https://hal.science/hal-01799506v1\">&#x27E8;hal-01799506&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01799506/document"
+      "pdf_url": "https://hal.science/hal-01799506/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "poster",
@@ -1757,7 +2408,16 @@
       ],
       "open_access": true,
       "citation": "Giovanna Guidoboni, Christophe Prud'Homme, Lorenzo Sala, Marcela Szopos. Unconditionally stable operator splitting method for a multiscale application in ophthalmology. <i>44e Congrès National d'Analyse Numérique</i>, May 2018, Cap d'Agde, France. <a target=\"_blank\" href=\"https://hal.science/hal-01798865v1\">&#x27E8;hal-01798865&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01798865/document"
+      "pdf_url": "https://hal.science/hal-01798865/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -1818,7 +2478,28 @@
       ],
       "open_access": true,
       "citation": "Gautier Follain, Nael Osmani, Sofia Azevedo, Guillaume Allio, Luc Mercier, et al.. Hemodynamic forces tune the arrest, adhesion and extravasation of circulating tumor cells. <i>Developmental Cell</i>, 2018, 45 (1), pp.33-52.e12. <a target=\"_blank\" href=\"https://dx.doi.org/10.1016/j.devcel.2018.02.015\">&#x27E8;10.1016/j.devcel.2018.02.015&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-01694694v1\">&#x27E8;hal-01694694&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01694694/document"
+      "pdf_url": "https://hal.science/hal-01694694/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-IDEX-0002",
+          "ANR-12-MONU-0010",
+          "ANR-11-LABX-0055"
+        ],
+        "anrProjectAcronym_s": [
+          "UNISTRA",
+          "VIVABRAIN",
+          "IRMIA"
+        ],
+        "anrProjectTitle_s": [
+          "Par-delà les frontières, l'Université de Strasbourg",
+          "Simulation d'angiographies virtuelles à partir de modèles vasculaires 3D et 3D+t",
+          "Institut de Recherche en Mathématiques, ses Interactions et Applications"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "thesis",
@@ -1856,7 +2537,16 @@
       ],
       "open_access": true,
       "citation": "Marcela Szopos. Mathematical modeling, analysis and simulations for fluid mechanics and their relevance to in silico medicine. Analysis of PDEs [math.AP]. Université de Strasbourg, IRMA UMR 7501, 2017. <a target=\"_blank\" href=\"https://theses.hal.science/tel-01646867v1\">&#x27E8;tel-01646867&#x27E9;</a>",
-      "pdf_url": "https://theses.hal.science/tel-01646867/document"
+      "pdf_url": "https://theses.hal.science/tel-01646867/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "poster",
@@ -1905,7 +2595,28 @@
       ],
       "open_access": true,
       "citation": "Cécile Daversin - Catty, Romain Hild, Christophe Prud'Homme, Christophe Trophime. Towards real time computation of 3D magnetic field in parametrized Polyhelix magnets using a reduced basis Biot-Savart model. <i>25th International Conference on Magnet Technology</i>, Aug 2017, Amsterdam, Netherlands. <a target=\"_blank\" href=\"http://mt-25.org/\"></a>, 2017. <a target=\"_blank\" href=\"https://hal.science/hal-01584931v1\">&#x27E8;hal-01584931&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01584931/document"
+      "pdf_url": "https://hal.science/hal-01584931/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-13-MONU-0005"
+        ],
+        "anrProjectAcronym_s": [
+          "CHORUS"
+        ],
+        "anrProjectTitle_s": [
+          "Common Horizon of Open Research in Uncertainty for Simulation"
+        ],
+        "europeanProjectReference_s": [
+          "731063"
+        ],
+        "europeanProjectAcronym_s": [
+          "MSO4SC"
+        ],
+        "europeanProjectTitle_s": [
+          "Mathematical Modelling, Simulation and Optimization for Societal Challenges with Scientific Computing"
+        ]
+      }
     },
     {
       "publication_type": "poster",
@@ -1958,7 +2669,22 @@
       ],
       "open_access": true,
       "citation": "Cécile Daversin, Francois Debray, Jean Dumas, Romain Hild, Christophe Prud'Homme, et al.. Comparative study between in-situ measurements and a 3D efficient model for the computation of magnetic fields in High Field Polyhelix magnets. <i>25th International Conference on Magnet Technology (MT25)</i>, Aug 2017, Amsterdam, Netherlands. <a target=\"_blank\" href=\"http://mt-25.org/\"></a>. <a target=\"_blank\" href=\"https://hal.science/hal-01588678v2\">&#x27E8;hal-01588678v2&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01588678/document"
+      "pdf_url": "https://hal.science/hal-01588678/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-13-MONU-0005"
+        ],
+        "anrProjectAcronym_s": [
+          "CHORUS"
+        ],
+        "anrProjectTitle_s": [
+          "Common Horizon of Open Research in Uncertainty for Simulation"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -1999,7 +2725,22 @@
       ],
       "open_access": false,
       "citation": "Lorenzo Sala, Christophe Prud'Homme, Daniele Prada, Fabrizia Salerni, Christophe Trophime, et al.. Patient-specific virtual simulator of tissue perfusion in the lamina cribrosa.. <i>Annual Meeting of Association for Research in Vision and Ophthalmology (ARVO)</i>, May 2017, Baltimore, MA, United States. <a target=\"_blank\" href=\"https://hal.science/hal-01479209v1\">&#x27E8;hal-01479209&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [
+          "731063"
+        ],
+        "europeanProjectAcronym_s": [
+          "MSO4SC"
+        ],
+        "europeanProjectTitle_s": [
+          "Mathematical Modelling, Simulation and Optimization for Societal Challenges with Scientific Computing"
+        ]
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -2041,7 +2782,37 @@
       ],
       "open_access": true,
       "citation": "Vincent Chabannes, Christophe Prud'Homme, Marcela Szopos, Ranine Tarabay. High order finite element simulations for fluid dynamics validated by experimental data from the fda benchmark nozzle model. <i>5th International Conference on Computational and Mathematical Biomedical Engineering - CMBE2017</i>, Apr 2017, Pittsburgh, PA, United States. <a target=\"_blank\" href=\"https://hal.science/hal-01429685v2\">&#x27E8;hal-01429685v2&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01429685/document"
+      "pdf_url": "https://hal.science/hal-01429685/document",
+      "funding": {
+        "funding_s": [
+          "MESR",
+          "Cemosis",
+          "ANR Vivabrain",
+          "Labex IRMIA",
+          "PRACE 10"
+        ],
+        "anrProjectReference_s": [
+          "ANR-12-MONU-0010",
+          "ANR-10-IDEX-0002"
+        ],
+        "anrProjectAcronym_s": [
+          "VIVABRAIN",
+          "UNISTRA"
+        ],
+        "anrProjectTitle_s": [
+          "Simulation d'angiographies virtuelles à partir de modèles vasculaires 3D et 3D+t",
+          "Par-delà les frontières, l'Université de Strasbourg"
+        ],
+        "europeanProjectReference_s": [
+          "211528"
+        ],
+        "europeanProjectAcronym_s": [
+          "PRACE"
+        ],
+        "europeanProjectTitle_s": [
+          "Partnership for Advanced Computing in Europe"
+        ]
+      }
     },
     {
       "publication_type": "book-chapter",
@@ -2071,7 +2842,25 @@
       ],
       "open_access": true,
       "citation": "Cécile Daversin, Christophe Prud'Homme. Simultaneous empirical interpolation and reduced basis method. Application to non-linear multi-physics problem. <i>Model Reduction of Parametrized Systems</i>, 17, Springer International Publishing, 2017, MS&A, 978-3-319-58786-8. <a target=\"_blank\" href=\"https://dx.doi.org/10.1007/978-3-319-58786-8\">&#x27E8;10.1007/978-3-319-58786-8&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-01332437v1\">&#x27E8;hal-01332437&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01332437/document"
+      "pdf_url": "https://hal.science/hal-01332437/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-13-MONU-0005",
+          "ANR-10-IDEX-0002"
+        ],
+        "anrProjectAcronym_s": [
+          "CHORUS",
+          "UNISTRA"
+        ],
+        "anrProjectTitle_s": [
+          "Common Horizon of Open Research in Uncertainty for Simulation",
+          "Par-delà les frontières, l'Université de Strasbourg"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "thesis",
@@ -2126,7 +2915,16 @@
       ],
       "open_access": true,
       "citation": "Nhung Pham. Méthodes numériques pour l'équation de Vlasov réduite. Analyse numérique [math.NA]. Université de Strasbourg, 2016. Français. <a target=\"_blank\" href=\"https://www.theses.fr/2016STRAD051\">&#x27E8;NNT : 2016STRAD051&#x27E9;</a>. <a target=\"_blank\" href=\"https://theses.hal.science/tel-01412750v2\">&#x27E8;tel-01412750v2&#x27E9;</a>",
-      "pdf_url": "https://theses.hal.science/tel-01412750/document"
+      "pdf_url": "https://theses.hal.science/tel-01412750/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "thesis",
@@ -2173,7 +2971,16 @@
       ],
       "open_access": true,
       "citation": "Michel Massaro. Méthodes numériques pour les plasmas sur architectures multicoeurs. Langage de programmation [cs.PL]. Université de Strasbourg, 2016. Français. <a target=\"_blank\" href=\"https://www.theses.fr/2016STRAD052\">&#x27E8;NNT : 2016STRAD052&#x27E9;</a>. <a target=\"_blank\" href=\"https://theses.hal.science/tel-01410049v2\">&#x27E8;tel-01410049v2&#x27E9;</a>",
-      "pdf_url": "https://theses.hal.science/tel-01410049/document"
+      "pdf_url": "https://theses.hal.science/tel-01410049/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -2217,7 +3024,25 @@
       ],
       "open_access": true,
       "citation": "Guillaume Dollé, O Duran, Nelson Feyeux, Emmanuel Frénod, Matteo Giacomini, et al.. Mathematical modeling and numerical simulation of a bioreactor landfill using Feel++. <i>ESAIM: Proceedings and Surveys</i>, 2016, CEMRACS 2015: Coupling multi-physics models involving fluids, 55, pp.83-110. <a target=\"_blank\" href=\"https://dx.doi.org/10.1051/proc/201655083\">&#x27E8;10.1051/proc/201655083&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-01258643v2\">&#x27E8;hal-01258643v2&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01258643/document"
+      "pdf_url": "https://hal.science/hal-01258643/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-11-LABX-0020",
+          "ANR-10-LABX-0002"
+        ],
+        "anrProjectAcronym_s": [
+          "LEBESGUE",
+          "AMIES"
+        ],
+        "anrProjectTitle_s": [
+          "Centre de Mathématiques Henri Lebesgue : fondements, interactions, applications et Formation",
+          "Agency for mathematics in interaction with enterprise and society"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "thesis",
@@ -2263,7 +3088,16 @@
       ],
       "open_access": true,
       "citation": "Ranine Tarabay. Modeling of blood flow in real vascular networks. Computer Aided Engineering. Université de Strasbourg, 2016. English. <a target=\"_blank\" href=\"https://www.theses.fr/2016STRAD034\">&#x27E8;NNT : 2016STRAD034&#x27E9;</a>. <a target=\"_blank\" href=\"https://theses.hal.science/tel-01364010v2\">&#x27E8;tel-01364010v2&#x27E9;</a>",
-      "pdf_url": "https://theses.hal.science/tel-01364010/document"
+      "pdf_url": "https://theses.hal.science/tel-01364010/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "thesis",
@@ -2306,7 +3140,16 @@
       ],
       "open_access": true,
       "citation": "Cécile Daversin - Catty. Reduced basis method applied to large non-linear multi-physics problems : application to high field magnets design. Electromagnetism. Université de Strasbourg, 2016. English. <a target=\"_blank\" href=\"https://www.theses.fr/2016STRAD019\">&#x27E8;NNT : 2016STRAD019&#x27E9;</a>. <a target=\"_blank\" href=\"https://theses.hal.science/tel-01361722v2\">&#x27E8;tel-01361722v2&#x27E9;</a>",
-      "pdf_url": "https://theses.hal.science/tel-01361722/document"
+      "pdf_url": "https://theses.hal.science/tel-01361722/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -2343,7 +3186,22 @@
       ],
       "open_access": true,
       "citation": "Silvia Bertoluzza, Micol Pennacchio, Christophe Prud'Homme, Abdoulaye Samake. Substructuring Preconditioners for h-p Mortar FEM. <i>ESAIM: Mathematical Modelling and Numerical Analysis</i>, 2016, 50 (4), pp.1057-1082. <a target=\"_blank\" href=\"https://dx.doi.org/10.1051/m2an/2015065\">&#x27E8;10.1051/m2an/2015065&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-01066606v1\">&#x27E8;hal-01066606&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01066606/document"
+      "pdf_url": "https://hal.science/hal-01066606/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-COSI-0009"
+        ],
+        "anrProjectAcronym_s": [
+          "HAMM"
+        ],
+        "anrProjectTitle_s": [
+          "Architecture Hybrides et Méthodes Multi-échelles"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -2380,7 +3238,28 @@
       ],
       "open_access": true,
       "citation": "Cécile Daversin, Christophe Prudhomme, Christophe Trophime. Full 3D MultiPhysics Model of High Field PolyHelices Magnets. <i>IEEE Transactions on Applied Superconductivity</i>, 2016, 26 (4), pp.1-4. <a target=\"_blank\" href=\"https://dx.doi.org/10.1109/TASC.2016.2516241\">&#x27E8;10.1109/TASC.2016.2516241&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-01220807v1\">&#x27E8;hal-01220807&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01220807/document"
+      "pdf_url": "https://hal.science/hal-01220807/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-IDEX-0002",
+          "ANR-13-MONU-0005",
+          "ANR-11-LABX-0055"
+        ],
+        "anrProjectAcronym_s": [
+          "UNISTRA",
+          "CHORUS",
+          "IRMIA"
+        ],
+        "anrProjectTitle_s": [
+          "Par-delà les frontières, l'Université de Strasbourg",
+          "Common Horizon of Open Research in Uncertainty for Simulation",
+          "Institut de Recherche en Mathématiques, ses Interactions et Applications"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -2442,7 +3321,22 @@
       ],
       "open_access": true,
       "citation": "Nicolas Passat, Stéphanie Salmon, Jean-Paul Armspach, Benoît Naegel, Christophe Prud'Homme, et al.. From real MRA to virtual MRA: Towards an open-source framework. <i>Medical Image Computing and Computer-Assisted Intervention (MICCAI)</i>, 2016, Athènes, France. pp.335-343, <a target=\"_blank\" href=\"https://dx.doi.org/10.1007/978-3-319-46726-9_39\">&#x27E8;10.1007/978-3-319-46726-9_39&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-01472890v1\">&#x27E8;hal-01472890&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01472890/document"
+      "pdf_url": "https://hal.science/hal-01472890/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-12-MONU-0010"
+        ],
+        "anrProjectAcronym_s": [
+          "VIVABRAIN"
+        ],
+        "anrProjectTitle_s": [
+          "Simulation d'angiographies virtuelles à partir de modèles vasculaires 3D et 3D+t"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -2485,7 +3379,25 @@
       ],
       "open_access": true,
       "citation": "Christophe Prud'Homme, Vincent Chabannes, Marcela Szopos, Alexandre Ancel, Julien Jomier. From medical imaging to numerical simulations. <i>Advanced technologies and treatments for Glaucoma</i>, Oct 2015, Milano, Italy. <a target=\"_blank\" href=\"https://hal.science/hal-01223120v1\">&#x27E8;hal-01223120&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01223120/document"
+      "pdf_url": "https://hal.science/hal-01223120/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-12-MONU-0010",
+          "ANR-10-IDEX-0002"
+        ],
+        "anrProjectAcronym_s": [
+          "VIVABRAIN",
+          "UNISTRA"
+        ],
+        "anrProjectTitle_s": [
+          "Simulation d'angiographies virtuelles à partir de modèles vasculaires 3D et 3D+t",
+          "Par-delà les frontières, l'Université de Strasbourg"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "poster",
@@ -2518,7 +3430,25 @@
       ],
       "open_access": true,
       "citation": "Cécile Daversin, Christophe Prud'Homme, Christophe Trophime. Full 3D MultiPhysics Model of High Field PolyHelices Magnets. <i>International Conference on Magnet Technology</i>, Oct 2015, Seoul, South Korea. <a target=\"_blank\" href=\"https://hal.science/hal-01219066v1\">&#x27E8;hal-01219066&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01219066/document"
+      "pdf_url": "https://hal.science/hal-01219066/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-IDEX-0002",
+          "ANR-13-MONU-0005"
+        ],
+        "anrProjectAcronym_s": [
+          "UNISTRA",
+          "CHORUS"
+        ],
+        "anrProjectTitle_s": [
+          "Par-delà les frontières, l'Université de Strasbourg",
+          "Common Horizon of Open Research in Uncertainty for Simulation"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -2548,7 +3478,25 @@
       ],
       "open_access": true,
       "citation": "Cécile Daversin, Christophe Prud'Homme. Simultaneous Empirical Interpolation and Reduced Basis method for non-linear problems. <i>MoRePaS2015</i>, Oct 2015, Trieste, Italy. <a target=\"_blank\" href=\"https://hal.science/hal-01219063v1\">&#x27E8;hal-01219063&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-IDEX-0002",
+          "ANR-13-MONU-0005"
+        ],
+        "anrProjectAcronym_s": [
+          "UNISTRA",
+          "CHORUS"
+        ],
+        "anrProjectTitle_s": [
+          "Par-delà les frontières, l'Université de Strasbourg",
+          "Common Horizon of Open Research in Uncertainty for Simulation"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "poster",
@@ -2581,7 +3529,25 @@
       ],
       "open_access": true,
       "citation": "Cécile Daversin, Christophe Prud'Homme, Christophe Trophime. Reduced Basis method applied to large scale non linear multiphysics problems. <i>MoRePaS2015</i>, Oct 2015, Trieste, Italy. <a target=\"_blank\" href=\"https://hal.science/hal-01219061v1\">&#x27E8;hal-01219061&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01219061/document"
+      "pdf_url": "https://hal.science/hal-01219061/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-IDEX-0002",
+          "ANR-13-MONU-0005"
+        ],
+        "anrProjectAcronym_s": [
+          "UNISTRA",
+          "CHORUS"
+        ],
+        "anrProjectTitle_s": [
+          "Par-delà les frontières, l'Université de Strasbourg",
+          "Common Horizon of Open Research in Uncertainty for Simulation"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "poster",
@@ -2619,7 +3585,22 @@
       ],
       "open_access": true,
       "citation": "Jean-Baptiste Wahl, Christophe Prud'Homme, Yannick Hoarau. Méthode de Réduction d'Ordre et Simulations Aerothermiques. <i>Journée doctorale </i>, Oct 2015, Strasbourg, France. <a target=\"_blank\" href=\"https://hal.science/hal-01217935v1\">&#x27E8;hal-01217935&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01217935/document"
+      "pdf_url": "https://hal.science/hal-01217935/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-13-MONU-0005"
+        ],
+        "anrProjectAcronym_s": [
+          "CHORUS"
+        ],
+        "anrProjectTitle_s": [
+          "Common Horizon of Open Research in Uncertainty for Simulation"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -2654,7 +3635,16 @@
       ],
       "open_access": false,
       "citation": "Marcela Szopos, Simone Cassani, Giovanna Guidoboni, Christophe Prud'Homme, Riccardo Sacco, et al.. Towards understanding the interplay between intraocular pressure and blood  pressure: a mathematical model.. <i>Advanced technologies and treatments for Glaucoma</i>, Oct 2015, Milan, Italy. <a target=\"_blank\" href=\"https://hal.science/hal-01225853v1\">&#x27E8;hal-01225853&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -2696,7 +3686,22 @@
       ],
       "open_access": true,
       "citation": "Nora Aïssiouene, Tarik Amtout, Matthieu Brachet, Emmanuel Frénod, Romain Hild, et al.. Hydromorpho: A coupled model for unsteady Stokes/Exner equations and numerical results with Feel++ library. <i>CEMRACS 2015</i>, Jul 2015, Marseille, France. <a target=\"_blank\" href=\"https://hal.science/hal-01223427v1\">&#x27E8;hal-01223427&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-11-LABX-0020"
+        ],
+        "anrProjectAcronym_s": [
+          "LEBESGUE"
+        ],
+        "anrProjectTitle_s": [
+          "Centre de Mathématiques Henri Lebesgue : fondements, interactions, applications et Formation"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -2730,7 +3735,22 @@
       ],
       "open_access": true,
       "citation": "Alexandre Ancel, Alexandre Fortin, Simon Garnotel, Olivia Miraucourt, Stéphanie Salmon, et al.. Phantom project. <i>CEMRACS 2015</i>, Jul 2015, Marseille, France. <a target=\"_blank\" href=\"https://hal.science/hal-01222281v1\">&#x27E8;hal-01222281&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-12-MONU-0010"
+        ],
+        "anrProjectAcronym_s": [
+          "VIVABRAIN"
+        ],
+        "anrProjectTitle_s": [
+          "Simulation d'angiographies virtuelles à partir de modèles vasculaires 3D et 3D+t"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -2776,7 +3796,22 @@
       ],
       "open_access": true,
       "citation": "Guillaume Dollé, Omar Duran, Nelson Feyeux, Emmanuel Frénod, Matteo Giacomini. SiViBiR++ project: Simulation of a Virtual Bioreactor Landfill using Feel++. <i>CEMRACS 2015</i>, Jul 2015, Luminy, France. <a target=\"_blank\" href=\"https://hal.science/hal-01222253v1\">&#x27E8;hal-01222253&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-11-LABX-0020"
+        ],
+        "anrProjectAcronym_s": [
+          "LEBESGUE"
+        ],
+        "anrProjectTitle_s": [
+          "Centre de Mathématiques Henri Lebesgue : fondements, interactions, applications et Formation"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -2809,7 +3844,16 @@
       ],
       "open_access": true,
       "citation": "Alexandre Ancel. Le couplage visualisation/simulation avec ParaView. <i>Journées nationales du Développement logiciel de l'Enseignement Supérieur et de la Recherche</i>, Jun 2015, Bordeaux, France. <a target=\"_blank\" href=\"https://hal.science/hal-01222369v1\">&#x27E8;hal-01222369&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -2844,7 +3888,22 @@
       ],
       "open_access": false,
       "citation": "G. Guidoboni, Alon Harris, Christophe Prud'Homme, Brent Siesky, Riccardo Sacco, et al.. Influence of blood pressure and vascular resistance on the response to medications lowering intraocular pressure: a mathematical model. <i>Investigative Ophthalmology & Visual Science</i>, 2015, 56 (7). <a target=\"_blank\" href=\"https://hal.science/hal-01217002v1\">&#x27E8;hal-01217002&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-IDEX-0002"
+        ],
+        "anrProjectAcronym_s": [
+          "UNISTRA"
+        ],
+        "anrProjectTitle_s": [
+          "Par-delà les frontières, l'Université de Strasbourg"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -2884,7 +3943,22 @@
       ],
       "open_access": true,
       "citation": "Vincent Chabannes, Mourad Ismail, Christophe Prud'Homme, Marcela Szopos. Hemodynamic simulations in the cerebral venous network: A study on the influence of different modeling assumptions. <i>Journal of Coupled Systems and Multiscale Dynamics</i>, 2015, 3 (1), pp.23-37. <a target=\"_blank\" href=\"https://dx.doi.org/10.1166/jcsmd.2015.1062\">&#x27E8;10.1166/jcsmd.2015.1062&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-01109767v2\">&#x27E8;hal-01109767v2&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01109767/document"
+      "pdf_url": "https://hal.science/hal-01109767/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-11-LABX-0055"
+        ],
+        "anrProjectAcronym_s": [
+          "IRMIA"
+        ],
+        "anrProjectTitle_s": [
+          "Institut de Recherche en Mathématiques, ses Interactions et Applications"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -2916,7 +3990,31 @@
       ],
       "open_access": true,
       "citation": "Vincent Chabannes, Christophe Prud'Homme. Feel++ : A Versatile High Performance Finite Element Embedded Library into C++. <i>SIAM Conference on Computational Science and Engineering</i>, SIAM, Mar 2015, Salt Lake City, United States. <a target=\"_blank\" href=\"https://hal.science/hal-01217031v1\">&#x27E8;hal-01217031&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-COSI-0009",
+          "ANR-10-IDEX-0002",
+          "ANR-13-MONU-0005",
+          "ANR-12-MONU-0010"
+        ],
+        "anrProjectAcronym_s": [
+          "HAMM",
+          "UNISTRA",
+          "CHORUS",
+          "VIVABRAIN"
+        ],
+        "anrProjectTitle_s": [
+          "Architecture Hybrides et Méthodes Multi-échelles",
+          "Par-delà les frontières, l'Université de Strasbourg",
+          "Common Horizon of Open Research in Uncertainty for Simulation",
+          "Simulation d'angiographies virtuelles à partir de modèles vasculaires 3D et 3D+t"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -2952,7 +4050,28 @@
       ],
       "open_access": true,
       "citation": "Cécile Daversin, Christophe Prud'Homme. Simultaneous Empirical Interpolation and Reduced Basis method for non-linear problems. <i>Comptes Rendus. Mathématique</i>, 2015, <a target=\"_blank\" href=\"https://dx.doi.org/10.1016/j.crma.2015.08.003\">&#x27E8;10.1016/j.crma.2015.08.003&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-01144116v1\">&#x27E8;hal-01144116&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01144116/document"
+      "pdf_url": "https://hal.science/hal-01144116/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-13-MONU-0005",
+          "ANR-10-IDEX-0002",
+          "ANR-11-LABX-0055"
+        ],
+        "anrProjectAcronym_s": [
+          "CHORUS",
+          "UNISTRA",
+          "IRMIA"
+        ],
+        "anrProjectTitle_s": [
+          "Common Horizon of Open Research in Uncertainty for Simulation",
+          "Par-delà les frontières, l'Université de Strasbourg",
+          "Institut de Recherche en Mathématiques, ses Interactions et Applications"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "thesis",
@@ -2998,7 +4117,16 @@
       ],
       "open_access": true,
       "citation": "Abdoulaye Samaké. Large scale nonconforming domain decomposition methods. Modeling and Simulation. Université de Grenoble, 2014. English. <a target=\"_blank\" href=\"https://www.theses.fr/2014GRENM066\">&#x27E8;NNT : 2014GRENM066&#x27E9;</a>. <a target=\"_blank\" href=\"https://theses.hal.science/tel-01092968v2\">&#x27E8;tel-01092968v2&#x27E9;</a>",
-      "pdf_url": "https://theses.hal.science/tel-01092968/document"
+      "pdf_url": "https://theses.hal.science/tel-01092968/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -3038,7 +4166,22 @@
       ],
       "open_access": true,
       "citation": "Christophe Prud'Homme, Cécile Daversin, Christophe Trophime, Stéphane Veys. Reduced basis methods and high performance computing. Applications to non-linear multi-physics problems. <i>Workshop Aristote</i>, Oct 2014, Palaiseau, France. <a target=\"_blank\" href=\"https://hal.science/hal-01083757v1\">&#x27E8;hal-01083757&#x27E9;</a>",
-      "pdf_url": ""
+      "pdf_url": "",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-COSI-0009"
+        ],
+        "anrProjectAcronym_s": [
+          "HAMM"
+        ],
+        "anrProjectTitle_s": [
+          "Architecture Hybrides et Méthodes Multi-échelles"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "poster",
@@ -3076,7 +4219,25 @@
       ],
       "open_access": true,
       "citation": "Cécile Daversin, Christophe Prud'Homme, Christophe Trophime. Bases réduites certifiées pour des problèmes multi-physiques non-linéaires de grande taille. Application au design d'aimants à haut champ. <i>Journée poster des doctorants - Université de Strasbourg</i>, Oct 2014, Strasbourg, France. <a target=\"_blank\" href=\"https://hal.science/hal-01082377v1\">&#x27E8;hal-01082377&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01082377/document"
+      "pdf_url": "https://hal.science/hal-01082377/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-13-MONU-0005",
+          "ANR-10-IDEX-0002"
+        ],
+        "anrProjectAcronym_s": [
+          "CHORUS",
+          "UNISTRA"
+        ],
+        "anrProjectTitle_s": [
+          "Common Horizon of Open Research in Uncertainty for Simulation",
+          "Par-delà les frontières, l'Université de Strasbourg"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "poster",
@@ -3119,7 +4280,16 @@
       ],
       "open_access": true,
       "citation": "Zakaria Belhachmi, Guillaume Dollé, Christophe Prud'Homme, Murielle Torregrossa. Diffuse Optical Tomography For Tumour Detection Diffuse Optical Tomography For Tumour Detection. <i>Journée Poster 2014</i>, Oct 2014, Strasbourg, France. <a target=\"_blank\" href=\"https://hal.science/hal-01082527v1\">&#x27E8;hal-01082527&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-01082527/document"
+      "pdf_url": "https://hal.science/hal-01082527/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "thesis",
@@ -3157,7 +4327,16 @@
       ],
       "open_access": true,
       "citation": "Pierre Jolivet. Domain decomposition methods. Application to high-performance computing. General Mathematics [math.GM]. Université de Grenoble, 2014. English. <a target=\"_blank\" href=\"https://www.theses.fr/2014GRENM040\">&#x27E8;NNT : 2014GRENM040&#x27E9;</a>. <a target=\"_blank\" href=\"https://theses.hal.science/tel-01155718v1\">&#x27E8;tel-01155718&#x27E9;</a>",
-      "pdf_url": "https://theses.hal.science/tel-01155718/document"
+      "pdf_url": "https://theses.hal.science/tel-01155718/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -3189,7 +4368,25 @@
       ],
       "open_access": true,
       "citation": "Cécile Daversin, Christophe Prud'Homme, Christophe Trophime, Stéphane Veys. Reduced Order modeling of high magnetic field magnets. <i>17th U.S. National Congress on Theoretical & Applied Mechanics</i>, Jun 2014, Michigan State University, East Lansing, Michigan, United States. <a target=\"_blank\" href=\"https://hal.science/hal-00955232v2\">&#x27E8;hal-00955232v2&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-00955232/document"
+      "pdf_url": "https://hal.science/hal-00955232/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-IDEX-0002",
+          "ANR-13-MONU-0005"
+        ],
+        "anrProjectAcronym_s": [
+          "UNISTRA",
+          "CHORUS"
+        ],
+        "anrProjectTitle_s": [
+          "Par-delà les frontières, l'Université de Strasbourg",
+          "Common Horizon of Open Research in Uncertainty for Simulation"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "report",
@@ -3223,7 +4420,16 @@
       ],
       "open_access": true,
       "citation": "O Mokhtari, A. Popescu, U. Tan, J. Traoré, X. Yau, et al.. Écoulements aérothermiques :Benchmarks et Applications avec Feel++ et FreeFem++. [Travaux universitaires] 1, UPMC LJLL,; Université de Strasbourg, IRMA; Airbus Group. 2014. <a target=\"_blank\" href=\"https://hal.sorbonne-universite.fr/hal-01082318v1\">&#x27E8;hal-01082318&#x27E9;</a>",
-      "pdf_url": "https://hal.sorbonne-universite.fr/hal-01082318/document"
+      "pdf_url": "https://hal.sorbonne-universite.fr/hal-01082318/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "book-chapter",
@@ -3263,7 +4469,22 @@
       ],
       "open_access": true,
       "citation": "Abdoulaye Samake, Vincent Chabannes, Christophe Picard, Christophe Prud'Homme. Domain decomposition methods in Feel++. <i>Domain Decomposition Methods in Science and Engineering XXI</i>, 98, Springer, pp.397-405, 2014, Lecture Notes in Computational Science and Engineering, <a target=\"_blank\" href=\"https://dx.doi.org/10.1007/978-3-319-05789-7_37\">&#x27E8;10.1007/978-3-319-05789-7_37&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-00762321v2\">&#x27E8;hal-00762321v2&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-00762321/document"
+      "pdf_url": "https://hal.science/hal-00762321/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-COSI-0009"
+        ],
+        "anrProjectAcronym_s": [
+          "HAMM"
+        ],
+        "anrProjectTitle_s": [
+          "Architecture Hybrides et Méthodes Multi-échelles"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -3303,7 +4524,22 @@
       ],
       "open_access": true,
       "citation": "Olivia Miraucourt, Olivier Génevaux, Marcela Szopos, Marc Thiriet, Hugues Talbot, et al.. 3D CFD in complex vascular systems: A case study. <i>International Symposium on Biomedical Simulation (ISBMS)</i>, 2014, Strasbourg, France. pp.86-94, <a target=\"_blank\" href=\"https://dx.doi.org/10.1007/978-3-319-12057-7_10\">&#x27E8;10.1007/978-3-319-12057-7_10&#x27E9;</a>. <a target=\"_blank\" href=\"https://univ-reims.hal.science/hal-01695067v1\">&#x27E8;hal-01695067&#x27E9;</a>",
-      "pdf_url": "https://univ-reims.hal.science/hal-01695067/document"
+      "pdf_url": "https://univ-reims.hal.science/hal-01695067/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-12-MONU-0010"
+        ],
+        "anrProjectAcronym_s": [
+          "VIVABRAIN"
+        ],
+        "anrProjectTitle_s": [
+          "Simulation d'angiographies virtuelles à partir de modèles vasculaires 3D et 3D+t"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "book-chapter",
@@ -3342,7 +4578,24 @@
       ],
       "open_access": true,
       "citation": "Pierre Jolivet, Frédéric Hecht, Frédéric Nataf, Christophe Prud'Homme. Overlapping Domain Decomposition Methods with FreeFem++. <i>Domain Decomposition Methods in Science and Engineering XXI</i>, 98, Springer, pp.315-322, 2014, Lecture Notes in Computational Science and Engineering, 978-3-319-05789-7. <a target=\"_blank\" href=\"https://dx.doi.org/10.1007/978-3-319-05789-7_28\">&#x27E8;10.1007/978-3-319-05789-7_28&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-00762742v1\">&#x27E8;hal-00762742&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-00762742/document"
+      "pdf_url": "https://hal.science/hal-00762742/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-COSI-0009",
+          "ANR-10-COSI-0013"
+        ],
+        "anrProjectAcronym_s": [
+          "HAMM",
+          "PETALH"
+        ],
+        "anrProjectTitle_s": [
+          "Architecture Hybrides et Méthodes Multi-échelles"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -3378,7 +4631,22 @@
       ],
       "open_access": true,
       "citation": "Elisa Schenone, Stéphane Veys, Christophe Prud'Homme. High Performance Computing for the Reduced Basis Method. Application to Natural Convection. <i>ESAIM: Proceedings</i>, 2013, 43, pp.255-273. <a target=\"_blank\" href=\"https://dx.doi.org/10.1051/proc/201343016\">&#x27E8;10.1051/proc/201343016&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-00786560v1\">&#x27E8;hal-00786560&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-00786560/document"
+      "pdf_url": "https://hal.science/hal-00786560/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-COSI-0009"
+        ],
+        "anrProjectAcronym_s": [
+          "HAMM"
+        ],
+        "anrProjectTitle_s": [
+          "Architecture Hybrides et Méthodes Multi-échelles"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -3414,7 +4682,25 @@
       ],
       "open_access": true,
       "citation": "Cécile Daversin, Stéphane Veys, Christophe Trophime, Christophe Prud'Homme. A Reduced Basis Framework: Application to large scale non-linear multi-physics problems. <i>ESAIM: Proceedings</i>, 2013, 43, pp.225-254. <a target=\"_blank\" href=\"https://dx.doi.org/10.1051/proc/201343015\">&#x27E8;10.1051/proc/201343015&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-00786557v1\">&#x27E8;hal-00786557&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-00786557/document"
+      "pdf_url": "https://hal.science/hal-00786557/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-COSI-0009",
+          "ANR-11-LABX-0055"
+        ],
+        "anrProjectAcronym_s": [
+          "HAMM",
+          "IRMIA"
+        ],
+        "anrProjectTitle_s": [
+          "Architecture Hybrides et Méthodes Multi-échelles",
+          "Institut de Recherche en Mathématiques, ses Interactions et Applications"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -3456,7 +4742,22 @@
       ],
       "open_access": true,
       "citation": "Céline Caldini Queiros, Vincent Chabannes, Mourad Ismail, Gonçalo Pena, Christophe Prud'Homme, et al.. Towards large-scale three-dimensional blood flow simulations in realistic geometries. <i>ESAIM: Proceedings</i>, 2013, 43, pp.195-212. <a target=\"_blank\" href=\"https://dx.doi.org/10.1051/proc/201343013\">&#x27E8;10.1051/proc/201343013&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-00786556v1\">&#x27E8;hal-00786556&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-00786556/document"
+      "pdf_url": "https://hal.science/hal-00786556/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-COSI-0009"
+        ],
+        "anrProjectAcronym_s": [
+          "HAMM"
+        ],
+        "anrProjectTitle_s": [
+          "Architecture Hybrides et Méthodes Multi-échelles"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -3493,7 +4794,22 @@
       ],
       "open_access": true,
       "citation": "Abdoulaye Samake, Silvia Bertoluzza, Micol Pennacchio, Christophe Prud'Homme, Chady Zaza. A Parallel Implementation of the Mortar Element Method in 2D and 3D. <i>ESAIM: Proceedings</i>, 2013, 43, pp.213-224. <a target=\"_blank\" href=\"https://dx.doi.org/10.1051/proc/201343014\">&#x27E8;10.1051/proc/201343014&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-00786554v1\">&#x27E8;hal-00786554&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-00786554/document"
+      "pdf_url": "https://hal.science/hal-00786554/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-10-COSI-0009"
+        ],
+        "anrProjectAcronym_s": [
+          "HAMM"
+        ],
+        "anrProjectTitle_s": [
+          "Architecture Hybrides et Méthodes Multi-échelles"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -3529,7 +4845,27 @@
       ],
       "open_access": true,
       "citation": "Pierre Jolivet, Frédéric Hecht, Frédéric Nataf, Christophe Prud'Homme. Scalable Domain Decomposition Preconditioners for Heterogeneous Elliptic Problems. <i>SC13 - International Conference for High Performance Computing, Networking, Storage and Analysis</i>, Nov 2013, Denver, United States. pp.80:1--80:11, <a target=\"_blank\" href=\"https://dx.doi.org/10.1145/2503210.2503212\">&#x27E8;10.1145/2503210.2503212&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-00939957v1\">&#x27E8;hal-00939957&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-00939957/document"
+      "pdf_url": "https://hal.science/hal-00939957/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [
+          "ANR-11-LABX-0055",
+          "ANR-10-COSI-0009",
+          "ANR-10-COSI-0013"
+        ],
+        "anrProjectAcronym_s": [
+          "IRMIA",
+          "HAMM",
+          "PETALH"
+        ],
+        "anrProjectTitle_s": [
+          "Institut de Recherche en Mathématiques, ses Interactions et Applications",
+          "Architecture Hybrides et Méthodes Multi-échelles"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -3575,7 +4911,24 @@
       ],
       "open_access": true,
       "citation": "Vincent Doyeux, Yann Guyot, Vincent Chabannes, Christophe Prud'Homme, Mourad Ismail. Simulation of two-fluid flows using a Finite Element/level set method. Application to bubbles and vesicle dynamics. <i>Journal of Computational and Applied Mathematics</i>, 2013, Fifth International Conference on Advanced COmputational Methods in ENgineering (ACOMEN 2011), 246, pp.251-259. <a target=\"_blank\" href=\"https://dx.doi.org/10.1016/j.cam.2012.05.004\">&#x27E8;10.1016/j.cam.2012.05.004&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-00665484v1\">&#x27E8;hal-00665484&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-00665484/document"
+      "pdf_url": "https://hal.science/hal-00665484/document",
+      "funding": {
+        "funding_s": [
+          "Région Rhône-Alpes (ISLE/CHPID project)"
+        ],
+        "anrProjectReference_s": [
+          "ANR-12-MONU-0010"
+        ],
+        "anrProjectAcronym_s": [
+          "VIVABRAIN"
+        ],
+        "anrProjectTitle_s": [
+          "Simulation d'angiographies virtuelles à partir de modèles vasculaires 3D et 3D+t"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -3613,7 +4966,16 @@
       ],
       "open_access": true,
       "citation": "Pierre Jolivet, Victorita Dolean, Frédéric Hecht, Frédéric Nataf, Christophe Prud'Homme, et al.. High performance domain decomposition methods on massively parallel architectures with FreeFEM++. <i>Journal of Numerical Mathematics</i>, 2012, 20 (3-4), pp.287-302. <a target=\"_blank\" href=\"https://dx.doi.org/10.1515/jnum-2012-0015\">&#x27E8;10.1515/jnum-2012-0015&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-00835298v1\">&#x27E8;hal-00835298&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-00835298/document"
+      "pdf_url": "https://hal.science/hal-00835298/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -3654,7 +5016,16 @@
       ],
       "open_access": true,
       "citation": "Vincent Doyeux, Vincent Chabannes, Christophe Prud'Homme, Mourad Ismail. Simulation of vesicle using level set method solved by high order finite element. <i>ESAIM: Proceedings</i>, 2012, 38, pp.335-347. <a target=\"_blank\" href=\"https://dx.doi.org/10.1051/proc/201238018\">&#x27E8;10.1051/proc/201238018&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-00665007v1\">&#x27E8;hal-00665007&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-00665007/document"
+      "pdf_url": "https://hal.science/hal-00665007/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "journal-article",
@@ -3699,7 +5070,24 @@
       ],
       "open_access": true,
       "citation": "Christophe Prud'Homme, Vincent Chabannes, Vincent Doyeux, Mourad Ismail, Abdoulaye Samake, et al.. Feel++: A Computational Framework for Galerkin Methods and Advanced Numerical Methods. <i>ESAIM: Proceedings</i>, 2012, 38, pp.429-455. <a target=\"_blank\" href=\"https://dx.doi.org/10.1051/proc/201238024\">&#x27E8;10.1051/proc/201238024&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-00662868v3\">&#x27E8;hal-00662868v3&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-00662868/document"
+      "pdf_url": "https://hal.science/hal-00662868/document",
+      "funding": {
+        "funding_s": [
+          "ISLE/CHPID"
+        ],
+        "anrProjectReference_s": [
+          "ANR-10-COSI-0009"
+        ],
+        "anrProjectAcronym_s": [
+          "HAMM"
+        ],
+        "anrProjectTitle_s": [
+          "Architecture Hybrides et Méthodes Multi-échelles"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "conference-paper",
@@ -3739,7 +5127,24 @@
       ],
       "open_access": true,
       "citation": "Christophe Prud'Homme, Vincent Chabannes, Vincent Doyeux, Mourad Ismail, Abdoulaye Samake, et al.. Advances in Feel++: a domain specific embedded language in C++ for partial differential equations. <i>Eccomas'12 - European Congress on Computational Methods in Applied Sciences and Engineering</i>, Sep 2012, Vienna, Austria. <a target=\"_blank\" href=\"https://hal.science/hal-00762442v1\">&#x27E8;hal-00762442&#x27E9;</a>",
-      "pdf_url": "https://hal.science/hal-00762442/document"
+      "pdf_url": "https://hal.science/hal-00762442/document",
+      "funding": {
+        "funding_s": [
+          "FRAE/RB4FASTSIM, ISLE/CHPID"
+        ],
+        "anrProjectReference_s": [
+          "ANR-10-COSI-0009"
+        ],
+        "anrProjectAcronym_s": [
+          "HAMM"
+        ],
+        "anrProjectTitle_s": [
+          "Architecture Hybrides et Méthodes Multi-échelles"
+        ],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     },
     {
       "publication_type": "thesis",
@@ -3783,7 +5188,16 @@
       ],
       "open_access": true,
       "citation": "Gonçalo Pena. Spectral element approximation of the incompressible Navier-Stokes equations in a moving domain and applications. Analysis of PDEs [math.AP]. Ecole Polytechnique Fédérale de Lausanne (EPFL), 2009. English. <a target=\"_blank\" href=\"https://www.theses.fr/\">&#x27E8;NNT : &#x27E9;</a>. <a target=\"_blank\" href=\"https://theses.hal.science/tel-00764421v1\">&#x27E8;tel-00764421&#x27E9;</a>",
-      "pdf_url": "https://theses.hal.science/tel-00764421/document"
+      "pdf_url": "https://theses.hal.science/tel-00764421/document",
+      "funding": {
+        "funding_s": [],
+        "anrProjectReference_s": [],
+        "anrProjectAcronym_s": [],
+        "anrProjectTitle_s": [],
+        "europeanProjectReference_s": [],
+        "europeanProjectAcronym_s": [],
+        "europeanProjectTitle_s": []
+      }
     }
   ]
 }

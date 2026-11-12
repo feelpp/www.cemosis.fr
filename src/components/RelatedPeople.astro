@@ -1,0 +1,14 @@
+---
+import { getPeopleDirectory } from '../lib/people';
+import { route, type Language } from '../lib/site';
+interface Props { lang: Language; project: string }
+const { lang, project } = Astro.props;
+const people = (await getPeopleDirectory(lang)).filter(person => person.projects.some(p => p.slug === project) || person.contracts.some(contract => contract.projectLinks.some(p => p.slug === project) || contract.funders.some(funding => funding.project === project)));
+---
+{people.length > 0 && <section class="related-people" aria-labelledby="related-people-title">
+  <h2 id="related-people-title">{lang === 'fr' ? 'Personnes associées' : 'Associated people'}</h2>
+  <ul>{people.map(person => <li data-project-person={person.id}>
+    <a href={`${route(lang, 'about')}#person-${person.id}`}>{person.name}</a>
+    {(person.projects.find(p => p.slug === project)?.role || person.role?.[lang]) && <span> · {person.projects.find(p => p.slug === project)?.role ?? person.role?.[lang]}</span>}
+  </li>)}</ul>
+</section>}

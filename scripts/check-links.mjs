@@ -74,6 +74,44 @@ for (const collection of ['pages', 'projects', 'news', 'funding']) {
   }
   checkEntries(folder);
 }
+// Each publication/project association must be rendered in both directions.
+let associations = 0;
+for (const lang of ['fr', 'en']) {
+  const publicationFile = join(root, lang, 'publications', 'index.html');
+  const publicationRows = documentFor(publicationFile).querySelectorAll('[data-publication]');
+  for (const row of publicationRows) {
+    for (const link of row.querySelectorAll('.publication-projects a')) {
+      const target = fileFor(new URL(link.getAttribute('href'), site).pathname);
+      if (!target || !documentFor(target).querySelectorAll('[data-publication]').some(p => p.id === row.id)) {
+        errors.push(`Missing project → publication association: ${lang}/${row.id} → ${link.getAttribute('href')}`);
+      }
+      associations++;
+    }
+  }
+  for (const file of htmlFiles.filter(file => file.startsWith(join(root, lang, 'projects') + '/'))) {
+    for (const row of documentFor(file).querySelectorAll('[data-publication]')) {
+      const reverse = publicationRows.find(p => p.id === row.id);
+      if (!reverse?.querySelectorAll('.publication-projects a').some(link => fileFor(new URL(link.getAttribute('href'), site).pathname) === file)) {
+        errors.push(`Missing publication → project association: ${file} → ${row.id}`);
+      }
+    }
+  }
+}
+// Project-funding links have reciprocal "Funding" / "Supported projects" entries.
+let fundingRelations = 0;
+for (const file of htmlFiles) {
+  for (const relation of documentFor(file).querySelectorAll('[data-funding-relation]')) {
+    const link = relation.querySelector('a');
+    const target = link && fileFor(new URL(link.getAttribute('href'), site).pathname);
+    const reverse = target && documentFor(target).querySelectorAll('[data-funding-relation]').some(other =>
+      other.getAttribute('data-funding-relation') !== relation.getAttribute('data-funding-relation') &&
+      other.getAttribute('data-funding-status') === relation.getAttribute('data-funding-status') &&
+      other.getAttribute('data-funder') === relation.getAttribute('data-funder') &&
+      other.getAttribute('data-funded-project') === relation.getAttribute('data-funded-project'));
+    if (!reverse) errors.push(`Missing reciprocal project funding link: ${file} → ${link?.getAttribute('href')}`);
+    fundingRelations++;
+  }
+}
 // Imported articles must keep media local and cannot introduce executable HTML.
 const discussions = JSON.parse(readFileSync('src/data/discussions.json', 'utf8'));
 for (const lang of ['fr', 'en']) {
@@ -95,6 +133,79 @@ for (const { from, to } of redirects) {
   if (!existsSync(join(root, from, 'index.html')) || !existsSync(join(root, to, 'index.html'))) errors.push(`Missing redirect output: ${from} → ${to}`);
 }
 const sitemap = readFileSync(join(root, 'sitemap-0.xml'), 'utf8');
+const fundingConfig = parseYaml(readFileSync('src/data/project-funding.yaml', 'utf8'));
+for (const [project, config] of Object.entries(fundingConfig.projects)) {
+  for (const lang of ['fr', 'en']) {
+    const file = join(root, lang, 'projects', project, 'index.html');
+    if (!existsSync(file)) continue; // Drafts / untranslated projects are not rendered.
+    for (const grant of config.grants ?? []) {
+      if (!documentFor(file).querySelectorAll('[data-project-grant]').some(row => row.getAttribute('data-project-grant') === grant.reference)) errors.push(`Missing project grant: ${lang}/${project} → ${grant.reference}`);
+    }
+    for (const funding of config.fundedBy ?? []) {
+      const row = documentFor(file).querySelectorAll('[data-funder], [data-funding-source]').find(row =>
+        funding.project ? row.getAttribute('data-funding-relation') === 'received' && row.getAttribute('data-funder') === funding.project : row.getAttribute('data-funding-source') === funding.source);
+      if (!row) errors.push(`Configured funding not rendered: ${lang}/${project} → ${funding.project ?? funding.source}`);
+      if (funding.recipient && !row?.text.includes(funding.recipient)) errors.push(`Missing funding recipient: ${lang}/${project}`);
+      if (funding.coverage === 'partial' && !row?.text.includes(lang === 'fr' ? 'Financement partiel' : 'Partial funding')) errors.push(`Missing partial funding label: ${lang}/${project}`);
+      if (funding.status && row?.getAttribute('data-funding-status') !== funding.status) errors.push(`Missing funding status: ${lang}/${project}`);
+      if (funding.period && !row?.text.includes(funding.period[lang])) errors.push(`Missing funding period: ${lang}/${project}`);
+      const sourceGrants = funding.project ? fundingConfig.projects[funding.project]?.grants : fundingConfig.fundingSources?.[funding.source]?.grants;
+      for (const grant of sourceGrants ?? []) {
+        if (!row?.querySelectorAll('[data-grant-reference]').some(item => item.getAttribute('data-grant-reference') === grant.reference)) errors.push(`Missing funding reference: ${lang}/${project} → ${grant.reference}`);
+      }
+    }
+  }
+  for (const alias of config.aliases ?? []) {
+    for (const lang of ['fr', 'en']) {
+      const aliasPath = `${base}/${lang}/projects/${alias}/`;
+      const canonicalPath = `${base}/${lang}/projects/${project}/`;
+      const file = join(root, lang, 'projects', alias, 'index.html');
+      if (!existsSync(file)) { errors.push(`Missing project alias redirect: ${aliasPath}`); continue; }
+      const redirect = documentFor(file);
+      if (redirect.querySelector('link[rel="canonical"]')?.getAttribute('href') !== new URL(canonicalPath, site).href ||
+          redirect.querySelector('meta[http-equiv="refresh"]')?.getAttribute('content') !== `0;url=${canonicalPath}`) {
+        errors.push(`Incorrect project alias target: ${aliasPath}`);
+      }
+      if (sitemap.includes(`<loc>${site.origin}${aliasPath}</loc>`)) errors.push(`Project alias in sitemap: ${aliasPath}`);
+      if (documentFor(join(root, lang, 'projects', 'index.html')).querySelectorAll('a').some(link => link.getAttribute('href') === aliasPath)) {
+        errors.push(`Renamed project still listed separately: ${aliasPath}`);
+      }
+    }
+  }
+}
 if (sitemap.includes('/404') || redirects.some(({ from }) => sitemap.includes(`<loc>${site.origin}${base}/${from}/</loc>`))) errors.push('Sitemap contains a 404 or redirect page.');
+// People have one public anchor and reciprocal project associations, regardless
+// of whether their main entry is a staff card or a doctoral-history row.
+const peopleConfig = parseYaml(readFileSync('src/data/people.yaml', 'utf8'));
+const aliases = new Map(Object.entries(fundingConfig.projects).flatMap(([slug, project]) => (project.aliases ?? []).map(alias => [alias, slug])));
+let peopleLinks = 0;
+for (const lang of ['fr', 'en']) {
+  const about = documentFor(join(root, lang, 'about', 'index.html'));
+  for (const person of peopleConfig.people) {
+    const anchors = about.querySelectorAll('[id]').filter(element => element.id === `person-${person.id}`);
+    if (anchors.length !== 1) { errors.push(`Expected one person anchor: ${lang}/${person.id}`); continue; }
+    const projects = new Set([
+      ...(person.projects ?? []).map(project => project.project),
+      ...(person.contracts ?? []).flatMap(contract => [...contract.projects ?? [], ...(contract.funding ?? []).flatMap(funding => funding.project ? [funding.project] : [])]),
+    ].map(project => aliases.get(project) ?? project));
+    for (const project of projects) {
+      const path = `${base}/${lang}/projects/${project}/`;
+      const target = fileFor(path);
+      if (!anchors[0].querySelectorAll('a').some(link => link.getAttribute('href') === path) ||
+          !target || !documentFor(target).querySelectorAll('[data-project-person]').some(row => row.getAttribute('data-project-person') === person.id)) {
+        errors.push(`Missing reciprocal person/project link: ${lang}/${person.id} → ${project}`);
+      }
+      peopleLinks++;
+    }
+    if (person.doctorate) {
+      const row = about.querySelectorAll('[data-doctorate]').find(row => row.getAttribute('data-doctorate') === person.id);
+      if (!row || row.getAttribute('data-doctorate-status') !== person.doctorate.status) errors.push(`Missing doctoral record: ${lang}/${person.id}`);
+      if (person.doctorate.defenseDate && row?.querySelector('time')?.getAttribute('datetime') !== person.doctorate.defenseDate) errors.push(`Incorrect defense date: ${lang}/${person.id}`);
+    }
+  }
+}
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
 console.log(`Verified ${htmlFiles.length} HTML pages: internal links, assets, metadata, drafts and redirects.`);
+console.log(`Verified ${associations} bidirectional publication/project associations across both languages.`);
+console.log(`Verified ${fundingRelations} reciprocal project-funding entries across both languages.`);
+console.log(`Verified ${peopleLinks} reciprocal person/project associations across both languages.`);

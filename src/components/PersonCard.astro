@@ -1,0 +1,16 @@
+---
+import PersonContracts from './PersonContracts.astro';
+import type { getPeopleDirectory } from '../lib/people';
+import type { Language } from '../lib/site';
+interface Props { person: Awaited<ReturnType<typeof getPeopleDirectory>>[number]; lang: Language }
+const { person, lang } = Astro.props;
+const initials = person.initials ?? person.name.split(/\s+/).map(part => part[0]).slice(0, 3).join('');
+---
+<article class="team-card" id={`person-${person.id}`} data-person={person.id} data-person-status={person.status}>
+  <span class="team-initials" aria-hidden="true">{initials}</span>
+  <h4>{person.name}</h4>
+  {person.role && <p>{person.role[lang]}</p>}
+  {person.contractBased && <p class="person-funding-type">{lang === 'fr' ? 'Financement sur contrats' : 'Contract-funded'}</p>}
+  {person.projects.length > 0 && <ul class="person-projects">{person.projects.map(project => <li><a href={project.href}>{project.title}</a>{project.role && <span> · {project.role}</span>}</li>)}</ul>}
+  <PersonContracts person={person} lang={lang} />
+</article>

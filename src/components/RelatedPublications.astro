@@ -1,0 +1,19 @@
+---
+import PublicationEntry from './PublicationEntry.astro';
+import { getPublicationIndex } from '../lib/publications';
+import { route, type Language } from '../lib/site';
+interface Props { lang: Language; project: string }
+const { lang, project } = Astro.props;
+const fr = lang === 'fr';
+const { publications } = await getPublicationIndex(lang);
+const related = publications.filter(p => p.projects.some(match => match.slug === project));
+---
+<section class="related-publications" aria-labelledby="related-publications-title">
+  <h2 id="related-publications-title">{fr ? 'Publications associées' : 'Related publications'}{related.length > 0 && ` (${related.length})`}</h2>
+  {related.length > 0 ? <>
+    <p>{fr ? 'Références de la collection CEMOSIS associées à ce projet à partir des financements et remerciements renseignés dans HAL.' : 'References in the CEMOSIS collection associated with this project through funding metadata and acknowledgments recorded in HAL.'}</p>
+    <ol class="publication-list">{related.map(publication => <PublicationEntry publication={publication} lang={lang} />)}</ol>
+    <p><a class="text-link" href={`${route(lang, 'publications')}?project=${project}#publication-list`}>{fr ? 'Voir ces références dans la liste des publications' : 'View these references in the publication list'} →</a></p>
+  </> : <p>{fr ? 'Aucune publication de la collection CEMOSIS n’est actuellement associée à ce projet dans les financements et remerciements renseignés dans HAL.' : 'No publication in the CEMOSIS collection is currently associated with this project through funding metadata or acknowledgments recorded in HAL.'}</p>}
+  <p><a href={route(lang, 'publications')}>{fr ? 'Toutes les publications' : 'All publications'} →</a></p>
+</section>

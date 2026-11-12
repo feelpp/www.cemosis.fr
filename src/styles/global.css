@@ -150,9 +150,33 @@ small { font-size: .9rem; }
 .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .team-card { padding: 28px; border: 1px solid var(--line); border-radius: 0; }
 .team-initials { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 50%; background: #f1f5f5; color: var(--ink); font-size: .9rem; font-family: monospace; margin-bottom: 23px; }
-.team-card h3 { font-size: 1.25rem; margin-bottom: 10px; }
+.team-card h3, .team-card h4 { font-size: 1.25rem; margin-bottom: 10px; }
 .team-card p { font-size: .9rem; }
 .team-updated { font-size: .9rem; margin-top: 20px; }
+.people-navigation { margin-bottom: 2rem; }
+.team-group { margin-top: 2rem; }
+.team-group > h3 { margin-bottom: 1rem; }
+.person-funding-type { color: var(--muted); }
+.person-projects, .person-contracts ul { padding-left: 1.1rem; font-size: .9rem; }
+.person-projects li { margin-bottom: .5rem; }
+.person-contracts { border-top: 1px solid var(--line); margin-top: 1rem; padding-top: 1rem; }
+.person-contracts > ol { list-style: none; padding: 0; margin: 0; }
+.person-contracts > ol > li + li { border-top: 1px solid var(--line); padding-top: .75rem; margin-top: .75rem; }
+.contract-years { font-weight: bold; }
+.doctoral-section { margin: 3rem 0 4rem; }
+.doctoral-group { margin-top: 2rem; }
+.doctoral-table-scroll { overflow-x: auto; margin-top: 1rem; }
+.doctoral-table { width: 100%; min-width: 650px; border-collapse: collapse; font-size: .95rem; }
+.doctoral-table th, .doctoral-table td { padding: 1rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.doctoral-table thead { background: #f1f5f5; }
+.doctoral-table tbody th { width: 24%; font-weight: normal; }
+.doctoral-table p { margin: .5rem 0; }
+.doctoral-table ul { padding-left: 1rem; font-size: .85rem; }
+.doctoral-supervisors { color: var(--muted); font-size: .85rem; }
+.related-people { margin-top: 3rem; }
+.related-people ul { padding-left: 1.25rem; }
+.related-people li { margin-bottom: .75rem; }
+[id^="person-"], #doctoral-research { scroll-margin-top: 6rem; }
 @media (min-width: 1600px) { .hero { padding-block: 100px; } }
 @media (max-width: 1120px) {
   .container { width: calc(100% - 64px); }
@@ -320,7 +344,7 @@ small { font-size: .9rem; }
 .publication-distributions { display:grid; grid-template-columns:1fr 1fr; gap:3rem; margin:2rem 0; }
 .publication-distributions ul { list-style:none; padding:0; max-height:22rem; overflow:auto; }
 .publication-distributions li { display:flex; justify-content:space-between; gap:1rem; border-bottom:1px solid #ddd; padding:.5rem 0; }
-.publication-filters { display:grid; grid-template-columns:2fr 1fr 1fr; gap:1rem; margin:2rem 0 1rem; }
+.publication-filters { display:grid; grid-template-columns:2fr 1fr 1fr 1.5fr; gap:1rem; margin:2rem 0 1rem; }
 .publication-filters label { display:flex; flex-direction:column; gap:.4rem; }
 .publication-filters input, .publication-filters select { width:100%; padding:.65rem; border:1px solid #777; border-radius:0; background:white; color:#171717; font:inherit; }
 .publication-list { padding:0; list-style:none; }
@@ -329,6 +353,19 @@ small { font-size: .9rem; }
 .publication-list p { margin:.5rem 0; }
 .publication-meta { color:#555; }
 .publication-links { display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:.8rem; }
+.publication-projects { display:flex; align-items:baseline; flex-wrap:wrap; gap:.5rem; margin:.8rem 0; }
+.publication-projects ul { display:flex; flex-wrap:wrap; gap:.5rem 1rem; margin:0; padding:0; list-style:none; }
+.publication-funding { margin-top:1rem; }
+.publication-funding summary { cursor:pointer; text-decoration:underline; text-underline-offset:.2em; }
+.publication-funding dl { border-left:3px solid #ddd; padding-left:1rem; overflow-wrap:anywhere; }
+.publication-funding dt { font-weight:bold; margin-top:.8rem; }
+.publication-funding dd { margin-left:0; }
+.related-publications { margin-top:3rem; }
+.project-funding { margin-top:3rem; }
+.project-funding > ul { padding-left:1.25rem; }
+.project-funding > ul > li { margin-bottom:1rem; }
+.funding-aspects { padding-left:1.25rem; margin-top:.5rem; }
+.publication-list > li:target { scroll-margin-top:6rem; background:#f5f7f6; }
 .publications-section { padding-bottom:4rem; }
 @media (max-width:800px) { .publication-stats { grid-template-columns:1fr 1fr; } .publication-filters { grid-template-columns:1fr; } }
 @media (max-width:500px) { .publication-distributions { grid-template-columns:1fr; gap:1rem; } }
@@ -358,6 +395,8 @@ small { font-size: .9rem; }
 .project-illustration { margin: 0 0 2.5rem; background: #f5f5ef; border: 1px solid var(--line); }
 .project-illustration .article-image { display: block; width: 100%; height: auto; max-height: 560px; object-fit: contain; }
 .project-illustration figcaption { padding: .85rem 1.2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+.image-credit { display: block; margin-top: .5rem; }
+.research-image-credit { display: block; padding: .6rem 1rem; font-size: .75rem; color: var(--muted); border-bottom: 1px solid var(--line); }
 
 /* A shared illustration and matching treatment for both homepage taxonomies. */
 .home-intro { background-image: linear-gradient(90deg, rgba(255,255,255,.84), rgba(255,255,255,.68)), var(--city-background); background-size: cover; background-position: center; }
