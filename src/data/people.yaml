@@ -4,7 +4,8 @@
 updated: 2026-11-12
 source: Current team names and roles supplied by the site owner on 9 October 2026. Additional names, funding
   and Luca Berti's project history supplied on 10 November 2026. Descriptive work areas also use the cited
-  public sources. Javier Cladellas's former membership confirmed by the site owner on 12 November 2026.
+  public sources. Javier Cladellas's former membership and 2024–2026 contract years confirmed by the
+  site owner on 12 November 2026.
 doctoralSince: 2012
 people:
   - id: christophe-prudhomme
@@ -100,11 +101,15 @@ people:
       en: Data analysis, modelling and simulation
     projects:
       - project: ktirio-urban-building
-    contracts: []
+    contracts:
+      - startYear: 2024
+        endYear: 2026
+        projects:
+          - ktirio-urban-building
     sources:
       - https://github.com/orgs/feelpp/discussions/2257
       - https://github.com/orgs/feelpp/discussions/2219
-    notes: Former membership confirmed by the owner. Contract years and funding details have not yet been supplied.
+    notes: Former membership and 2024–2026 contract years confirmed by the owner. Specific funding details have not yet been supplied.
   - id: luca-berti
     name: Luca Berti
     initials: LB

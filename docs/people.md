@@ -19,8 +19,8 @@ membership is left `unspecified` unless confirmed. Internal `notes` and evidence
 
 Javier Cladellas is listed as a former member, as confirmed by the owner on
 12 November 2026, with data analysis, modelling and simulation work on Ktirio
-Urban Building documented in the project discussions. His contract years and
-specific funding remain unspecified.
+Urban Building documented in the project discussions. His 2024–2026 contract
+years are owner-confirmed; specific funding remains unspecified.
 
 ## Contracts and project history
 
