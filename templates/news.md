@@ -11,6 +11,8 @@ historical: false
 projects: [] # Project slugs, e.g. ["jnl-g", "exama"]
 ---
 
-Write the story here. Replace the sample date with the actual publication date.
+Write the story here. For an event, replace the sample date with the event's
+start date and add endDate for a multi-day event. For other news, use the
+publication date. This date is displayed on cards and determines their order.
 
 Link to publications, events or software where helpful.

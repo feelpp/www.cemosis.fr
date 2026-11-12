@@ -3,7 +3,7 @@ title: "Mathematics and digital technologies: skills, careers and sovereignty"
 description: "At FEM 2026, a round table on HPC, simulation, AI and agentic AI, mathematical expertise and career prospects."
 lang: "en"
 slug: "fem-2026-mathematiques-numerique"
-date: "2026-10-29"
+date: "2026-11-17"
 category: "Event · Mathematics and industry"
 projects: ["exama"]
 image: "/images/fem/fem-2026.png"

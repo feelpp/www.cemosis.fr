@@ -3,7 +3,7 @@ title: "Mathématiques et numérique : compétences, métiers et souveraineté"
 description: "Au FEM 2026, une table ronde sur le HPC, la simulation, l’IA et l’IA agentique, les compétences mathématiques et les perspectives professionnelles."
 lang: "fr"
 slug: "fem-2026-mathematiques-numerique"
-date: "2026-10-29"
+date: "2026-11-17"
 category: "Événement · Mathématiques et entreprises"
 projects: ["exama"]
 image: "/images/fem/fem-2026.png"

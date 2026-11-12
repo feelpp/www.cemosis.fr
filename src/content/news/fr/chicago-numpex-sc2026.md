@@ -1,15 +1,17 @@
 ---
 title: "Chicago : une reconstruction urbaine pour NumPEx à SC26"
-description: "Trois vues du modèle de Chicago illustreront un poster NumPEx à Supercomputing en novembre 2026."
+description: "Trois vues du modèle de Chicago illustreront un poster NumPEx à Supercomputing, du 15 au 20 novembre 2026."
 lang: "fr"
 slug: "chicago-numpex-sc2026"
-date: "2026-10-09"
+date: "2026-11-15"
+endDate: "2026-11-20"
 projects: ["exama", "ktirio-urban-building"]
 category: "NumPEx · SC26"
 image: "/images/chicago/downtown.png"
+source: "https://sc26.supercomputing.org/all-dates-deadlines/"
 ---
 
-Ces vues de la reconstruction géométrique de **Chicago** illustreront un **poster NumPEx**, présenté sur le **stand GENCI/TGCC Alice Recoque** à **Supercomputing en novembre 2026**. Elles montrent les bâtiments, les voies de circulation, la végétation et les surfaces d’eau à différentes échelles.
+Ces vues de la reconstruction géométrique de **Chicago** illustreront un **poster NumPEx**, présenté sur le **stand GENCI/TGCC Alice Recoque** à **Supercomputing (SC26), du 15 au 20 novembre 2026 à Chicago**. Elles montrent les bâtiments, les voies de circulation, la végétation et les surfaces d’eau à différentes échelles.
 
 ## Le centre-ville et ses espaces verts
 
